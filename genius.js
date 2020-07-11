@@ -47,22 +47,16 @@ client.on("message", async message => {
     message.channel.send("There is **no way** to bypass iCloud unlock.\n For __Activation Lock__, see <https://support.apple.com/en-us/HT201441>");
   }
     
-});
-
   if(command === "alock") {
     const sayMessage = args.join(" ");
     message.channel.send("See <https://support.apple.com/en-us/HT201441>. If the __Activation Lock__ placed on a device you have purchased or one that has come into your possessions **cannot** be removed by the previous owner, you must contact your local Apple Store (<https://www.apple.com/retail/>) with proof of purchase.");
   }
     
-});
-
-  if(command === "bypass") {
+  if(command === "other") {
     const sayMessage = args.join(" ");
-    message.channel.send("There is **no way** to bypass iCloud unlock.\n For __Activation Lock__, see <https://support.apple.com/en-us/HT201441>");
+    message.channel.send("");
   }
     
-});
-
   if(command === "template") {
     const sayMessage = args.join(" ");
     message.channel.send("input");
