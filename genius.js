@@ -31,7 +31,7 @@ client.on("message", async message => {
   if (message.author.bot) return;
   mention = message.mentions.users.first();
   if(command === "notify") {
-    if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["Owner"].includes(r.name)) )
       return message.reply("you have no power here");    const sayMessage = args.join(" ");
       mentionMessage = message.content.slice(8).split(' ')
       mentionMessage.shift()
@@ -42,9 +42,9 @@ client.on("message", async message => {
 
   }
     
-  if(command === "bang") {
+  if(command === "bypass") {
     const sayMessage = args.join(" ");
-    message.channel.send("bong");
+    message.channel.send("There is **no way** to bypass iCloud unlock.\n For __Activation Lock__, see <https://support.apple.com/en-us/HT201441>");
   }
     
 });
