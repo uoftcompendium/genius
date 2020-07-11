@@ -62,7 +62,7 @@ client.on("message", async message => {
     message.channel.send("Account recovery is a process designed to get you back into your Apple ID account when you don’t have enough information to reset your password. For security reasons, it might take several days or longer before you can use your account again. <https://support.apple.com/en-us/HT204921>");
   }
     
-  if(command === "battery") {
+  if(command === "batterysite") {
     const sayMessage = args.join(" ");
     message.channel.send("<https://support.apple.com/en-us/HT208387>");
   }
@@ -82,6 +82,11 @@ client.on("message", async message => {
     message.channel.send("A device can be **restored** through an __iCloud backup__ or __local (computer) backup__, by following instructions at <https://support.apple.com/en-us/HT204184>.");
   }
 
+         
+  if(command === "battery") {
+    const sayMessage = args.join(" ");
+    message.channel.send("__Battery health guide for iPhones:__ \n- iPhones 5/5S/SE: **90-93%** and less is degraded beyond reasonable usability. \n- iPhones 6/6S/7/8/SE2020 **85-90%** and less is degraded beyond reasonable usability. \n- iPhones 6+/6S+/7+/8+/X/X **80-85%** and less is degraded beyond reasonable usability. \n- XR/XSM/11/11P/11PM - **80% and lower** (Apple recommendation) \n\n*From experience it seems to line up roughly with when people start to complain with batteries and roughly when they could experience shutdowns, throttle, misreporting battery percent, etc. For more info, see <https://support.apple.com/en-us/HT208387>*");
+  }
          
   if(command === "template") {
     const sayMessage = args.join(" ");
