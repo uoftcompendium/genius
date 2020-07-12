@@ -102,7 +102,7 @@ client.on("message", async message => {
     
   if(command === "template") {
     const sayMessage = args.join(" ");
-    message.channel.send("```js\nif(command === "template") { \nconst sayMessage = args.join(" "); \nmessage.channel.send("input"); \n}```");
+    message.channel.send("```js\nif(command === 'template') { \nconst sayMessage = args.join(' '); \nmessage.channel.send('input'); \n}```");
   }
 
     
