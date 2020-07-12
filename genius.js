@@ -132,7 +132,7 @@ client.on("message", async message => {
          
   if(command === "commands") {
     const sayMessage = args.join(" ");
-    message.channel.send("```bash\n $info # credits & info \n$alock # activation lock \n$appdl # app not downloading/updating \n$ar # account recovery \n$battery # battery health guide \n$batterysite # battery website \n$bypass # iCloud bypass \n$bypasshack # it's hack time \n$checkrain # checkra1n jailbreak info \n$commands # lists all commands \n$downgrade # how to get rid of betas \n$jailbreak # jailbreak info \n$other # 'other' storage bloat \n$restore # how to restore device \n$snapjb # snapchat jailbreak fix \n$storage # cloud storage pricing \n$uncover # unc0ver jailbreak info ```");
+    message.channel.send("```bash\n$info # credits & info \n$alock # activation lock \n$appdl # app not downloading/updating \n$ar # account recovery \n$battery # battery health guide \n$batterysite # battery website \n$bypass # iCloud bypass \n$bypasshack # it's hack time \n$checkrain # checkra1n jailbreak info \n$commands # lists all commands \n$downgrade # how to get rid of betas \n$jailbreak # jailbreak info \n$other # 'other' storage bloat \n$restore # how to restore device \n$snapjb # snapchat jailbreak fix \n$storage # cloud storage pricing \n$uncover # unc0ver jailbreak info ```");
   }
 
          
