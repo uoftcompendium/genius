@@ -106,27 +106,27 @@ client.on("message", async message => {
   }
 
     
-  if(command === "template") {
+  if(command === "storageplans") {
+    const sayMessage = args.join(" ");
+    message.channel.send("When you sign up for iCloud, you automatically get 5GB of free storage. If you need more space in iCloud, you can upgrade to a larger storage plan. **USD** pricing: __50GB__ ($0.99), __200GB__ ($2.99), __2TB__ ($9.99), all charged monthly.");
+  }
+
+    
+  if(command === "checkrain") {
     const sayMessage = args.join(" ");
     message.channel.send("input");
   }
 
     
-  if(command === "template") {
+  if(command === "uncover") {
     const sayMessage = args.join(" ");
     message.channel.send("input");
   }
 
     
-  if(command === "template") {
+  if(command === "jailbreak") {
     const sayMessage = args.join(" ");
-    message.channel.send("input");
-  }
-
-    
-  if(command === "template") {
-    const sayMessage = args.join(" ");
-    message.channel.send("input");
+    message.channel.send("__Jailbreaking__ is a method by which your iOS device can bypass Apple's stock restrictions through __hardware__ and __software__-based exploits, unlocking the true potential of your iPhone beyond Apple's closed environment. For tools, type `$checkrain` or `$uncover`.");
   }
 
 
