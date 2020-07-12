@@ -120,7 +120,7 @@ client.on("message", async message => {
     
   if(command === "uncover") {
     const sayMessage = args.join(" ");
-    message.channel.send("**unc0ver** is a jailbreak tool that relies on the a patchable software exploit. It is currently working on all iOS versions between 11.0 and 13.5, on all devices. Current version: `5.2.1`. Install at <https://unc0ver.dev/>");
+    message.channel.send("**unc0ver** is a jailbreak tool that relies on a patchable software exploit. It is currently working on all iOS versions between 11.0 and 13.5, on all devices. Current version: `5.2.1`. Install at <https://unc0ver.dev/>");
   }
 
     
@@ -129,7 +129,17 @@ client.on("message", async message => {
     message.channel.send("__Jailbreaking__ is a method by which your iOS device can bypass Apple's stock restrictions through __hardware__ and __software__-based exploits, unlocking the true potential of your iPhone beyond Apple's closed environment. For tools, type `$checkrain` or `$uncover`.");
   }
 
+         
+  if(command === "commands") {
+    const sayMessage = args.join(" ");
+    message.channel.send("```bash \n$info # credits & info \n$alock # activation lock \n$appdl # app not downloading/updating \n$ar # account recovery \n$battery # battery health guide \n$batterysite # battery website \n$bypass # iCloud bypass \n$bypasshack # it's hack time \n$checkrain # checkra1n jailbreak info \n$commands # lists all commands \n$downgrade # how to get rid of betas \n$jailbreak # jailbreak info \n$other # 'other' storage bloat \n$restore # how to restore device \n$snapjb # snapchat jailbreak fix \n$storage # cloud storage pricing \n$uncover # unc0ver jailbreak info ```");
+  }
 
+         
+  if(command === "template") {
+    const sayMessage = args.join(" ");
+    message.channel.send("input");
+  }
     
   if(command === "CVD") {
     const sayMessage = args.join(" ");
