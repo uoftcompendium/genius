@@ -106,7 +106,7 @@ client.on("message", async message => {
   }
 
     
-  if(command === "storageplans") {
+  if(command === "storage") {
     const sayMessage = args.join(" ");
     message.channel.send("When you sign up for iCloud, you automatically get 5GB of free storage. If you need more space in iCloud, you can upgrade to a larger storage plan. **USD** pricing: __50GB__ ($0.99), __200GB__ ($2.99), __2TB__ ($9.99), all charged monthly.");
   }
@@ -114,13 +114,13 @@ client.on("message", async message => {
     
   if(command === "checkrain") {
     const sayMessage = args.join(" ");
-    message.channel.send("input");
+    message.channel.send("**checkra1n** is a jailbreak tool that relies on the `checkm8` hardware exploit. It is currently working on all iOS versions 12.3 and higher, on devices 5S to X. Current version: `0.10.2`. Install at <https://checkra.in/>");
   }
 
     
   if(command === "uncover") {
     const sayMessage = args.join(" ");
-    message.channel.send("input");
+    message.channel.send("**unc0ver** is a jailbreak tool that relies on the a patchable software exploit. It is currently working on all iOS versions between 11.0 and 13.5, on all devices. Current version: `5.2.1`. Install at <https://unc0ver.dev/>");
   }
 
     
