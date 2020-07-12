@@ -92,10 +92,48 @@ client.on("message", async message => {
     const sayMessage = args.join(" ");
     message.channel.send("https://i.imgur.com/tatd6yS.png");
   }
+
+    
+  if(command === "snapjb") {
+    const sayMessage = args.join(" ");
+    message.channel.send("__Jailbroken__ iOS devices may fail to work with Snapchat, even if you have the official app, if you have certain ‘tweaks’ installed. These tweaks can compromise the security of your account. **Solutions**: (1) Disabling Cydia Substrate using the “NoSub” tweak, (2) Uninstalling the “xCon” tweak, (3) Using a “jailbroken iOS cleaning app,” like iCleaner, if unofficial apps have been installed and then uninstalled. <https://support.snapchat.com/en-US/article/jailbroken-iphone>");
+  }
+
+    
+  if(command === "template") {
+    const sayMessage = args.join(" ");
+    message.channel.send("```js\nif(command === "template") { \nconst sayMessage = args.join(" "); \nmessage.channel.send("input"); \n}```");
+  }
+
     
   if(command === "template") {
     const sayMessage = args.join(" ");
     message.channel.send("input");
+  }
+
+    
+  if(command === "template") {
+    const sayMessage = args.join(" ");
+    message.channel.send("input");
+  }
+
+    
+  if(command === "template") {
+    const sayMessage = args.join(" ");
+    message.channel.send("input");
+  }
+
+    
+  if(command === "template") {
+    const sayMessage = args.join(" ");
+    message.channel.send("input");
+  }
+
+
+    
+  if(command === "CVD") {
+    const sayMessage = args.join(" ");
+    message.channel.send("Return;");
   }
      
   
