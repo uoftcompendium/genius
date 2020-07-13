@@ -19,9 +19,10 @@ client.on("message", async message => {
     m.edit(`Latency \`${m.createdTimestamp - message.createdTimestamp}ms\`. API Latency \`${Math.round(client.ping)}ms\`.`);
   }
 
-  if (message.content === '$react') {
+  if (message.content === '$invite') {
       message.react('732342713055182898');
-      message.author.sendMessage("732342713055182898");
+      message.author.sendMessage("Invite **Genius** to your server through <https://discord.com/oauth2/authorize?client_id=731603315032326235&scope=bot&permissions=2112>.");
+      message.channel.send("An invite has been issued via DM.");
   }
     
   if(command === "say") {
@@ -183,9 +184,9 @@ client.on("message", async message => {
   }
 
          
-  if(command === "invite") {
+  if(command === "invitedeprecated") {
     const sayMessage = args.join(" ");
-    message.channel.send("Invite **Genius** to your server through <https://discord.com/oauth2/authorize?client_id=731603315032326235&scope=bot&permissions=2112>.");
+    message.channel.send("`Invite`");
   }
 
          
