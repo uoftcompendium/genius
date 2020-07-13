@@ -169,24 +169,23 @@ client.on("message", async message => {
   if(command === "ios") {
     const sayMessage = args.join(" ");
     message.channel.send({embed: {
-      color: 16752989,
+      color: 16738918,
       title: "iOS Status",
       fields: [{
           name: "Current distribution",
-          value: "iOS `13.5.1` (`17F80`) R. Jun. 1, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates)."
+          value: "iOS `13.5.1` (`17F80`) R. Jun. 1, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates). ([Official](https://developer.apple.com/news/releases/))"
         },
         {
           name: "Distribution 13 Betas",
-          value: "iOS `13.6 GM` (`17G68`) R. Jul. 9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates)"
+          value: "iOS `13.6 GM` (`17G68`) R. Jul. 9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates). ([Official](https://developer.apple.com/news/releases/))"
         },
         {
           name: "Next iOS release",
-          value: "iOS `14.0 (2)` (`18A5319i`) R. Jul. 7,9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_14#Updates)"
+          value: "iOS `14.0 (2)` (`18A5319i`) R. Jul. 7,9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_14#Updates). ([Official](https://developer.apple.com/news/releases/))"
         }
       ],
       timestamp: new Date(),
       footer: {
-        icon_url: "https://cdn.discordapp.com/emojis/711692716421021717.png?v=1",
         text: "Data by Apple"
       }
     }
