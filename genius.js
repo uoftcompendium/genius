@@ -170,30 +170,24 @@ client.on("message", async message => {
     const sayMessage = args.join(" ");
     message.channel.send({embed: {
       color: 3447003,
-      author: {
-        name: client.user.username,
-        icon_url: client.user.avatarURL
-      },
-      title: "This is an embed",
-      url: "http://google.com",
-      description: "This is a test embed to showcase what they look like and what they can do.",
+      title: "iOS Status",
       fields: [{
-          name: "Fields",
-          value: "They can have different fields with small headlines."
+          name: "Current distribution",
+          value: "iOS 13.5.1, (`17F80`) R. Jun. 1, 2020"
         },
         {
-          name: "Masked links",
-          value: "You can put [masked links](http://google.com) inside of rich embeds."
+          name: "Distribution 13 Betas",
+          value: "Developer beta 13.6 GM (`17G68`) R. Jul. 9, 2020"
         },
         {
-          name: "Markdown",
-          value: "You can put all the *usual* **__Markdown__** inside of them."
+          name: "Next release",
+          value: "iOS 14.0 (2) (Dev.) (`18A5319i`) R. Jul. 7,9, 2020"
         }
       ],
       timestamp: new Date(),
       footer: {
-        icon_url: client.user.avatarURL,
-        text: "© Example"
+        icon_url: "https://cdn.discordapp.com/emojis/711692716421021717.png?v=1",
+        text: "Data by Apple"
       }
     }
   });
