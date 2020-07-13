@@ -191,6 +191,32 @@ client.on("message", async message => {
     }
   });
   }
+  if(command === "watchos") {
+    const sayMessage = args.join(" ");
+    message.channel.send({embed: {
+      color: 16738918,
+      title: "watchOS Status",
+      fields: [{
+          name: "Current distribution",
+          value: "watchOS `6.2.6` (`17T620`) R. Jun. 1, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_6). ([Official](https://developer.apple.com/news/releases/))"
+        },
+        {
+          name: "Distribution V6 Betas",
+          value: "watchOS `6.2.8 (4) GM` (`17U63`) R. Jul. 9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_6). ([Official](https://developer.apple.com/news/releases/))"
+        },
+        {
+          name: "Next watchOS release",
+          value: "watchOS `7.0 (2)` (`18R5327h`) R. Jul. 7, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_7). ([Official](https://developer.apple.com/news/releases/))"
+        }
+      ],
+      timestamp: new Date(),
+      footer: {
+        text: "Last refresh July 9, 2020"
+      }
+    }
+  });
+  }
+
 
 });
  
