@@ -20,7 +20,8 @@ client.on("message", async message => {
   }
 
   if (message.content === '$react') {
-	  message.react('732342713055182898');
+      message.react('732342713055182898');
+      message.author.sendMessage("732342713055182898");
   }
     
   if(command === "say") {
