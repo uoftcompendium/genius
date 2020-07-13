@@ -7,6 +7,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+  if (message.content === '$react') {
+	  message.react('😄');
+  }
+
 client.on("message", async message => {
   if(message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
@@ -183,12 +187,6 @@ client.on("message", async message => {
     message.channel.send("Invite **Genius** to your server through <https://discord.com/oauth2/authorize?client_id=731603315032326235&scope=bot&permissions=2112>.");
   }
 
-  if(command === "react") {
-    const sayMessage = args.join(" ")
-    message.channel.send("Done").then(sentMessage => {
-      let emoji = message.guild.emojis.find('name', "invite");
-    });
-  }
          
   if(command === "ios") {
     const sayMessage = args.join(" ");
