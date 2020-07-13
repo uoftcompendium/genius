@@ -208,7 +208,7 @@ client.on("message", async message => {
         },
         {
           name: "Other",
-          value: "$info` - credits & information\n`$help` - list of all commands\n`$version` - version number\n"
+          value: "`$info` - credits & information\n`$help` - list of all commands\n`$version` - version number\n"
         }
 
       ],
