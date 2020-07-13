@@ -186,7 +186,7 @@ client.on("message", async message => {
   if(command === "react") {
     const sayMessage = args.join(" ")
     message.channel.send("Done").then(sentMessage => {
-      let emoji = message.guild.emojis.find('name', "incoming_envelope");
+      let emoji = message.guild.emojis.find('name', "invite");
     });
   }
          
