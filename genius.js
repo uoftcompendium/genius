@@ -44,7 +44,7 @@ client.on("message", async message => {
 
   if(command === "commands") {
     const sayMessage = args.join(" ");
-    message.channel.send("```bash\n ----- iOS & iPhone ----- \n$alock # activation lock \n$appdl # app not downloading/updating \n$ar # account recovery \n$backuprestore # restore from backup \n$battery # battery health guide \n$batterysite # battery website \n$bypass # iCloud bypass \n$bypasshack # it's hack time \n$dfu # DFU mode guide \n$downgrade # how to get rid of betas \n$factoryrestore # factory restore \n$ios # iOS version & stats \n$iphone7 # issues with iPhone 7 \n$other # 'other' storage bloat \n$storage # iCloud storage pricing \n----- Jailbreak ----- \n$checkrain # checkra1n jailbreak info \n$jailbreak # what is jailbreak \n$snapjb # snapchat jailbreak fix \n$uncover # unc0ver jailbreak info \n----- Apple Watch ----- \n$awbeta # applewatch beta guide \n$watchosbeta # should i install? NO \n$watchos # watchOS version & stats \n----- Other ----- \n$info # credits & information \n$commands # list of all commands \n$version # version number ```");
+    message.channel.send("```bash\n ----- iOS & iPhone ----- \n$alock # activation lock \n$appdl # app not downloading/updating \n$ar # account recovery \n$backuprestore # restore from backup \n$battery # battery health guide \n$batterysite # battery website \n$bypass # iCloud bypass \n$bypasshack # it's hack time \n$dfu # DFU mode guide \n$downgrade # how to get rid of betas \n$factoryrestore # factory restore \n$ios # iOS version & stats \n$iphone7 # issues with iPhone 7 \n$other # 'other' storage bloat \n$storage # iCloud storage pricing \n----- Jailbreak ----- \n$checkrain # checkra1n jailbreak info \n$jailbreak # what is jailbreak \n$snapjb # snapchat jailbreak fix \n$uncover # unc0ver jailbreak info \n----- Apple Watch ----- \n$awbeta # applewatch beta guide \n$watchosbeta # should i install? NO \n$watchos # watchOS version & stats \n----- Other ----- \n$info # credits & information \n$commands # list of all commands \n$invite # invite Genius \n$version # version number ```");
   }
     
   if(command === "bypass") {
@@ -177,6 +177,11 @@ client.on("message", async message => {
     message.channel.send("The **iPhone 7** & **iPhone 7 Plus** are plagued with multiple issues that make it a less than economic choice in the current phone climate. It's affected by these __two issues__: \n\n__1)__ '**No Service**' recall, which you can read about at <https://support.apple.com/iphone-7-no-service>. This recall is about to expire, leaving many people soon to have to pay for their own repair. \n\n__2)__ The poor design of the iPhone 7 has caused a **defect with the Audio IC**, causing it to become separated from the board. This could result in loss of multiple  audio features such as calls, speaker phone, voice memos, Siri, etc. The difference between this issue and the last is that Apple refuses to recognize the design flaw, and on top of that, even if you get it repaired, it will happen again. There is __no permanent solution__. \n\n*In short, if you're looking for a budget solution, the iPhone SE 2020 or a used iPhone 8 is an infinitely better choice for your money.*");
   }
 
+         
+  if(command === "invite") {
+    const sayMessage = args.join(" ");
+    message.channel.send("Invite **Genius** to your server through <https://discord.com/oauth2/authorize?client_id=731603315032326235&scope=bot&permissions=2112>.");
+  }
          
   if(command === "ios") {
     const sayMessage = args.join(" ");
