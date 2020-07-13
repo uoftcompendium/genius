@@ -186,7 +186,7 @@ client.on("message", async message => {
       ],
       timestamp: new Date(),
       footer: {
-        text: "Data by Apple"
+        text: "Last refresh July 9, 2020"
       }
     }
   });
