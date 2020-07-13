@@ -165,6 +165,40 @@ client.on("message", async message => {
     message.channel.send("You shouldn’t install the watchOS __Developer__ or __Public__ beta since they are prerelease software not meant the the *general* public. If something goes wrong, you will have to send your Apple Watch back to Apple to get it reset or replaced. Proceed at your own risk through <https://beta.apple.com/sp/betaprogram/>.");
   }
 
+         
+  if(command === "iOS") {
+    const sayMessage = args.join(" ");
+    message.channel.send({embed: {
+      color: 3447003,
+      author: {
+        name: client.user.username,
+        icon_url: client.user.avatarURL
+      },
+      title: "This is an embed",
+      url: "http://google.com",
+      description: "This is a test embed to showcase what they look like and what they can do.",
+      fields: [{
+          name: "Fields",
+          value: "They can have different fields with small headlines."
+        },
+        {
+          name: "Masked links",
+          value: "You can put [masked links](http://google.com) inside of rich embeds."
+        },
+        {
+          name: "Markdown",
+          value: "You can put all the *usual* **__Markdown__** inside of them."
+        }
+      ],
+      timestamp: new Date(),
+      footer: {
+        icon_url: client.user.avatarURL,
+        text: "© Example"
+      }
+    }
+  });
+  }
+
 });
  
 client.login(process.env.ID);
