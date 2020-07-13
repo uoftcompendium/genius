@@ -202,6 +202,7 @@ client.on("message", async message => {
       }
     }
   });
+
   }
   if(command === "watchos") {
     const sayMessage = args.join(" ");
