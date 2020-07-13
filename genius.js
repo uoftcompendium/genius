@@ -182,6 +182,15 @@ client.on("message", async message => {
     const sayMessage = args.join(" ");
     message.channel.send("Invite **Genius** to your server through <https://discord.com/oauth2/authorize?client_id=731603315032326235&scope=bot&permissions=2112>.");
   }
+
+  if(command === "custom") {
+    const sayMessage = args.join(" ");
+    channel.send(embedName).then(sentMessage => {
+      let emoji = message.guild.emojis.find('name', "incoming_envelope");
+      message.react(emoji);
+    });
+  }
+});
          
   if(command === "ios") {
     const sayMessage = args.join(" ");
