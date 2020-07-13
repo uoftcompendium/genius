@@ -82,9 +82,15 @@ client.on("message", async message => {
     message.channel.send("iOS Developer & Public __Betas__ can be uninstalled by following the instructions at <https://support.apple.com/en-us/HT203282#beta>. An __iCloud backup__ is highly recommended.");
   }
       
-  if(command === "restore") {
+  if(command === "backuprestore") {
     const sayMessage = args.join(" ");
     message.channel.send("A device can be **restored** through an __iCloud backup__ or __local (computer) backup__, by following instructions at <https://support.apple.com/en-us/HT204184>.");
+  }
+
+      
+  if(command === "factoryrestore") {
+    const sayMessage = args.join(" ");
+    message.channel.send("A __factory restore__ erases the information and settings on your iPhone, iPad, or iPod and installs the latest version of iOS, iPadOS, or iPod software. Follow the steps at <https://support.apple.com/en-us/HT201252>.");
   }
 
          
