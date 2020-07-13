@@ -152,6 +152,11 @@ client.on("message", async message => {
     message.channel.send("__DFU__ or __Device Firmware Upgrade__ mode allows all devices to be restored from any state. Learn more how to enter DFU mode on any device at <https://www.theiphonewiki.com/wiki/DFU_Mode>.");
   }
      
+         
+  if(command === "watchosbeta") {
+    const sayMessage = args.join(" ");
+    message.channel.send("Should I install the **watchOS 7** beta on my Apple Watch?\n https://i.imgur.com/kvS0QpT.png");
+  }
   
 });
  
