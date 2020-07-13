@@ -7,9 +7,6 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-  if (message.content === '$react') {
-	  message.react('😄');
-  }
 
 client.on("message", async message => {
   if(message.author.bot) return;
@@ -22,6 +19,9 @@ client.on("message", async message => {
     m.edit(`Latency \`${m.createdTimestamp - message.createdTimestamp}ms\`. API Latency \`${Math.round(client.ping)}ms\`.`);
   }
 
+  if (message.content === '$react') {
+	  message.react('😄');
+  }
     
   if(command === "say") {
 
