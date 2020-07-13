@@ -189,6 +189,37 @@ client.on("message", async message => {
     message.channel.send("`Invite`");
   }
 
+  if(command === "help") {
+    const sayMessage = args.join(" ");
+    message.channel.send({embed: {
+      color: 16746881,
+      title: "iOS & iPhone",
+      fields: [{
+          name: "Current distribution",
+          value: "`$alock` - activation lock\n`$appdl` - app dl issues)\n`$ar` - account recovery\n`$backuprestore` - backup restore\n`$battery` - battery health guide\n`$batterysite` - battery website\n`$bypass` - iCloud bypass\n`$bypasshack` - it's hack time\n`$dfu` - DFU mode guide \n`$downgrade` - how to get rid of betas \n`$factoryrestore` - factory restore\n`$ios` - iOS version & stats\n`$iphone7` - issues with iPhone 7\n`$other` - 'other' storage bloat \n`$storage` - iCloud storage pricing "
+        },
+        {
+          name: "Jailbreak",
+          value: "`$checkrain` - checkra1n jailbreak info \n`$jailbreak` - what is jailbreak \n`$snapjb` - snapchat jailbreak fix \n`$uncover` - unc0ver jailbreak info"
+        },
+        {
+          name: "Apple Watch",
+          value: "`$awbeta` - applewatch beta guide\n`$watchosbeta` - should i install? NO"
+        },
+        {
+          name: "Other",
+          value: "$info` - credits & information\n`$help` - list of all commands\n`$version` - version number\n"
+        }
+
+      ],
+      timestamp: new Date(),
+      footer: {
+        text: "Designed by tank#0001"
+      }
+    }
+  });
+
+  }
          
   if(command === "ios") {
     const sayMessage = args.join(" ");
@@ -216,6 +247,7 @@ client.on("message", async message => {
   });
 
   }
+
   if(command === "watchos") {
     const sayMessage = args.join(" ");
     message.channel.send({embed: {
