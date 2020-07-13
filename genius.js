@@ -169,19 +169,19 @@ client.on("message", async message => {
   if(command === "ios") {
     const sayMessage = args.join(" ");
     message.channel.send({embed: {
-      color: 3447003,
+      color: 16752989,
       title: "iOS Status",
       fields: [{
           name: "Current distribution",
-          value: "iOS 13.5.1, (`17F80`) R. Jun. 1, 2020"
+          value: "iOS `13.5.1` (`17F80`) R. Jun. 1, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates)."
         },
         {
           name: "Distribution 13 Betas",
-          value: "Developer beta 13.6 GM (`17G68`) R. Jul. 9, 2020"
+          value: "iOS `13.6 GM` (`17G68`) R. Jul. 9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates)"
         },
         {
-          name: "Next release",
-          value: "iOS 14.0 (2) (Dev.) (`18A5319i`) R. Jul. 7,9, 2020"
+          name: "Next iOS release",
+          value: "iOS `14.0 (2)` (`18A5319i`) R. Jul. 7,9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_14#Updates)"
         }
       ],
       timestamp: new Date(),
