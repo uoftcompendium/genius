@@ -44,7 +44,7 @@ client.on("message", async message => {
 
   if(command === "commands") {
     const sayMessage = args.join(" ");
-    message.channel.send("```bash\n$info # credits & info \n$alock # activation lock \n$appdl # app not downloading/updating \n$ar # account recovery \n$backuprestore # restore from backup \n$battery # battery health guide \n$batterysite # battery website \n$bypass # iCloud bypass \n$bypasshack # it's hack time \n$checkrain # checkra1n jailbreak info \n$commands # lists all commands \n$dfu # DFU mode guide \n$downgrade # how to get rid of betas \n$factoryrestore # factory restore \n$jailbreak # jailbreak info \n$other # 'other' storage bloat \n$snapjb # snapchat jailbreak fix \n$storage # cloud storage pricing \n$uncover # unc0ver jailbreak info ```");
+    message.channel.send("```bash\n$info # credits & info \n$alock # activation lock \n$appdl # app not downloading/updating \n$ar # account recovery \n$awbeta # applewatch beta guide \n$backuprestore # restore from backup \n$battery # battery health guide \n$batterysite # battery website \n$bypass # iCloud bypass \n$bypasshack # it's hack time \n$checkrain # checkra1n jailbreak info \n$commands # lists all commands \n$dfu # DFU mode guide \n$downgrade # how to get rid of betas \n$factoryrestore # factory restore \n$jailbreak # jailbreak info \n$other # 'other' storage bloat \n$snapjb # snapchat jailbreak fix \n$storage # cloud storage pricing \n$uncover # unc0ver jailbreak info \n$watchosbeta # should i install? NO ```");
   }
     
   if(command === "bypass") {
@@ -158,6 +158,13 @@ client.on("message", async message => {
     message.channel.send("Should I install the **watchOS 7** beta on my Apple Watch?\n https://i.imgur.com/kvS0QpT.png");
   }
   
+
+         
+  if(command === "awbeta") {
+    const sayMessage = args.join(" ");
+    message.channel.send("You shouldn’t install the watchOS __Developer__ or __Public__ beta since they are prerelease software not meant the the *general* public. If something goes wrong, you will have to send your Apple Watch back to Apple to get it reset or replaced. Proceed at your own risk through <https://beta.apple.com/sp/betaprogram/>.");
+  }
+
 });
  
 client.login(process.env.ID);
