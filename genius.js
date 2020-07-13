@@ -181,7 +181,7 @@ client.on("message", async message => {
   if(command === "ios") {
     const sayMessage = args.join(" ");
     message.channel.send({embed: {
-      color: 16738918,
+      color: 5488029,
       title: "iOS Status",
       fields: [{
           name: "Current distribution",
@@ -207,7 +207,7 @@ client.on("message", async message => {
   if(command === "watchos") {
     const sayMessage = args.join(" ");
     message.channel.send({embed: {
-      color: 16738918,
+      color: 5488029,
       title: "watchOS Status",
       fields: [{
           name: "Current distribution",
