@@ -166,7 +166,7 @@ client.on("message", async message => {
   }
 
          
-  if(command === "iOS") {
+  if(command === "ios") {
     const sayMessage = args.join(" ");
     message.channel.send({embed: {
       color: 3447003,
