@@ -89,9 +89,6 @@ const reactionPages = async (message, author, options, page, retries) => {
           // and some more here too
       });
 
-
-
-
 }
 
 client.on('ready', () => {
@@ -102,7 +99,7 @@ client.on('message', async (message) => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
 
-  if (message.content === `${prefix}help`) {
+  if (message.content === `${prefix}helpmenu`) {
       // variables
 
       const emojis = {
