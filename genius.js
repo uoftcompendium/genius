@@ -7,6 +7,12 @@ const pages = {
   2: { title: ':two:', description: 'This is page two!' }
 }
 
+const filter = (reaction, user) => {
+  return ['⬅', '➡', '🗑'].includes(reaction.emoji.name) && user.id == msg.author.id;
+};
+
+awaitReactions(msg, m, options, filter);
+
 const removeReaction = async (m, msg, emoji) => {
   try { m.reactions.find(r => r.emoji.name == emoji).users.remove(msg.author.id); } catch(err) {}
 }
@@ -16,11 +22,6 @@ const awaitReactions = async (msg, m, options, filter) => {
   // simplify the use of these options, using destructing^
   const { min, max, page, limit } = options;
 
-const filter = (reaction, user) => {
-  return ['⬅', '➡', '🗑'].includes(reaction.emoji.name) && user.id == msg.author.id;
-};
-
-awaitReactions(msg, m, options, filter);
   
   m.awaitReactions(filter, { max: 1, time: limit, errors: ['time'] })
   .then(async (collected) => {
