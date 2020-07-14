@@ -3,30 +3,32 @@ const { token, prefix } = require('./config.json');
 
 const client = new Discord.Client();
 
-// functions
+// FUNCTIONS
 
 const reactionPages = async (message, author, options, page, retries) => {
   // code incoming!
+
+  
   const filter = (reaction, user) => {
     if (options.allowOtherUserReactions) {
         return Object.values(options.emojis).includes(reaction.emoji.name);
     } else {
         return Object.values(options.emojis).includes(reaction.emoji.name) && user.id === author.id;
     }
-}
+  }
 
-const collectorOptions = {
+  const collectorOptions = {
     max: 1,
     time: (options.timeLimit * 1000),
     errors: ['time']
-}
+  }  
 
-message.awaitReactions(filter, collectorOptions)
-    .then(async (collected) => {
-      const reaction = collected.first();
-      const minPage = 0;
-      const maxPage = (options.pages.length - 1);
-      const restartLoop = async () => { await reactionPages(message, author, options, page, retries); }
+  message.awaitReactions(filter, collectorOptions)
+      .then(async (collected) => {
+        const reaction = collected.first();
+        const minPage = 0;
+        const maxPage = (options.pages.length - 1);
+        const restartLoop = async () => { await reactionPages(message, author, options, page, retries); }
 
       
       if (reaction.emoji.name === options.emojis.firstPage) {
@@ -90,7 +92,9 @@ message.awaitReactions(filter, collectorOptions)
       }
     });
 }
-// functions
+// END FUNCTIONS
+
+// BEGIN COMMAND
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
@@ -160,5 +164,7 @@ client.on('message', async (message) => {
         // command
     }
 });
+
+// END COMMAND
 
 client.login(process.env.ID);
