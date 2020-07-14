@@ -48,13 +48,7 @@ message.awaitReactions(filter, collectorOptions)
           message = await message.edit(options.pages[page]);
           return restartLoop();
       }
-      
-      if (reaction.emoji.name === options.emojis.stop) {
-          // stop listening
-          // stop listening
-          return true;
-          
-      }
+
       
       if (reaction.emoji.name === options.emojis.delete) {
           // delete the message (also stops listening)  
@@ -112,14 +106,13 @@ client.on('message', async (message) => {
         const emojis = {
           firstPage: '732634910715674625',
           previousPage: '732634909579149444',
-          stop: '🛑',
           delete: '732634909461708863',
           nextPage: '732634910824595456',
           lastPage: '732634910711349270'
       }
 
       const pages = [
-        {  embed: { color: 16746881, title: 'Genius Assistant', description: 'Genius is an Apple support archive assistant with frequently asked questions available upon request. Welcome to the Genius help menu. To navigate, use the <:previous:732634909579149444> and <:next:732634910824595456> buttons. The table of contents is below: \n\n1. Welcome page \n2. iOS & iPhone \n3. Apple Watch \n4. Jailbreak \n5. Other \n\nTo return to this page, simply press <:firstpage:732634910715674625>. To close the menu entirely, press <:cancel:732634909461708863>. Thank you for using Genius.' } },
+        {  embed: { color: 16746881, title: 'Genius Assistant', description: 'Genius is an Apple support archive assistant with frequently asked questions available upon request. Welcome to the Genius help menu. To navigate, use the <:previous:732634909579149444> and <:next:732634910824595456> buttons. The table of contents is below: \n\n1. Welcome \n2. iOS & iPhone \n3. Apple Watch \n4. Jailbreak \n5. Other \n\nTo return to this page, simply press <:firstpage:732634910715674625>. To close the menu entirely, press <:cancel:732634909461708863>. Thank you for using Genius.' } },
         {  embed: { color: 16746881, title: 'Page 2', description: 'This is page two' } },
         {  embed: { color: 16746881, title: 'Page 3', description: 'This is page three' } }
       ]
@@ -145,7 +138,6 @@ client.on('message', async (message) => {
 
         await msg.react(emojis.firstPage);
         await msg.react(emojis.previousPage);
-        await msg.react(emojis.stop);
         await msg.react(emojis.delete);
         await msg.react(emojis.nextPage);
         await msg.react(emojis.lastPage);
