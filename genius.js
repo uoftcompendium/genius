@@ -191,8 +191,6 @@ client.on("message", async message => {
   });
   }
 
-
-
 });
 // functions
 
@@ -287,7 +285,7 @@ client.on('message', async (message) => {
       // variables
 
       const emojis = {
-        firstPage: '732685936063676447',
+        firstPage: '⏮️',
         previousPage: '⬅️',
         delete: '🗑️',
         nextPage: '➡️',
