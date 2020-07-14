@@ -119,9 +119,9 @@ client.on('message', async (message) => {
       }
 
       const pages = [
-        {  embed: { title: 'Page 1', description: 'This is page one' } },
-        {  embed: { title: 'Page 2', description: 'This is page two' } },
-        {  embed: { title: 'Page 3', description: 'This is page three' } }
+        {  embed: { color: 16746881, title: 'Page 1', description: 'This is page one' } },
+        {  embed: { color: 16746881, title: 'Page 2', description: 'This is page two' } },
+        {  embed: { color: 16746881, title: 'Page 3', description: 'This is page three' } }
       ]
 
       const defaultPage = 0;
