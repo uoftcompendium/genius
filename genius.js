@@ -15,12 +15,16 @@ const filter = (reaction, user) => {
   return ['⬅', '➡', '🗑'].includes(reaction.emoji.name) && user.id == msg.author.id;
 };
 
-awaitReactions(msg, m, options, filter);
-
 //reactionlogic
 const awaitReactions = async (msg, m, options, filter) => {
   // simplify the use of these options, using destructing^
   const { min, max, page, limit } = options;
+
+  const filter = (reaction, user) => {
+    return ['⬅', '➡', '🗑'].includes(reaction.emoji.name) && user.id == msg.author.id;
+  };
+
+  awaitReactions(msg, m, options, filter);
   
   m.awaitReactions(filter, { max: 1, time: limit, errors: ['time'] })
   .then(async (collected) => {
@@ -53,7 +57,7 @@ client.on('message', async (msg) => {
     const args = msg.content.slice(prefix.length).split(/ +/g);
     const command = args.shift().toLowerCase();
     
-    if (command == 'help') {
+    if (command == 'welp') {
         // the command itself
 
         const options = {
