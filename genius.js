@@ -51,6 +51,12 @@ const reactionPages = async (message, author, options, page, retries) => {
           return restartLoop();
       }
 
+      if (reaction.emoji.name === options.emojis.stop) {
+        // stop listening
+        return true;
+        // stop listening
+      }
+
       
       if (reaction.emoji.name === options.emojis.delete) {
           // delete the message (also stops listening)  
@@ -110,6 +116,7 @@ client.on('message', async (message) => {
         const emojis = {
           firstPage: '732634910715674625',
           previousPage: '732634909579149444',
+          stop: '🛑',
           delete: '732634909461708863',
           nextPage: '732634910824595456',
           lastPage: '732634910711349270'
@@ -142,6 +149,7 @@ client.on('message', async (message) => {
 
         await msg.react(emojis.firstPage);
         await msg.react(emojis.previousPage);
+        await msg.react(emojis.stop);
         await msg.react(emojis.delete);
         await msg.react(emojis.nextPage);
         await msg.react(emojis.lastPage);
