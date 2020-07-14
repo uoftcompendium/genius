@@ -132,13 +132,10 @@ client.on("message", async message => {
           text: "Last refresh July 9, 2020"
         }
       }
-    });
+    };
     }
 
   if (message.content === `${prefix}watchos`) {
-
-
-  if (message.content === `${prefix}bypass`) {
       message.channel.send({embed: {
         color: 16746881,
         title: "watchOS Status",
@@ -163,7 +160,7 @@ client.on("message", async message => {
     });
     }
 
-});
+};
 
 
 // functions
