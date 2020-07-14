@@ -16,11 +16,11 @@ const awaitReactions = async (msg, m, options, filter) => {
   // simplify the use of these options, using destructing^
   const { min, max, page, limit } = options;
 
-  const filter = (reaction, user) => {
-    return ['⬅', '➡', '🗑'].includes(reaction.emoji.name) && user.id == msg.author.id;
-  };
+const filter = (reaction, user) => {
+  return ['⬅', '➡', '🗑'].includes(reaction.emoji.name) && user.id == msg.author.id;
+};
 
-  awaitReactions(msg, m, options, filter);
+awaitReactions(msg, m, options, filter);
   
   m.awaitReactions(filter, { max: 1, time: limit, errors: ['time'] })
   .then(async (collected) => {
