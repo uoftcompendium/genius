@@ -258,3 +258,7 @@ client.on('message', async (message) => {
 
 
 client.login(process.env.ID);
+
+
+})
+// THE STATS IOS
