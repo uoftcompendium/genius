@@ -110,16 +110,16 @@ client.on('message', async (message) => {
         // variables
 
         const emojis = {
-          firstPage: '⏮️',
-          previousPage: '⬅️',
+          firstPage: '<:firstpage:732634910715674625>',
+          previousPage: '<:previous:732634909579149444>',
           stop: '🛑',
-          delete: '🗑️',
-          nextPage: '➡️',
-          lastPage: '⏩'
+          delete: '<:cancel:732634909461708863>',
+          nextPage: '<:next:732634910824595456>',
+          lastPage: '<:lastpage:732634910711349270>'
       }
 
       const pages = [
-        {  embed: { color: 16746881, title: 'Genius Assistant', description: 'Genius is an Apple support archive assistant with frequently asked questions available upon request. Welcome to the Genius help menu. To navigate, use the ⬅️ and ➡️ buttons. The table of contents is below: \n\n1. Welcome page \n2. iOS & iPhone \n3. Apple Watch \n4. Jailbreak \n5. Other \n\nTo return to this page, simply press ⏮️. To close the menu entirely, press 🗑️. Thank you for using Genius.' } },
+        {  embed: { color: 16746881, title: 'Genius Assistant', description: 'Genius is an Apple support archive assistant with frequently asked questions available upon request. Welcome to the Genius help menu. To navigate, use the <:previous:732634909579149444> and <:next:732634910824595456> buttons. The table of contents is below: \n\n1. Welcome page \n2. iOS & iPhone \n3. Apple Watch \n4. Jailbreak \n5. Other \n\nTo return to this page, simply press <:firstpage:732634910715674625>. To close the menu entirely, press <:cancel:732634909461708863>. Thank you for using Genius.' } },
         {  embed: { color: 16746881, title: 'Page 2', description: 'This is page two' } },
         {  embed: { color: 16746881, title: 'Page 3', description: 'This is page three' } }
       ]
