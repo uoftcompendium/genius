@@ -7,11 +7,6 @@ const pages = {
   2: { title: ':two:', description: 'This is page two!' }
 }
 
-const filter = (reaction, user) => {
-  return ['⬅', '➡', '🗑'].includes(reaction.emoji.name) && user.id == msg.author.id;
-};
-
-awaitReactions(msg, m, options, filter);
 
 const removeReaction = async (m, msg, emoji) => {
   try { m.reactions.find(r => r.emoji.name == emoji).users.remove(msg.author.id); } catch(err) {}
@@ -71,6 +66,11 @@ client.on('message', async (msg) => {
         await m.react('➡');
         await m.react('🗑');
 
+        const filter = (reaction, user) => {
+          return ['⬅', '➡', '🗑'].includes(reaction.emoji.name) && user.id == msg.author.id;
+        };
+        
+        awaitReactions(msg, m, options, filter);
 
         if (reaction.emoji.name === '⬅') {
           // remove the back reaction if possible
