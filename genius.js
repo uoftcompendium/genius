@@ -2,6 +2,24 @@ const Discord = require('discord.js');
 const { token, prefix } = require('./config.json');
 const client = new Discord.Client();
 
+client.on("message", async message => {
+  if(message.author.bot) return;
+  if(message.content.indexOf(config.prefix) !== 0) return;
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+  
+  if(command === "ping") {
+    const m = await message.channel.send("Recalculating...");
+    m.edit(`Latency \`${m.createdTimestamp - message.createdTimestamp}ms\`. API Latency \`${Math.round(client.ping)}ms\`.`);
+  }
+
+  if (message.content === '.invite') {
+      message.react('732342713055182898');
+      message.author.sendMessage("Invite **Genius** to your server through <https://discord.com/oauth2/authorize?client_id=731603315032326235&scope=bot&permissions=2112>.");
+      message.channel.send("An invite has been issued via DM.");
+  }
+
+});
 
 
 // functions
@@ -147,25 +165,6 @@ client.on('message', async (message) => {
       await reactionPages(msg, message.author, options, currentPage, currentRetries);
 
   }
-});
-
-client.on("message", async message => {
-  if(message.author.bot) return;
-  if(message.content.indexOf(config.prefix) !== 0) return;
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
-  const command = args.shift().toLowerCase();
-  
-  if(command === "ping") {
-    const m = await message.channel.send("Recalculating...");
-    m.edit(`Latency \`${m.createdTimestamp - message.createdTimestamp}ms\`. API Latency \`${Math.round(client.ping)}ms\`.`);
-  }
-
-  if (message.content === '.invite') {
-      message.react('732342713055182898');
-      message.author.sendMessage("Invite **Genius** to your server through <https://discord.com/oauth2/authorize?client_id=731603315032326235&scope=bot&permissions=2112>.");
-      message.channel.send("An invite has been issued via DM.");
-  }
-
 });
 
 
