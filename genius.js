@@ -116,6 +116,19 @@ client.on('message', async (message) => {
         nextPage: '➡️',
         lastPage: '⏩'
       }
+
+      const options = {
+          emojis,
+          pages,
+          timeLimit,
+          maximumRetries,
+          allowOtherUserReactions
+      }
+      
+      // the difference:
+      // 'msg' is the message we sent from the bot
+      // 'message.author' is who sent the command initially
+      await reactionPages(msg, message.author, options, currentPage, currentRetries);
     
       const pages = [
         'This is page one',
@@ -144,19 +157,6 @@ client.on('message', async (message) => {
         await msg.react(emojis.delete);
         await msg.react(emojis.nextPage);
         await msg.react(emojis.lastPage);
-
-        const options = {
-          emojis,
-          pages,
-          timeLimit,
-          maximumRetries,
-          allowOtherUserReactions
-        }
-        
-        // the difference:
-        // 'msg' is the message we sent from the bot
-        // 'message.author' is who sent the command initially
-        await reactionPages(msg, message.author, options, currentPage, currentRetries);
 
 
     }
