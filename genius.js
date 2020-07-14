@@ -16,6 +16,11 @@ client.on("message", async message => {
       message.channel.send("An invite has been issued via DM.");
   }
 
+  if (message.content === `${prefix}bypass`) {
+    message.channel.send("There is **no way** to bypass iCloud unlock.\n For __Activation Lock__, see <https://support.apple.com/en-us/HT201441>");
+  }
+
+
 });
 
 
