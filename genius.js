@@ -52,7 +52,7 @@ module.exports = {
                 embed.setDescription(pages [page-1]);
                 embed.setFooter(`Page ${page} of ${pages.length}`);
             })
-        };
+        });
     })
     }
 }
