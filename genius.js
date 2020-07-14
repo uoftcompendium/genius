@@ -11,10 +11,6 @@ const removeReaction = async (m, msg, emoji) => {
   try { m.reactions.find(r => r.emoji.name == emoji).users.remove(msg.author.id); } catch(err) {}
 }
 
-const filter = (reaction, user) => {
-  return ['⬅', '➡', '🗑'].includes(reaction.emoji.name) && user.id == msg.author.id;
-};
-
 //reactionlogic
 const awaitReactions = async (msg, m, options, filter) => {
   // simplify the use of these options, using destructing^
