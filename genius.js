@@ -132,7 +132,7 @@ client.on("message", async message => {
           text: "Last refresh July 9, 2020"
         }
       }
-    };
+    });
     }
 
   if (message.content === `${prefix}watchos`) {
@@ -160,7 +160,6 @@ client.on("message", async message => {
     });
     }
 
-};
 
 
 // functions
