@@ -281,7 +281,7 @@ client.on('message', async (message) => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
 
-  if (message.content === `${prefix}help`) {
+  if (message.content === `${prefix}backuprestorehow`) {
       // variables
 
       const emojis = {
@@ -293,11 +293,8 @@ client.on('message', async (message) => {
       }
     
       const pages = [
-          'Welcome to the Genius **help menu**, an Apple support archive assistant with frequently asked questions available upon request. To navigate, use the buttons below. The table of contents: (**1**) Welcome, (**2**) iOS & iPhone, (**3**) Apple Watch, (**4**) Jailbreak, (**5**) Other. For suggestions, contact `tank#0001`.',
-          '**2. iOS & iPhone** \n\n`$alock` - activation lock \n`$appdl` - app not downloading/updating \n`$ar` - account recovery \n`$backuprestore` - restore from backup \n`$battery` - battery health guide \n`$batterysite` - battery website \n`$bypass` - iCloud bypass \n`$bypasshack` - it\'s hack time \n`$dfu` - DFU mode guide \n`$downgrade` - how to get rid of betas \n`$factoryrestore` - factory restore \n`$ios` - iOS version & stats \n`$iphone7` - issues with iPhone 7 \n`$other` - \'other\' storage bloat \n`$storage` - iCloud storage pricing \n\n**Next panel**: Apple Watch',
-          '**3. Apple Watch** \n\n`$awbeta` - applewatch beta guide \n`$watchosbeta` - should i install? NO \n`$watchos` - watchOS version & stats \n\n**Next panel**: Jailbreak',
-          '**4. Jailbreak** \n\n`$checkrai`n - checkra1n jailbreak info \n\n`$jailbreak` - what is jailbreak \n\n`$snapjb` - snapchat jailbreak fix \n\n`$uncover` - unc0ver jailbreak info \n\n**Next panel**: Other',
-          '**5. Other** \n\n`$info` - credits & information \n`$help` - opens help menu \n`$version` - current version no.'
+          {  embed: { color: 16746881, title: 'Restore your device from an iCloud backup', description: 'Learn how to restore your device from a backup in iCloud or on your computer.\n1. Turn on your device. You should see a Hello screen. If you already set up your device, you need to [erase all of its content](https://support.apple.com/kb/ht201274) before you can use these steps to restore from your backup.\n2. Follow the onscreen setup steps until you reach the Apps & Data screen, then tap Restore from iCloud Backup.\n3. Sign in to iCloud with your Apple ID.\n4. Choose a backup. Look at the date and size of each and pick the most relevant. After you choose, the transfer starts. If a message says that a newer version of software is required, follow the onscreen steps to update (If you don\'t see onscreen steps to help you update, [learn what to do](https://support.apple.com/kb/ht203434)).' } },
+          {  embed: { color: 16746881, title: 'Restore your device from an iCloud backup (2)', description: '5. When asked, sign in with your Apple ID to restore your apps and purchases (If you've purchased iTunes or App Store content using multiple Apple IDs, you'll be asked to sign in to each). If you can’t remember your password, you can tap Skip this Step and sign in later. But you won\'t be able to use the apps until you sign in with your Apple ID.\n6. Stay connected and wait for a progress bar to appear and complete. Depending on the size of the backup and the network speed, the progress bar might need a few minutes to an hour to complete. If you disconnect from Wi-Fi too soon, the progress will pause until you reconnect.\n7. Now you can finish setup and enjoy your device. Content like your apps, photos, music, and other information will continue to restore in the background for the next several hours or days, depending on the amount of information there is. Try to connect often to Wi-Fi and power to let the process complete.\n[Get help with restoring from your iCloud backup](https://support.apple.com/en-ca/HT203516).' } }
       ]
       
       const defaultPage = 0;
