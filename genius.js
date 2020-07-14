@@ -26,7 +26,7 @@ module.exports = {
         .setColor(0xffffff)
         .setFooter(`Page ${page} of ${pages.length}`)
         .setDescription(pages [page-1])
-
+  if(command === "say") {
     message.channel.send(embed).then(msg => {
     
         msg.react('👈').then(r => {
@@ -56,7 +56,7 @@ module.exports = {
     })
     }
 }
-  
+}  
   if(command === "ping") {
     const m = await message.channel.send("Recalculating...");
     m.edit(`Latency \`${m.createdTimestamp - message.createdTimestamp}ms\`. API Latency \`${Math.round(client.ping)}ms\`.`);
