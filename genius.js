@@ -40,21 +40,77 @@ client.on('message', async (msg) => {
     await m.react('➡');
     await m.react('🗑');
 
+    const removeReaction = async (m, msg, emoji) => {
+      try { m.reactions.find(r => r.emoji.name == emoji).users.remove(msg.author.id); } catch(err) {}
+    }
+
     const awaitReactions = async (msg, m, options, filter) => {
         // simplify the use of these options, using destructing^
         const { min, max, page, limit } = options;
     
         m.awaitReactions(filter, { max: 1, time: limit, errors: ['time'] })
         .then(async (collected) => {
-            // logic
+            const reaction = collected.first();
+
+          if (reaction.emoji.name === '⬅') {
+            // a.       
+          }
+          else if (reaction.emoji.name === '➡') {
+            // b.
+          }
+          else if (reaction.emoji.name === '🗑') {
+            // c.
+          }
+          else {
+            // d.
+          }
+
+
         }).catch(() => {});
     }
-
-
 
     const filter = (reaction, user) => {
         return ['⬅', '➡', '🗑'].includes(reaction.emoji.name) && user.id == msg.author.id;
     };
+
+    if (reaction.emoji.name === '⬅') {
+      // remove the back reaction if possible
+      await removeReaction(m, msg, '⬅');
+      
+      // check if the page can go back one
+      if (page != min) {
+          // change the page
+          page = page - 1;
+          await m.edit({ embed: pages[page] });
+      }
+     
+      // restart the listener 
+      awaitReactions(msg, m, options, filter);
+  }
+
+  else if (reaction.emoji.name === '➡') {
+    // remove the back reaction if possible
+    await removeReaction(m, msg, '➡');
+    
+    // check if the page can go forward one
+    if (page != max) {
+        // change the page
+        page = page + 1;
+        await m.edit({ embed: pages[page] });
+    }
+   
+    // restart the listener 
+    awaitReactions(msg, m, options, filter);
+}
+
+else if (reaction.emoji.name === '🗑') {
+  // trash the message instantly, returning so the listener fully stops
+  return await m.delete();
+}
+
+else {
+  awaitReactions(msg, m, options, filter);
+};
 
     
 
