@@ -52,12 +52,6 @@ const reactionPages = async (message, author, options, page, retries) => {
               return restartLoop();
           }
 
-          if (reaction.emoji.name === options.emojis.stop) {
-              // stop listening
-              // stop listening
-              return true;
-          }
-
           if (reaction.emoji.name === options.emojis.delete) {
               // delete the message (also stops listening)   
               // delete the message (also stops listening)
@@ -105,7 +99,6 @@ client.on('message', async (message) => {
       const emojis = {
         firstPage: '⏮️',
         previousPage: '⬅️',
-        stop: '🛑',
         delete: '🗑️',
         nextPage: '➡️',
         lastPage: '⏩'
@@ -134,7 +127,6 @@ client.on('message', async (message) => {
 
       await msg.react(emojis.firstPage);
       await msg.react(emojis.previousPage);
-      await msg.react(emojis.stop);
       await msg.react(emojis.delete);
       await msg.react(emojis.nextPage);
       await msg.react(emojis.lastPage);
