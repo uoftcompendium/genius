@@ -96,7 +96,7 @@ const reactionPages = async (message, author, options, page, retries) => {
               retries++;
               return restartLoop();
           }
-      }
+        }
     });
 }
 // END FUNCTIONS
