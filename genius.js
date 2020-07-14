@@ -86,17 +86,18 @@ const reactionPages = async (message, author, options, page, retries) => {
     
         // more code here
       })
+
       .catch(async (error) => {
-          // and some more here too
-          if (collected.size === 0) {
-            if (retries >= options.maximumRetries) {
-                return true;
-            } else {
-                retries++;
-                return restartLoop();
-            }
-        }
-      });
+        // and some more here too
+        if (collected.size === 0) {
+          if (retries >= options.maximumRetries) {
+              return true;
+          } else {
+              retries++;
+              return restartLoop();
+          }
+      }
+    });
 }
 // END FUNCTIONS
 
