@@ -239,7 +239,7 @@ client.on('message', async (message) => {
       }
     
       const pages = [
-          '**Genius Assistant** \n\nWelcome to the Genius help menu, an Apple support archive assistant with frequently asked questions available upon request. To navigate, use the buttons below. The table of contents: \n\n1. Welcome \n2. iOS & iPhone \n3. Apple Watch \n4. Jailbreak \n5. Other',
+          'Welcome to the Genius **help menu**, an Apple support archive assistant with frequently asked questions available upon request. To navigate, use the buttons below. The table of contents: (**1**) Welcome, (**2**) iOS & iPhone, (**3**) Apple Watch, (**4**) Jailbreak, (**5**) Other. For suggestions, contact `tank#0001`.',
           '**2. iOS & iPhone** \n\n`$alock` - activation lock \n`$appdl` - app not downloading/updating \n`$ar` - account recovery \n`$backuprestore` - restore from backup \n`$battery` - battery health guide \n`$batterysite` - battery website \n`$bypass` - iCloud bypass \n`$bypasshack` - it\'s hack time \n`$dfu` - DFU mode guide \n`$downgrade` - how to get rid of betas \n`$factoryrestore` - factory restore \n`$ios` - iOS version & stats \n`$iphone7` - issues with iPhone 7 \n`$other` - \'other\' storage bloat \n`$storage` - iCloud storage pricing \n\n**Next panel**: Apple Watch',
           '**3. Apple Watch** \n\n`$awbeta` - applewatch beta guide \n`$watchosbeta` - should i install? NO \n`$watchos` - watchOS version & stats \n\n**Next panel**: Jailbreak',
           '**4. Jailbreak** \n\n`$checkrai`n - checkra1n jailbreak info \n\n`$jailbreak` - what is jailbreak \n\n`$snapjb` - snapchat jailbreak fix \n\n`$uncover` - unc0ver jailbreak info \n\n**Next panel**: Other',
