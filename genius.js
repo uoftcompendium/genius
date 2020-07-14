@@ -14,6 +14,7 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
+  if(command === "embed") {
 module.exports = {
     name: 'page',
     description: 'test',
@@ -26,7 +27,6 @@ module.exports = {
         .setColor(0xffffff)
         .setFooter(`Page ${page} of ${pages.length}`)
         .setDescription(pages [page-1])
-  if(command === "say") {
     message.channel.send(embed).then(msg => {
     
         msg.react('👈').then(r => {
