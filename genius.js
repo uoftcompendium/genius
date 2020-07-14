@@ -12,7 +12,7 @@ client.on("message", async message => {
 
   if (message.content === `${prefix}inv`) {
       message.react('732342713055182898');
-      message.author.sendMessage("Invite **Genius** to your server through <https://discord.com/oauth2/authorize?client_id=731603315032326235&scope=bot&permissions=2112>.");
+      message.author.send("Invite **Genius** to your server through <https://discord.com/oauth2/authorize?client_id=731603315032326235&scope=bot&permissions=2112>.");
       message.channel.send("An invite has been issued via DM.");
   }
 
