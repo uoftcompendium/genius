@@ -3,6 +3,8 @@ const { token, prefix } = require('./config.json');
 const client = new Discord.Client();
 
   
+client.on("message", async message => {
+  if(message.author.bot) return;
   if (message.content === `${prefix}ping`) {
     const m = await message.channel.send("Recalculating...");
     m.edit(`Latency \`${m.createdTimestamp - message.createdTimestamp}ms\`. API Latency \`${Math.round(client.ping)}ms\`.`);
