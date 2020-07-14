@@ -14,49 +14,57 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-  if(command === "embed") {
-module.exports = {
-    name: 'page',
-    description: 'test',
-    execute(message, args) {
-        
-        let pages = [];
-        let page =1;
+// THE MOVABLE EMBED
 
-        const embed = new Discord.MessageEmbed()
-        .setColor(0xffffff)
-        .setFooter(`Page ${page} of ${pages.length}`)
-        .setDescription(pages [page-1])
-    message.channel.send(embed).then(msg => {
-    
-        msg.react('👈').then(r => {
-            msg.react('👉')
+client.on('message', async (msg) => {
+    if (!msg.content.toLowerCase().startsWith(config.prefix) || msg.author.bot) return;
 
-            const backwardsFilter = (reaction, user) => reaction.emoji.name === '👈' &&user.id === message.author.id;
-            const forwardsFilter =  (reaction, user) => reaction.emoji.name === '👉' &&user.id === message.author.id;
+    const args = msg.content.slice(prefix.length).split(/ +/g);
+    const command = args.shift().toLowerCase();
+    if (command == 'embed') {
+        const options = {
+            limit: 15 * 1000,
+            min: 1,
+            max: 2, // there will be 2 pages
+            page: 1
+        }
 
-            const backwards = msg.createReactionCollector(backwardsFilter, { time: 60000});
-            const forwards = msg.createReactionCollector(forwardsFilter, { time: 60000});
-
-            backwards.on('collect', r => {
-                if (page === 1) return;
-                page--;
-                embed.setDescription(pages [page-1]);
-                embed.setFooter(`Page ${page} of ${pages.length}`);
-                msg.edit(embed)
-            })
-
-            forwards.on('collect', r => {
-                if (page === 1) return;
-                page++;
-                embed.setDescription(pages [page-1]);
-                embed.setFooter(`Page ${page} of ${pages.length}`);
-            })
-        });
-    })
+    const pages = {
+        1: { title: ':one:', description: 'This is page one!' }, 
+        2: { title: ':two:', description: 'This is page two!' }
     }
-}
-}  
+
+    const m = await msg.channel.send({ embed: pages[options.page] });
+
+    await m.react('⬅');
+    await m.react('➡');
+    await m.react('🗑');
+
+    const awaitReactions = async (msg, m, options, filter) => {
+        // simplify the use of these options, using destructing^
+        const { min, max, page, limit } = options;
+    
+        m.awaitReactions(filter, { max: 1, time: limit, errors: ['time'] })
+        .then(async (collected) => {
+            // logic
+        }).catch(() => {});
+    }
+
+
+
+    const filter = (reaction, user) => {
+        return ['⬅', '➡', '🗑'].includes(reaction.emoji.name) && user.id == msg.author.id;
+    };
+
+    
+
+awaitReactions(msg, m, options, filter);
+
+    }
+});
+
+// THE END OF MOVABLE EMBED 
+
   if(command === "ping") {
     const m = await message.channel.send("Recalculating...");
     m.edit(`Latency \`${m.createdTimestamp - message.createdTimestamp}ms\`. API Latency \`${Math.round(client.ping)}ms\`.`);
