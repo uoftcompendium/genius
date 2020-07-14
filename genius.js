@@ -110,12 +110,12 @@ client.on('message', async (message) => {
         // variables
 
         const emojis = {
-          firstPage: '<:firstpage:732634910715674625>',
-          previousPage: '<:previous:732634909579149444>',
+          firstPage: '732634910715674625',
+          previousPage: '732634909579149444',
           stop: '🛑',
-          delete: '<:cancel:732634909461708863>',
-          nextPage: '<:next:732634910824595456>',
-          lastPage: '<:lastpage:732634910711349270>'
+          delete: '732634909461708863',
+          nextPage: '732634910824595456',
+          lastPage: '732634910711349270'
       }
 
       const pages = [
