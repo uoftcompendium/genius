@@ -105,9 +105,11 @@ client.on('message', async (message) => {
       }
     
       const pages = [
-          'This is page one',
-          'This is page two',
-          'This is page three'
+          '**Genius Assistant** \n\nWelcome to the Genius help menu, an Apple support archive assistant with frequently asked questions available upon request. To navigate, use the buttons below. The table of contents: \n\n1. Welcome \n2. iOS & iPhone \n3. Apple Watch \n4. Jailbreak \n5. Other',
+          '**1. iOS & iPhone** \n\n`$alock` - activation lock \n`$appdl` - app not downloading/updating \n`$ar` - account recovery \n`$backuprestore` - restore from backup \n`$battery` - battery health guide \n`$batterysite` - battery website \n`$bypass` - iCloud bypass \n`$bypasshack` - it\'s hack time \n`$dfu` - DFU mode guide \n`$downgrade` - how to get rid of betas \n`$factoryrestore` - factory restore \n`$ios` - iOS version & stats \n`$iphone7` - issues with iPhone 7 \n`$other` - \'other\' storage bloat \n`$storage` - iCloud storage pricing \n\n**Next panel**: Apple Watch',
+          'This is page three',
+          'This is page four',
+          'This is page five'
       ]
       
       const defaultPage = 0;
