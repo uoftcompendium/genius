@@ -110,57 +110,30 @@ client.on("message", async message => {
     message.channel.send("The **iPhone 7** & **iPhone 7 Plus** are plagued with multiple issues that make it a less than economic choice in the current phone climate. It's affected by these __two issues__: \n\n__1)__ '**No Service**' recall, which you can read about at <https://support.apple.com/iphone-7-no-service>. This recall is about to expire, leaving many people soon to have to pay for their own repair. \n\n__2)__ The poor design of the iPhone 7 has caused a **defect with the Audio IC**, causing it to become separated from the board. This could result in loss of multiple  audio features such as calls, speaker phone, voice memos, Siri, etc. The difference between this issue and the last is that Apple refuses to recognize the design flaw, and on top of that, even if you get it repaired, it will happen again. There is __no permanent solution__. \n\n*In short, if you're looking for a budget solution, the iPhone SE 2020 or a used iPhone 8 is an infinitely better choice for your money.*");
   }
 
-  if (message.content === `${prefix}ios`) {
-      message.channel.send({embed: {
-        color: 16746881,
-        title: "iOS Status",
-        fields: [{
-            name: "Current distribution",
-            value: "iOS `13.5.1` (`17F80`) R. Jun. 1, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates). ([Official](https://developer.apple.com/news/releases/))"
-          },
-          {
-            name: "Distribution 13 Betas",
-            value: "iOS `13.6 GM` (`17G68`) R. Jul. 9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates). ([Official](https://developer.apple.com/news/releases/))"
-          },
-          {
-            name: "Next iOS release",
-            value: "iOS `14.0 (2)` (`18A5319i`) R. Jul. 7,9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_14#Updates). ([Official](https://developer.apple.com/news/releases/))"
-          }
-        ],
-        timestamp: new Date(),
-        footer: {
-          text: "Last refresh July 9, 2020"
-        }
+if (message.content === `${prefix}ios`) {
+  message.channel.send({embed: {
+    color: 16746881,
+    title: "iOS Status",
+    fields: [{
+        name: "Current distribution",
+        value: "iOS `13.5.1` (`17F80`) R. Jun. 1, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates). ([Official](https://developer.apple.com/news/releases/))"
+      },
+      {
+        name: "Distribution 13 Betas",
+        value: "iOS `13.6 GM` (`17G68`) R. Jul. 9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_13#Updates). ([Official](https://developer.apple.com/news/releases/))"
+      },
+      {
+        name: "Next iOS release",
+        value: "iOS `14.0 (2)` (`18A5319i`) R. Jul. 7,9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/IOS_14#Updates). ([Official](https://developer.apple.com/news/releases/))"
       }
-    });
+    ],
+    timestamp: new Date(),
+    footer: {
+      text: "Last refresh July 9, 2020"
     }
-
-  if (message.content === `${prefix}watchos`) {
-      message.channel.send({embed: {
-        color: 16746881,
-        title: "watchOS Status",
-        fields: [{
-            name: "Current distribution",
-            value: "watchOS `6.2.6` (`17T620`) R. Jun. 1, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_6). ([Official](https://developer.apple.com/news/releases/))"
-          },
-          {
-            name: "Distribution V6 Betas",
-            value: "watchOS `6.2.8 (4) GM` (`17U63`) R. Jul. 9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_6). ([Official](https://developer.apple.com/news/releases/))"
-          },
-          {
-            name: "Next watchOS release",
-            value: "watchOS `7.0 (2)` (`18R5327h`) R. Jul. 7, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_7). ([Official](https://developer.apple.com/news/releases/))"
-          }
-        ],
-        timestamp: new Date(),
-        footer: {
-          text: "Last refresh July 9, 2020"
-        }
-      }
-    });
-    }
-
-
+  }
+});
+}
 
 // functions
 
