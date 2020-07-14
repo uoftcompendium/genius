@@ -136,6 +136,62 @@ client.on("message", async message => {
   }
 
 
+  if (message.content === `${prefix}watchos`) {
+    message.channel.send({embed: {
+      color: 16746881,
+      title: "iOS Status",
+      fields: [{
+          name: "Current distribution",
+          value: "watchOS `6.2.6` (`17T620`) R. Jun. 1, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_6). ([Official](https://developer.apple.com/news/releases/))"
+        },
+        {
+          name: "Distribution V6 Betas",
+          value: "watchOS `6.2.8 (4) GM` (`17U63`) R. Jul. 9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_6). ([Official](https://developer.apple.com/news/releases/))"
+        },
+        {
+          name: "Next iOS release",
+          value: "watchOS `7.0 (2)` (`18R5327h`) R. Jul. 7, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_7). ([Official](https://developer.apple.com/news/releases/))"
+        }
+      ],
+      timestamp: new Date(),
+      footer: {
+        text: "Last refresh July 9, 2020"
+      }
+    }
+  });
+  }
+
+  if (message.content === `${prefix}commands`) {
+      message.channel.send({embed: {
+        color: 16746881,
+        title: "Genius Assistant",
+        fields: [{
+            name: "iOS & iPhone",
+            value: "`$alock` - activation lock\n`$appdl` - app dl issues)\n`$ar` - account recovery\n`$backuprestore` - backup restore\n`$battery` - battery health guide\n`$batterysite` - battery website\n`$bypass` - iCloud bypass\n`$bypasshack` - it's hack time\n`$dfu` - DFU mode guide \n`$downgrade` - how to get rid of betas \n`$factoryrestore` - factory restore\n`$ios` - iOS version & stats\n`$iphone7` - issues with iPhone 7\n`$other` - 'other' storage bloat \n`$storage` - iCloud storage pricing "
+          },
+          {
+            name: "Jailbreak",
+            value: "`$checkrain` - checkra1n jailbreak info \n`$jailbreak` - what is jailbreak \n`$snapjb` - snapchat jailbreak fix \n`$uncover` - unc0ver jailbreak info"
+          },
+          {
+            name: "Apple Watch",
+            value: "`$awbeta` - applewatch beta guide\n`$watchosbeta` - should i install? NO"
+          },
+          {
+            name: "Other",
+            value: "`$info` - credits & information\n`$help` - list of all commands\n`$version` - version number\n"
+          }
+
+        ],
+        timestamp: new Date(),
+        footer: {
+          text: "Designed by tank#0001"
+      }
+    }
+  });
+  }
+
+
 
 });
 // functions
