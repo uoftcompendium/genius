@@ -234,8 +234,8 @@ client.on('message', async (message) => {
         firstPage: '⏮️',
         previousPage: '⬅️',
         delete: '🗑️',
-        nextPage: '⏩',
-        lastPage: '732685936017801377'
+        nextPage: '➡️',
+        lastPage: '⏩'
       }
     
       const pages = [
