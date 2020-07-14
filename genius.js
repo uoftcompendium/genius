@@ -16,7 +16,7 @@ client.on("message", async message => {
 
 module.exports = {
     name: 'page',
-    description: 'A command that clears a large amount of msgs',
+    description: 'test',
     execute(message, args) {
         
         let pages = [];
@@ -29,7 +29,7 @@ module.exports = {
 
     message.channel.send(embed).then(msg => {
     
-        msg.react('👈').then r => {
+        msg.react('👈').then(r => {
             msg.react('👉')
 
             const backwardsFilter = (reaction, user) => reaction.emoji.name === '👈' &&user.id === message.author.id;
