@@ -219,25 +219,12 @@ const reactionPages = async (message, author, options, page, retries) => {
           const maxPage = (options.pages.length - 1);
           const restartLoop = async () => { await reactionPages(message, author, options, page, retries); }
 
-          if (reaction.emoji.name === options.emojis.firstPage) {
-              if (page === minPage) return restartLoop();
-
-              page = minPage;
-              message = await message.edit(options.pages[minPage]);
-              return restartLoop();
-          }
-
           if (reaction.emoji.name === options.emojis.previousPage) {
               if (page === minPage) return restartLoop();
 
               page--;
               message = await message.edit(options.pages[page]);
               return restartLoop();
-          }
-
-          if (reaction.emoji.name === options.emojis.delete) {
-              await message.delete();
-              return true;
           }
 
           if (reaction.emoji.name === options.emojis.nextPage) {
@@ -248,11 +235,6 @@ const reactionPages = async (message, author, options, page, retries) => {
               return restartLoop();
           }
 
-          if (reaction.emoji.name === options.emojis.lastPage) {
-              page = maxPage;
-              message = await message.edit(options.pages[maxPage]);
-              return restartLoop();      
-          }
       })
 
 
@@ -274,11 +256,8 @@ client.on('message', async (message) => {
   if (message.content === `${prefix}backuprestorehow`) {
 
       const emojis = {
-        firstPage: '⏮️',
         previousPage: '⬅️',
-        delete: '🗑️',
         nextPage: '➡️',
-        lastPage: '⏩'
       }
     
       const pages = [
@@ -299,11 +278,8 @@ client.on('message', async (message) => {
       
       const msg = await message.channel.send(pages[defaultPage]);
 
-      await msg.react(emojis.firstPage);
       await msg.react(emojis.previousPage);
-      await msg.react(emojis.delete);
       await msg.react(emojis.nextPage);
-      await msg.react(emojis.lastPage);
 
       const options = {
         emojis,
