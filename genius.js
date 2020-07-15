@@ -213,7 +213,7 @@ if (message.content === `${prefix}help ios`) {
     title: "iOS Assistance",
     fields: [{
         name: "All help topics:",
-        value: "\n`$help ios` \n`$help iphone` \n`$help apple watch` \n`$help jailbreak` \n`$help icloud` \n`$help other`\n\n[Support Server](https://discord.gg/iphone) | [Docs](https://discord.gg/iphone)\n*Add `guide` to the command for instructions.\nEx: `$ios downgrade guide`"
+        value: "\n`$help ios` \n`$help iphone` \n`$help apple watch` \n`$help jailbreak` \n`$help icloud` \n`$help other`\n\n[Support Server](https://discord.gg/iphone) | [Docs](https://discord.gg/iphone)\n\nAdd `guide` for instructions.\nEx: `$ios downgrade guide`"
       }
     ],
     footer: {
