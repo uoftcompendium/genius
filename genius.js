@@ -213,7 +213,7 @@ if (message.content === `${prefix}help ios`) {
     title: "iOS Assistance",
     fields: [{
         name: "All help topics:",
-        value: "\n`$help ios` \n`$help iphone` \n`$help apple watch` \n`$help jailbreak` \n`$help icloud` \n`$help other`\n\n[Support Server](https://discord.gg/iphone) | [Docs](https://discord.gg/iphone)\n\nAdd `guide` for instructions.\nEx: `$ios downgrade guide`"
+        value: "\n`$ios passcode`\niOS passcode\n`$ios faceid`\niOS Face ID \n`$ios touchid`\niOS Touch ID \n`$ios lockaccess`\n Lockscreen access \n`$ios keychain`\niOS Keychain\n`$ios 2fa`\niOS iOS 2-Factor-Authentication\n\n[Support Server](https://discord.gg/iphone) | [Docs](https://discord.gg/iphone)\n\nAdd `guide` for instructions.\nEx: `$ios downgrade guide`"
       }
     ],
     footer: {
