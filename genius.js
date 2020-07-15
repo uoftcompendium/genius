@@ -195,14 +195,18 @@ client.on("message", async message => {
     message.channel.send({embed: {
       color: 9552127,
       title: "Genius Assistant",
-      description: "List of help topics:\n\n`$help ios` \n`$help iphone` \n`$help apple watch` \n`$help jailbreak` \n`$help icloud` \n`$help other`\n\n[Support Server](https://discord.gg/iphone) | [Docs](https://discord.gg/iphone)",
-      timestamp: new Date(),
+      fields: [{
+          name: "All help topics:",
+          value: "\n`$help ios` \n`$help iphone` \n`$help apple watch` \n`$help jailbreak` \n`$help icloud` \n`$help other`\n\n[Support Server](https://discord.gg/iphone) | [Docs](https://discord.gg/iphone)"
+        }
+      ],
       footer: {
         text: "Version: 3.0.1 | Build 0X8902"
     }
   }
 });
 }
+
 
 });
 
