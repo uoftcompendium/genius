@@ -372,7 +372,7 @@ client.on('message', async (message) => {
 
 // END PAGES CMD
 
-// START PAGES CMD
+// $ios passcode guide
 
 client.on('message', async (message) => {
   if (message.author.bot) return;
@@ -417,6 +417,139 @@ client.on('message', async (message) => {
       await reactionPages(msg, message.author, options, currentPage, currentRetries);
 
   }
+
+// $ios faceid guide
+
+  if (message.content === `${prefix}ios faceid guide`) {
+
+      const emojis = {
+        previousPage: '⬅️',
+        nextPage: '➡️',
+      }
+    
+      const pages = [
+          {  embed: { footer: { text: "This is page 1 of 2. The parent command is $ios faceid" }, color: 9552127, title: 'Set up Face ID or add an alternate appearance', description: '`1.` If you didn’t set up Face ID when you first set up your iPhone, go to Settings  > Face ID & Passcode > Set up Face ID, then follow the onscreen instructions.\n\n`2.` To set up an additional appearance for Face ID to recognize, go to Settings > Face ID & Passcode > Set Up an Alternate Appearance, then follow the onscreen instructions.\n\nIf you have physical limitations, you can tap Accessibility Options during Face ID set up. When you do this, setting up facial recognition doesn’t require the full range of head motion. Using Face ID is still secure, but it requires more consistency in how you look at iPhone.\n\nUse the ➡️ button to proceed to page 2.\n' } },
+          {  embed: { footer: { text: "This is page 2 of 2. The parent command is $ios faceid" }, color: 9552127, title: 'Set up Face ID or add an alternate appearance (2)', description: 'Face ID also has an accessibility feature you can use if you’re blind or have low vision. If you don’t want Face ID to require that you look at iPhone with your eyes open, go to Settings > Accessibility, then turn off Require Attention for Face ID. This feature is automatically turned off if you turn on VoiceOver when you first set up iPhone. See [Change Face ID and attention settings on iPhone.](https://support.apple.com/en-ca/guide/iphone/iph646624222/13.0/ios/13.0)\n\n[User Guide - Face ID, Apple](https://support.apple.com/en-ca/guide/iphone/iph6d162927a/ios)\n\nUse the ⬅️ button to return to page 1.\n' } }
+      ]
+      
+      const defaultPage = 0;
+      
+      const timeLimit = 15;
+      
+      const maximumRetries = 3;
+      
+      const allowOtherUserReactions = false;
+      
+      let currentPage = 0;
+      let currentRetries = 0;
+      
+      const msg = await message.channel.send(pages[defaultPage]);
+
+      await msg.react(emojis.previousPage);
+      await msg.react(emojis.nextPage);
+
+      const options = {
+        emojis,
+        pages,
+        timeLimit,
+        maximumRetries,
+        allowOtherUserReactions
+      }
+
+      await reactionPages(msg, message.author, options, currentPage, currentRetries);
+
+  }
+
+  // $ios touchid guide
+
+    if (message.content === `${prefix}ios touchid guide`) {
+  
+        const emojis = {
+          previousPage: '⬅️',
+          nextPage: '➡️',
+        }
+      
+        const pages = [
+            {  embed: { footer: { text: "This is page 1 of 2. The parent command is $ios touchid" }, color: 9552127, title: 'Set up Touch ID on iPhone', description: 'Turn on fingerprint recognition\n\n``1.` If you didn’t turn on fingerprint recognition when you first set up your iPhone, go to Settings  > Touch ID & Passcode.\n\n`2.` Turn on any of the options, then follow the onscreen instructions.\n\nIf you turn on iTunes & App Store, you’re asked for your Apple ID password when you make your first purchase from the App Store, Apple Books, or iTunes Store. When you make your next purchases, you’re asked to use Touch ID.\n\nNote: If you can’t add a fingerprint or unlock your iPhone using Touch ID, see the Apple Support article [If Touch ID isn’t working.](https://support.apple.com/HT207537)\n\nUse the ➡️ button to proceed to page 2.\n' } },
+            {  embed: { footer: { text: "This is page 2 of 2. The parent command is $ios touchid" }, color: 9552127, title: 'Set up Touch ID on iPhone (2)', description: 'Add a fingerprint\n\n`1.` Go to Settings  > Touch ID & Passcode.\n\n`2.` Tap Add a Fingerprint.\n\n`3.` Follow the onscreen instructions.\n\nName or delete a fingerprint\n\n`1. Go to Settings  > Touch ID & Passcode. If you added more than one fingerprint, place a finger on the Home button to identify its print.\n\n`2`. Tap the fingerprint, then enter a name (such as “Thumb”) or tap Delete Fingerprint.\n\nUse the ⬅️ button to return to page 1.\n' } }
+        ]
+        
+        const defaultPage = 0;
+        
+        const timeLimit = 15;
+        
+        const maximumRetries = 3;
+        
+        const allowOtherUserReactions = false;
+        
+        let currentPage = 0;
+        let currentRetries = 0;
+        
+        const msg = await message.channel.send(pages[defaultPage]);
+  
+        await msg.react(emojis.previousPage);
+        await msg.react(emojis.nextPage);
+  
+        const options = {
+          emojis,
+          pages,
+          timeLimit,
+          maximumRetries,
+          allowOtherUserReactions
+        }
+  
+        await reactionPages(msg, message.author, options, currentPage, currentRetries);
+  
+    }
+
+
+
+
+  // GUIDE COMMAND TEMPLATE
+
+  if (message.content === `${prefix}version3guide`) {
+
+      const emojis = {
+        previousPage: '⬅️',
+        nextPage: '➡️',
+      }
+    
+      const pages = [
+          {  embed: { footer: { text: "This is page 1 of 2. The parent command is $parent" }, color: 9552127, title: 'title', description: 'enterdesc\n\nUse the ➡️ button to proceed to page 2.\n' } },
+          {  embed: { footer: { text: "This is page 2 of 2. The parent command is $parent" }, color: 9552127, title: 'title (2)', description: 'enterdesc\n\nUse the ⬅️ button to return to page 1.\n' } }
+      ]
+      
+      const defaultPage = 0;
+      
+      const timeLimit = 15;
+      
+      const maximumRetries = 3;
+      
+      const allowOtherUserReactions = false;
+      
+      let currentPage = 0;
+      let currentRetries = 0;
+      
+      const msg = await message.channel.send(pages[defaultPage]);
+
+      await msg.react(emojis.previousPage);
+      await msg.react(emojis.nextPage);
+
+      const options = {
+        emojis,
+        pages,
+        timeLimit,
+        maximumRetries,
+        allowOtherUserReactions
+      }
+
+      await reactionPages(msg, message.author, options, currentPage, currentRetries);
+
+  }
+
+  
+
+
 });
 
 // END PAGES CMD
