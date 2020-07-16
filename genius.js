@@ -8,7 +8,7 @@ client.on("message", async message => {
 
   msg = message.content.toLowerCase();
 
-  if (msg.startsWith === `${prefix}ping`) {
+  if (msg.content === `${prefix}ping`) {
     const m = await message.channel.send("Recalculating...");
     m.edit(`Latency \`${m.createdTimestamp - message.createdTimestamp}ms\`. API Latency \`${Math.round(client.ping)}ms\`.`);
   }
