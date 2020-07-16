@@ -6,12 +6,16 @@ const client = new Discord.Client();
 client.on("message", async message => {
   if(message.author.bot) return;
 
-  msg = message.content.toLowerCase();
 
-  if (msg.content === `${prefix}ping`) {
+  if (message.content === `${prefix}ping`) {
     const m = await message.channel.send("Recalculating...");
     m.edit(`Latency \`${m.createdTimestamp - message.createdTimestamp}ms\`. API Latency \`${Math.round(client.ping)}ms\`.`);
   }
+
+  if (message.content.toLowerCase() === `${prefix}lower`) {
+    message.channel.send("Command succeeded");
+  }
+
 
   if (message.content === `${prefix}invite`) {
       message.react('732342713055182898');
