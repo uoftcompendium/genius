@@ -5,7 +5,10 @@ const client = new Discord.Client();
   
 client.on("message", async message => {
   if(message.author.bot) return;
-  if (message.content === `${prefix}ping`) {
+
+  msg = message.content.toLowerCase();
+
+  if (msg.startsWith === `${prefix}ping`) {
     const m = await message.channel.send("Recalculating...");
     m.edit(`Latency \`${m.createdTimestamp - message.createdTimestamp}ms\`. API Latency \`${Math.round(client.ping)}ms\`.`);
   }
@@ -110,7 +113,7 @@ client.on("message", async message => {
     message.channel.send("The **iPhone 7** & **iPhone 7 Plus** are plagued with multiple issues that make it a less than economic choice in the current phone climate. It's affected by these __two issues__: \n\n__1)__ '**No Service**' recall, which you can read about at <https://support.apple.com/iphone-7-no-service>. This recall is about to expire, leaving many people soon to have to pay for their own repair. \n\n__2)__ The poor design of the iPhone 7 has caused a **defect with the Audio IC**, causing it to become separated from the board. This could result in loss of multiple  audio features such as calls, speaker phone, voice memos, Siri, etc. The difference between this issue and the last is that Apple refuses to recognize the design flaw, and on top of that, even if you get it repaired, it will happen again. There is __no permanent solution__. \n\n*In short, if you're looking for a budget solution, the iPhone SE 2020 or a used iPhone 8 is an infinitely better choice for your money.*");
   }
 
-  // START IOS CENTRAL COMMANDS, ACTIVATED VIA $HELP IOS
+  // START IOS CENTRAL COMMANDS, ACTIVATED VIA $help ios
 
   if (message.content === `${prefix}ios passcode`) {
     message.channel.send("For better security, set a passcode that needs to be entered to unlock iPhone when you turn it on or wake it. Setting a passcode turns on data protection, which encrypts your iPhone data with 256-bit AES encryption. (Some apps may opt out of using data protection.) <https://support.apple.com/en-ca/guide/iphone/iph14a867ae/ios>");
@@ -124,29 +127,72 @@ client.on("message", async message => {
     message.channel.send("Use Touch ID (supported models) to unlock iPhone, authorize purchases and payments, and sign in to many third-party apps by pressing the Home button with your finger or thumb. To use Touch ID, you must also set up a passcode on your iPhone. <https://support.apple.com/en-ca/guide/iphone/iph672384a0b/ios>");
   }
 
-  if (message.content === `${prefix}ios lockaccess`) {
-    message.channel.send("By default, some commonly used features (such as Today View and Control Center) are available when iPhone is locked. (For security, USB connections aren’t allowed when iPhone is locked.) You can change whether any of these items can be accessed from the Lock screen. <https://support.apple.com/en-ca/guide/iphone/iph9a2a69136/ios>");
-  }
-
-  if (message.content === `${prefix}ios keychain`) {
-    message.channel.send("Use iCloud Keychain to keep your website and app passwords, credit card information, Wi-Fi network information, and other account information up to date across all of your approved devices and Mac computers. (iOS 7, iPadOS 13, OS X 10.9, or later required.) iCloud Keychain is secured with 256-bit AES encryption during storage and transmission, and its data cannot be read by Apple. <https://support.apple.com/en-ca/guide/iphone/iph82d6721b2/ios>");
-  }
-
   if (message.content === `${prefix}ios 2fa`) {
     message.channel.send("Two-factor authentication helps prevent others from accessing your Apple ID account, even if they know your Apple ID password. Two-factor authentication is built into iOS 9, iPadOS 13, OS X 10.11, or later. <https://support.apple.com/en-ca/guide/iphone/iphd709a3c46/ios>");
   }
 
+  if (message.content === `${prefix}ios alock`) {
+    message.channel.send("See <https://support.apple.com/en-us/HT201441>. If the __Activation Lock__ placed on a device you have purchased or one that has come into your possession **cannot** be removed by the previous owner, you must contact your local Apple Store (<https://www.apple.com/retail/>) with proof of purchase.");
+  }
 
+  if (message.content === `${prefix}ios appdl`) {
+    message.channel.send("If you want to update apps, you can update them manually or turn on automatic updates (<https://support.apple.com/en-ca/HT202180>) But if your app won't update or is interrupted while it's downloading, try the steps at <https://support.apple.com/en-us/HT207165>.");
+  }
   
-  // END IOS CENTRAL COMMANDS, ACTIVATED VIA $HELP IOS
+  if (message.content === `${prefix}ios ar`) {
+    message.channel.send("Account recovery is a process designed to get you back into your Apple ID account when you don’t have enough information to reset your password. For security reasons, it might take several days or longer before you can use your account again. <https://support.apple.com/en-us/HT204921>");
+  }
 
+  if (message.content === `${prefix}ios backuprestore`) {
+    message.channel.send("A device can be **restored** through an __iCloud backup__ or __local (computer) backup__, by following instructions at <https://support.apple.com/en-us/HT204184>.");
+  }
+
+  if (message.content === `${prefix}ios battery`) {
+    message.channel.send("https://support.apple.com/en-us/HT208387");
+  }
+
+  if (message.content === `${prefix}ios battery guide`) {
+    message.channel.send("__Battery health guide for iPhones:__ \n- iPhones 5/5S/SE: **90-93%** and less is degraded beyond reasonable usability. \n- iPhones 6/6S/7/8/SE2020 **85-90%** and less is degraded beyond reasonable usability. \n- iPhones 6+/6S+/7+/8+/X/X **80-85%** and less is degraded beyond reasonable usability. \n- XR/XSM/11/11P/11PM - **80% and lower** is generally degraded (Apple recommendation) \n\n*From experience this seems to line up roughly with when people start to complain with batteries and roughly when they could experience shutdowns, throttle, misreporting battery percent, etc. For more info, see <https://support.apple.com/en-us/HT208387>*");
+  }
+
+  if (message.content === `${prefix}ios bypass`) {
+    message.channel.send("There is **no way** to bypass iCloud unlock.\n For __Activation Lock__, see <https://support.apple.com/en-us/HT201441>");
+  }
+
+  if (message.content === `${prefix}ios bypass guide`) {
+    message.channel.send("There is **no way** to bypass iCloud unlock.\n For __Activation Lock__, see <https://support.apple.com/en-us/HT201441>");
+  }
+
+  if (message.content === `${prefix}ios bypasshack`) {
+    message.channel.send("https://i.imgur.com/tatd6yS.png");
+  }
+
+  if (message.content === `${prefix}ios downgrade`) {
+    message.channel.send("iOS Developer & Public __Betas__ can be uninstalled by following the instructions at <https://support.apple.com/en-us/HT203282#beta>. An __iCloud backup__ is highly recommended.");
+  }
+
+  if (message.content === `${prefix}ios factoryrestore`) {
+    message.channel.send("A __factory restore__ erases the information and settings on your iPhone, iPad, or iPod and installs the latest version of iOS, iPadOS, or iPod software. Follow the steps at <https://support.apple.com/en-us/HT201252>.");
+  }
+
+  if (message.content === `${prefix}ios other`) {
+    message.channel.send("__**Other** storage unusually high is currently classified as this by Apple:__ \n\n> Non-removable mobile assets, like Siri voices, fonts, dictionaries, non-removable logs and caches, Spotlight index, and system data, such as Keychain and CloudKit Database. Cached files can't be deleted by the system.\n\n You can read more at <https://support.apple.com/en-us/HT201656> \n\n__The only known method to solve this issue is as follows:__ \n1) Backup your iPhone to **iCloud**. Note: you **cannot** use iTunes of Finder as high 'Other' storage will return. (<https://support.apple.com/en-us/HT203977>) \n2) Restore your phone to **factory settings** using iTunes or Finder on a computer. (<https://support.apple.com/en-us/HT201252>) \n3) Wait for the restore to finish, then you can safely restore from your **iCloud backup**. (<https://support.apple.com/en-us/HT204184>)");
+  }
+
+
+  if (message.content === `${prefix}ios beta`) {
+    message.channel.send("input");
+  }
+
+
+  // END IOS CENTRAL COMMANDS, ACTIVATED VIA $help ios
 
 
   // START THE MASTER TEMPLATE COMMAND
   if (message.content === `${prefix}cmdname`) {
     message.channel.send("input");
   }
-  // SENDTART THE MASTER TEMPLATE COMMAND
+  // END THE MASTER TEMPLATE COMMAND
 
 
   if (message.content === `${prefix}ios`) {
@@ -252,7 +298,7 @@ if (message.content === `${prefix}help ios`) {
     title: "iOS Assistance",
     fields: [{
         name: "All help topics:",
-        value: "\n`$ios passcode` - iOS passcode\n`$ios faceid` - iOS Face ID \n`$ios touchid` - iOS Touch ID \n`$ios lockaccess` - Lockscreen access \n`$ios keychain` - iOS Keychain\n`$ios 2fa` - iOS 2FA\n\nAdd `guide` for instructions.\nEx: `$ios 2fa guide`"
+        value: "\n`$ios passcode` - iOS passcode\n`$ios faceid` - iOS Face ID \n`$ios touchid` - iOS Touch ID\n`$ios 2fa` - iOS 2FA\n\nAdd `guide` for instructions.\nEx: `$ios 2fa guide`"
       }
     ],
     footer: {
@@ -502,7 +548,44 @@ client.on('message', async (message) => {
   
     }
 
+    // $ios 2fa guide
 
+    if (message.content === `${prefix}ios 2fa guide`) {
+
+      const emojis = {
+        previousPage: '⬅️',
+        nextPage: '➡️',
+      }
+    
+      const pages = [
+          {  embed: { footer: { text: "This is page 1 of 2. The parent command is $ios 2fa" }, color: 9552127, title: 'title', description: 'enterdesc\n\nUse the ➡️ button to proceed to page 2.\n' } },
+          {  embed: { footer: { text: "This is page 2 of 2. The parent command is $ios 2fa" }, color: 9552127, title: 'title (2)', description: 'enterdesc\n\nUse the ⬅️ button to return to page 1.\n' } }
+      ]
+      
+      const defaultPage = 0;
+      
+      const timeLimit = 15;
+      
+      const maximumRetries = 3;
+      
+      const allowOtherUserReactions = false;
+      
+      let currentPage = 0;
+      let currentRetries = 0;
+      
+      const msg = await message.channel.send(pages[defaultPage]);
+
+      await msg.react(emojis.previousPage);
+      await msg.react(emojis.nextPage);
+
+      const options = {
+        emojis,
+        pages,
+        timeLimit,
+        maximumRetries,
+        allowOtherUserReactions
+      }
+    }
 
 
   // GUIDE COMMAND TEMPLATE
