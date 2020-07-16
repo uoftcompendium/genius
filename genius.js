@@ -7,7 +7,7 @@ client.on("message", async message => {
   if(message.author.bot) return;
 
 
-  if (message.content === `${prefix}ping`) {
+  if (message.content.toLowerCase() === `${prefix}ping`) {
     const m = await message.channel.send("Recalculating...");
     m.edit(`Latency \`${m.createdTimestamp - message.createdTimestamp}ms\`. API Latency \`${Math.round(client.ping)}ms\`.`);
   }
@@ -17,174 +17,174 @@ client.on("message", async message => {
   }
 
 
-  if (message.content === `${prefix}invite`) {
+  if (message.content.toLowerCase() === `${prefix}invite`) {
       message.react('732342713055182898');
       message.author.send("Invite **Genius** to your server through <https://discord.com/oauth2/authorize?client_id=731603315032326235&scope=bot&permissions=2112>.");
       message.channel.send("An invite has been issued via DM.");
   }
 
-  if (message.content === `${prefix}bypass`) {
+  if (message.content.toLowerCase() === `${prefix}bypass`) {
     message.channel.send("There is **no way** to bypass iCloud unlock.\n For __Activation Lock__, see <https://support.apple.com/en-us/HT201441>");
   }
 
-  if (message.content === `${prefix}alock`) {
+  if (message.content.toLowerCase() === `${prefix}alock`) {
     message.channel.send("See <https://support.apple.com/en-us/HT201441>. If the __Activation Lock__ placed on a device you have purchased or one that has come into your possession **cannot** be removed by the previous owner, you must contact your local Apple Store (<https://www.apple.com/retail/>) with proof of purchase.");
   }
 
 
-  if (message.content === `${prefix}other`) {
+  if (message.content.toLowerCase() === `${prefix}other`) {
     message.channel.send("__**Other** storage unusually high is currently classified as this by Apple:__ \n\n> Non-removable mobile assets, like Siri voices, fonts, dictionaries, non-removable logs and caches, Spotlight index, and system data, such as Keychain and CloudKit Database. Cached files can't be deleted by the system.\n\n You can read more at <https://support.apple.com/en-us/HT201656> \n\n__The only known method to solve this issue is as follows:__ \n1) Backup your iPhone to **iCloud**. Note: you **cannot** use iTunes of Finder as high 'Other' storage will return. (<https://support.apple.com/en-us/HT203977>) \n2) Restore your phone to **factory settings** using iTunes or Finder on a computer. (<https://support.apple.com/en-us/HT201252>) \n3) Wait for the restore to finish, then you can safely restore from your **iCloud backup**. (<https://support.apple.com/en-us/HT204184>)");
   }
 
-  if (message.content === `${prefix}ar`) {
+  if (message.content.toLowerCase() === `${prefix}ar`) {
     message.channel.send("Account recovery is a process designed to get you back into your Apple ID account when you don’t have enough information to reset your password. For security reasons, it might take several days or longer before you can use your account again. <https://support.apple.com/en-us/HT204921>");
   }
 
-  if (message.content === `${prefix}batterysite`) {
+  if (message.content.toLowerCase() === `${prefix}batterysite`) {
     message.channel.send("<https://support.apple.com/en-us/HT208387>");
   }
 
-  if (message.content === `${prefix}appdl`) {
+  if (message.content.toLowerCase() === `${prefix}appdl`) {
     message.channel.send("If you want to update apps, you can update them manually or turn on automatic updates (<https://support.apple.com/en-ca/HT202180>) But if your app won't update or is interrupted while it's downloading, try the steps at <https://support.apple.com/en-us/HT207165>.");
   }
 
-  if (message.content === `${prefix}downgrade`) {
+  if (message.content.toLowerCase() === `${prefix}downgrade`) {
     message.channel.send("iOS Developer & Public __Betas__ can be uninstalled by following the instructions at <https://support.apple.com/en-us/HT203282#beta>. An __iCloud backup__ is highly recommended.");
   }
 
-  if (message.content === `${prefix}backuprestore`) {
+  if (message.content.toLowerCase() === `${prefix}backuprestore`) {
     message.channel.send("A device can be **restored** through an __iCloud backup__ or __local (computer) backup__, by following instructions at <https://support.apple.com/en-us/HT204184>.");
   }
 
-  if (message.content === `${prefix}factoryrestore`) {
+  if (message.content.toLowerCase() === `${prefix}factoryrestore`) {
     message.channel.send("A __factory restore__ erases the information and settings on your iPhone, iPad, or iPod and installs the latest version of iOS, iPadOS, or iPod software. Follow the steps at <https://support.apple.com/en-us/HT201252>.");
   }
 
-  if (message.content === `${prefix}battery`) {
+  if (message.content.toLowerCase() === `${prefix}battery`) {
     message.channel.send("__Battery health guide for iPhones:__ \n- iPhones 5/5S/SE: **90-93%** and less is degraded beyond reasonable usability. \n- iPhones 6/6S/7/8/SE2020 **85-90%** and less is degraded beyond reasonable usability. \n- iPhones 6+/6S+/7+/8+/X/X **80-85%** and less is degraded beyond reasonable usability. \n- XR/XSM/11/11P/11PM - **80% and lower** is generally degraded (Apple recommendation) \n\n*From experience it seems to line up roughly with when people start to complain with batteries and roughly when they could experience shutdowns, throttle, misreporting battery percent, etc. For more info, see <https://support.apple.com/en-us/HT208387>*");
   }
 
-  if (message.content === `${prefix}bypasshack`) {
+  if (message.content.toLowerCase() === `${prefix}bypasshack`) {
     message.channel.send("https://i.imgur.com/tatd6yS.png");
   }
 
-  if (message.content === `${prefix}snapjb`) {
+  if (message.content.toLowerCase() === `${prefix}snapjb`) {
     message.channel.send("__Jailbroken__ iOS devices may fail to work with Snapchat, even if you have the official app, if you have certain ‘tweaks’ installed. These tweaks can compromise the security of your account. **Solutions**: (1) Disabling Cydia Substrate using the “NoSub” tweak, (2) Uninstalling the “xCon” tweak, (3) Using a “jailbroken iOS cleaning app,” like iCleaner, if unofficial apps have been installed and then uninstalled. <https://support.snapchat.com/en-US/article/jailbroken-iphone>");
   }
 
-  if (message.content === `${prefix}template`) {
+  if (message.content.toLowerCase() === `${prefix}template`) {
     message.channel.send("```js\nif(command === 'template') { \nconst sayMessage = args.join(' '); \nmessage.channel.send('input'); \n}```");
   }
 
-  if (message.content === `${prefix}storage`) {
+  if (message.content.toLowerCase() === `${prefix}storage`) {
     message.channel.send("When you sign up for iCloud, you automatically get 5GB of free storage. If you need more space in iCloud, you can upgrade to a larger storage plan. **USD** pricing: __50GB__ ($0.99), __200GB__ ($2.99), __2TB__ ($9.99), all charged monthly.");
   }
 
-  if (message.content === `${prefix}checkrain`) {
+  if (message.content.toLowerCase() === `${prefix}checkrain`) {
     message.channel.send("**checkra1n** is a jailbreak tool that relies on the `checkm8` hardware exploit. It is currently working on all iOS versions 12.3 and higher, on devices 5S to X. Current version: `0.10.2`. Install at <https://checkra.in/>");
   }
 
-  if (message.content === `${prefix}uncover`) {
+  if (message.content.toLowerCase() === `${prefix}uncover`) {
     message.channel.send("**unc0ver** is a jailbreak tool that relies on a patchable software exploit. It is currently working on all iOS versions between 11.0 and 13.5, on all devices. Current version: `5.2.1`. Install at <https://unc0ver.dev/>");
   }
 
-  if (message.content === `${prefix}jailbreak`) {
+  if (message.content.toLowerCase() === `${prefix}jailbreak`) {
     message.channel.send("__Jailbreaking__ is a method by which your iOS device can bypass Apple's stock restrictions through __hardware__ and __software__-based exploits, unlocking the true potential of your iPhone beyond Apple's closed environment. For tools, type `$checkrain` or `$uncover`.");
   }
 
-  if (message.content === `${prefix}version`) {
+  if (message.content.toLowerCase() === `${prefix}version`) {
     message.channel.send("`V. 2.1.1`");
   }
 
-  if (message.content === `${prefix}info`) {
+  if (message.content.toLowerCase() === `${prefix}info`) {
     message.channel.send("**Genius:tm:** is an Apple support archive assistant with frequently asked questions available upon request. Written in Discord.js by `tank#0001`. Genius contributors: `Isaac#0004`, `Fudge#0001`, `samsscreenrepair#0001`, `FoxRunTime#0346`, `sapphic wallflower#5186`, `Ber#0107`, `BytesAndCoffee#2233`.");
   }
 
-  if (message.content === `${prefix}dfu`) {
+  if (message.content.toLowerCase() === `${prefix}dfu`) {
     message.channel.send("__DFU__ or __Device Firmware Upgrade__ mode allows all devices to be restored from any state. Learn more how to enter DFU mode on any device at <https://www.theiphonewiki.com/wiki/DFU_Mode>.");
   }
 
-  if (message.content === `${prefix}watchosbeta`) {
+  if (message.content.toLowerCase() === `${prefix}watchosbeta`) {
     message.channel.send("Should I install the **watchOS 7** beta on my Apple Watch?\n https://i.imgur.com/kvS0QpT.png");
   }
 
-  if (message.content === `${prefix}awbeta`) {
+  if (message.content.toLowerCase() === `${prefix}awbeta`) {
     message.channel.send("You shouldn’t install the watchOS __Developer__ or __Public__ beta since they are prerelease software not meant the the *general* public. If something goes wrong, you will have to send your Apple Watch back to Apple to get it reset or replaced. Proceed at your own risk through <https://beta.apple.com/sp/betaprogram/>.");
   }
 
 
-  if (message.content === `${prefix}iphone7`) {
+  if (message.content.toLowerCase() === `${prefix}iphone7`) {
     message.channel.send("The **iPhone 7** & **iPhone 7 Plus** are plagued with multiple issues that make it a less than economic choice in the current phone climate. It's affected by these __two issues__: \n\n__1)__ '**No Service**' recall, which you can read about at <https://support.apple.com/iphone-7-no-service>. This recall is about to expire, leaving many people soon to have to pay for their own repair. \n\n__2)__ The poor design of the iPhone 7 has caused a **defect with the Audio IC**, causing it to become separated from the board. This could result in loss of multiple  audio features such as calls, speaker phone, voice memos, Siri, etc. The difference between this issue and the last is that Apple refuses to recognize the design flaw, and on top of that, even if you get it repaired, it will happen again. There is __no permanent solution__. \n\n*In short, if you're looking for a budget solution, the iPhone SE 2020 or a used iPhone 8 is an infinitely better choice for your money.*");
   }
 
   // START IOS CENTRAL COMMANDS, ACTIVATED VIA $help ios
 
-  if (message.content === `${prefix}ios passcode`) {
+  if (message.content.toLowerCase() === `${prefix}ios passcode`) {
     message.channel.send("For better security, set a passcode that needs to be entered to unlock iPhone when you turn it on or wake it. Setting a passcode turns on data protection, which encrypts your iPhone data with 256-bit AES encryption. (Some apps may opt out of using data protection.) <https://support.apple.com/en-ca/guide/iphone/iph14a867ae/ios>");
   }
 
-  if (message.content === `${prefix}ios faceid`) {
+  if (message.content.toLowerCase() === `${prefix}ios faceid`) {
     message.channel.send("Use Face ID (supported models: ) to unlock iPhone, authorize purchases and payments, and sign in to many third-party apps by simply glancing at your iPhone. To use Face ID, you must also set up a passcode on your iPhone. <https://support.apple.com/en-ca/guide/iphone/iph6d162927a/ios>");
   }
 
-  if (message.content === `${prefix}ios touchid`) {
+  if (message.content.toLowerCase() === `${prefix}ios touchid`) {
     message.channel.send("Use Touch ID (supported models) to unlock iPhone, authorize purchases and payments, and sign in to many third-party apps by pressing the Home button with your finger or thumb. To use Touch ID, you must also set up a passcode on your iPhone. <https://support.apple.com/en-ca/guide/iphone/iph672384a0b/ios>");
   }
 
-  if (message.content === `${prefix}ios 2fa`) {
+  if (message.content.toLowerCase() === `${prefix}ios 2fa`) {
     message.channel.send("Two-factor authentication helps prevent others from accessing your Apple ID account, even if they know your Apple ID password. Two-factor authentication is built into iOS 9, iPadOS 13, OS X 10.11, or later. <https://support.apple.com/en-ca/guide/iphone/iphd709a3c46/ios>");
   }
 
-  if (message.content === `${prefix}ios alock`) {
+  if (message.content.toLowerCase() === `${prefix}ios alock`) {
     message.channel.send("See <https://support.apple.com/en-us/HT201441>. If the __Activation Lock__ placed on a device you have purchased or one that has come into your possession **cannot** be removed by the previous owner, you must contact your local Apple Store (<https://www.apple.com/retail/>) with proof of purchase.");
   }
 
-  if (message.content === `${prefix}ios appdl`) {
+  if (message.content.toLowerCase() === `${prefix}ios appdl`) {
     message.channel.send("If you want to update apps, you can update them manually or turn on automatic updates (<https://support.apple.com/en-ca/HT202180>) But if your app won't update or is interrupted while it's downloading, try the steps at <https://support.apple.com/en-us/HT207165>.");
   }
   
-  if (message.content === `${prefix}ios ar`) {
+  if (message.content.toLowerCase() === `${prefix}ios ar`) {
     message.channel.send("Account recovery is a process designed to get you back into your Apple ID account when you don’t have enough information to reset your password. For security reasons, it might take several days or longer before you can use your account again. <https://support.apple.com/en-us/HT204921>");
   }
 
-  if (message.content === `${prefix}ios backuprestore`) {
+  if (message.content.toLowerCase() === `${prefix}ios backuprestore`) {
     message.channel.send("A device can be **restored** through an __iCloud backup__ or __local (computer) backup__, by following instructions at <https://support.apple.com/en-us/HT204184>.");
   }
 
-  if (message.content === `${prefix}ios battery`) {
+  if (message.content.toLowerCase() === `${prefix}ios battery`) {
     message.channel.send("https://support.apple.com/en-us/HT208387");
   }
 
-  if (message.content === `${prefix}ios battery guide`) {
+  if (message.content.toLowerCase() === `${prefix}ios battery guide`) {
     message.channel.send("__Battery health guide for iPhones:__ \n- iPhones 5/5S/SE: **90-93%** and less is degraded beyond reasonable usability. \n- iPhones 6/6S/7/8/SE2020 **85-90%** and less is degraded beyond reasonable usability. \n- iPhones 6+/6S+/7+/8+/X/X **80-85%** and less is degraded beyond reasonable usability. \n- XR/XSM/11/11P/11PM - **80% and lower** is generally degraded (Apple recommendation) \n\n*From experience this seems to line up roughly with when people start to complain with batteries and roughly when they could experience shutdowns, throttle, misreporting battery percent, etc. For more info, see <https://support.apple.com/en-us/HT208387>*");
   }
 
-  if (message.content === `${prefix}ios bypass`) {
+  if (message.content.toLowerCase() === `${prefix}ios bypass`) {
     message.channel.send("There is **no way** to bypass iCloud unlock.\n For __Activation Lock__, see <https://support.apple.com/en-us/HT201441>");
   }
 
-  if (message.content === `${prefix}ios bypass guide`) {
+  if (message.content.toLowerCase() === `${prefix}ios bypass guide`) {
     message.channel.send("There is **no way** to bypass iCloud unlock.\n For __Activation Lock__, see <https://support.apple.com/en-us/HT201441>");
   }
 
-  if (message.content === `${prefix}ios bypasshack`) {
+  if (message.content.toLowerCase() === `${prefix}ios bypasshack`) {
     message.channel.send("https://i.imgur.com/tatd6yS.png");
   }
 
-  if (message.content === `${prefix}ios downgrade`) {
+  if (message.content.toLowerCase() === `${prefix}ios downgrade`) {
     message.channel.send("iOS Developer & Public __Betas__ can be uninstalled by following the instructions at <https://support.apple.com/en-us/HT203282#beta>. An __iCloud backup__ is highly recommended.");
   }
 
-  if (message.content === `${prefix}ios factoryrestore`) {
+  if (message.content.toLowerCase() === `${prefix}ios factoryrestore`) {
     message.channel.send("A __factory restore__ erases the information and settings on your iPhone, iPad, or iPod and installs the latest version of iOS, iPadOS, or iPod software. Follow the steps at <https://support.apple.com/en-us/HT201252>.");
   }
 
-  if (message.content === `${prefix}ios other`) {
+  if (message.content.toLowerCase() === `${prefix}ios other`) {
     message.channel.send("__**Other** storage unusually high is currently classified as this by Apple:__ \n\n> Non-removable mobile assets, like Siri voices, fonts, dictionaries, non-removable logs and caches, Spotlight index, and system data, such as Keychain and CloudKit Database. Cached files can't be deleted by the system.\n\n You can read more at <https://support.apple.com/en-us/HT201656> \n\n__The only known method to solve this issue is as follows:__ \n1) Backup your iPhone to **iCloud**. Note: you **cannot** use iTunes of Finder as high 'Other' storage will return. (<https://support.apple.com/en-us/HT203977>) \n2) Restore your phone to **factory settings** using iTunes or Finder on a computer. (<https://support.apple.com/en-us/HT201252>) \n3) Wait for the restore to finish, then you can safely restore from your **iCloud backup**. (<https://support.apple.com/en-us/HT204184>)");
   }
 
 
-  if (message.content === `${prefix}ios beta`) {
+  if (message.content.toLowerCase() === `${prefix}ios beta`) {
     message.channel.send("input");
   }
 
@@ -193,13 +193,13 @@ client.on("message", async message => {
 
 
   // START THE MASTER TEMPLATE COMMAND
-  if (message.content === `${prefix}cmdname`) {
+  if (message.content.toLowerCase() === `${prefix}cmdname`) {
     message.channel.send("input");
   }
   // END THE MASTER TEMPLATE COMMAND
 
 
-  if (message.content === `${prefix}ios`) {
+  if (message.content.toLowerCase() === `${prefix}ios`) {
     message.channel.send({embed: {
       color: 9552127,
       title: "iOS Status",
@@ -225,7 +225,7 @@ client.on("message", async message => {
   }
 
 
-  if (message.content === `${prefix}watchos`) {
+  if (message.content.toLowerCase() === `${prefix}watchos`) {
     message.channel.send({embed: {
       color: 9552127,
       title: "watchOS Status",
@@ -250,7 +250,7 @@ client.on("message", async message => {
   });
   }
 
-  if (message.content === `${prefix}commands`) {
+  if (message.content.toLowerCase() === `${prefix}commands`) {
       message.channel.send({embed: {
         color: 9552127,
         title: "Genius Assistant",
@@ -280,7 +280,7 @@ client.on("message", async message => {
   });
   }
 
-  if (message.content === `${prefix}help`) {
+  if (message.content.toLowerCase() === `${prefix}help`) {
     message.channel.send({embed: {
       color: 9552127,
       title: "Genius Assistant",
@@ -296,7 +296,7 @@ client.on("message", async message => {
 });
 }
 
-if (message.content === `${prefix}help ios`) {
+if (message.content.toLowerCase() === `${prefix}help ios`) {
   message.channel.send({embed: {
     color: 9552127,
     title: "iOS Assistance",
@@ -379,7 +379,7 @@ client.on('message', async (message) => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
 
-  if (message.content === `${prefix}backuprestorehow`) {
+  if (message.content.toLowerCase() === `${prefix}backuprestorehow`) {
 
       const emojis = {
         previousPage: '⬅️',
@@ -428,7 +428,7 @@ client.on('message', async (message) => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
 
-  if (message.content === `${prefix}ios passcode guide`) {
+  if (message.content.toLowerCase() === `${prefix}ios passcode guide`) {
 
       const emojis = {
         previousPage: '⬅️',
@@ -470,7 +470,7 @@ client.on('message', async (message) => {
 
 // $ios faceid guide
 
-  if (message.content === `${prefix}ios faceid guide`) {
+  if (message.content.toLowerCase() === `${prefix}ios faceid guide`) {
 
       const emojis = {
         previousPage: '⬅️',
@@ -512,7 +512,7 @@ client.on('message', async (message) => {
 
   // $ios touchid guide
 
-    if (message.content === `${prefix}ios touchid guide`) {
+    if (message.content.toLowerCase() === `${prefix}ios touchid guide`) {
   
         const emojis = {
           previousPage: '⬅️',
@@ -554,7 +554,7 @@ client.on('message', async (message) => {
 
     // $ios 2fa guide
 
-    if (message.content === `${prefix}ios 2fa guide`) {
+    if (message.content.toLowerCase() === `${prefix}ios 2fa guide`) {
 
       const emojis = {
         previousPage: '⬅️',
@@ -594,7 +594,7 @@ client.on('message', async (message) => {
 
   // GUIDE COMMAND TEMPLATE
 
-  if (message.content === `${prefix}version3guide`) {
+  if (message.content.toLowerCase() === `${prefix}version3guide`) {
 
       const emojis = {
         previousPage: '⬅️',
