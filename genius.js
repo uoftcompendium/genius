@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const { token, prefix } = require('./config.json');
 const client = new Discord.Client();
 
-client.user.setActivity("$help"); 
 
 
 client.on("message", async message => {
@@ -680,3 +679,5 @@ client.on("message", async message => {
 });
 
   client.login(process.env.ID);
+
+  client.user.setActivity("$help")
