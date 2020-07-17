@@ -189,43 +189,43 @@ if (message.content.toLowerCase() === `${prefix}ios passcode`) {
 
 // ALL IPHONE COMMANDS ($iphone command)
 
-if (message.content.toLowerCase() === `${prefix}iPhone 5S`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone 5S`) {
     message.channel.send("The **iPhone 5S** (`A1457 (Middle East); A1518, A1528 (China); A1530 (Asia Pacific); A1533 (North America, China); A1453 (North America, Japan)`) is Apple's 7th Generation smartphone released on **September 20, 2013**. Predecessor: **iPhone 5**, Successor: **iPhone 6, iPhone 6 Plus**. Colours: Space Gray, Silver, Gold. Storage configurations: 16, 32, 64 GB. <https://en.wikipedia.org/wiki/IPhone_5S>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone 6`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone 6`) {
     message.channel.send("The **iPhone 6** (`A1549 (North America);  A1586 (Global);  A1589 (China)`) is Apple's 8th Generation smartphone released on **September 19, 2014**. Predecessor: **iPhone 5S, iPhone 5C**, Successor: **iPhone 6S, iPhone 6S Plus**. Colours: Space Grey, Silver, Gold. Storage configurations: 16, 32, 64, 128 GB. <https://en.wikipedia.org/wiki/IPhone_6>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone 6 Plus`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone 6 Plus`) {
     message.channel.send("The **iPhone 6 Plus** (`A1522 (North America);  A1524 (Global);  A1593 (China);`) is Apple's 8th Generation smartphone released on **September 19, 2014**. Predecessor: **iPhone 5S, iPhone 5C**, Successor: **iPhone 6S, iPhone 6S Plus**. Colours: Space Grey, Silver, Gold. Storage configurations: 16, 64, 128 GB. <https://en.wikipedia.org/wiki/IPhone_6>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone 6S`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone 6S`) {
     message.channel.send("The **iPhone 6S** (`A1633 (North America) A1688 (International) A1700 (China)`) is Apple's 9th Generation smartphone released on **September 25, 2015**. Predecessor: **iPhone 6, iPhone 6 Plus**, Successor: **iPhone 7, iPhone 7 Plus**. Colours: Space Gray, Silver, Gold, Rose Gold. Storage configurations: 16, 32, 64, 128GB. <https://en.wikipedia.org/wiki/IPhone_6S>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone 6S Plus`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone 6S Plus`) {
     message.channel.send("The **iPhone 6S Plus** (`A1634 (North America) A1687 (International) A1699 (China)`) is Apple's 9th Generation smartphone released on **September 25, 2015**. Predecessor: **iPhone 6, iPhone 6 Plus**, Successor: **iPhone 7, iPhone 7 Plus**. Colours: Space Gray, Silver, Gold, Rose Gold. Storage configurations: 16, 32, 64, 128GB. <https://en.wikipedia.org/wiki/IPhone_6S>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone SE`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone SE`) {
     message.channel.send("The **iPhone SE** (`A1662 (US model) A1723 (Sprint and in most countries) A1724 (China Mobile model)`) is Apple's 9th Generation smartphone released on **March 31, 2016**. Predecessor: **iPhone 5S**, Successor: **iPhone SE**. Colours: Space Gray, Silver, Gold, Rose Gold. Storage configurations: 16, 32, 64, 128GB. <https://en.wikipedia.org/wiki/IPhone_SE_(1st_generation)>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone 7`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone 7`) {
     message.channel.send("The **iPhone 7** (`A1660 (with Qualcomm modem) A1778 (with Intel modem)  A1779 (sold in Japan)`) is Apple's 10th Generation smartphone released on **September 16, 2016**. Predecessor: **iPhone 6S, iPhone 6S Plus**, Successor: **iPhone 8, iPhone 8 Plus**. Colours: Black, Jet Black, Silver, Gold, Rose Gold, (Product) RED. Storage configurations: 32, 128, or 256 GB. <https://en.wikipedia.org/wiki/IPhone_7>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone 7 Plus`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone 7 Plus`) {
     message.channel.send("The **iPhone 7 Plus** (`A1661 (with Qualcomm modem) A1784 (with Intel modem)  A1785 (sold in Japan)`) is Apple's 10th Generation smartphone released on **September 16, 2016**. Predecessor: **iPhone 6S, iPhone 6S Plus**, Successor: **iPhone 8, iPhone 8 Plus**. Colours: Black, Jet Black, Silver, Gold, Rose Gold, (Product) RED. Storage configurations: 32, 128, or 256 GB. <https://en.wikipedia.org/wiki/IPhone_7>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone 8`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone 8`) {
     message.channel.send("The **iPhone 8** (`A1863 (with Qualcomm modem) A1905 (with Intel modem) A1906 (sold in Japan)`) is Apple's 11th Generation smartphone released on **September 22, 2017**. Predecessor: **iPhone 7, iPhone 7 Plus**, Successor: **iPhone X, iPhone SE 2020**. Colours: Space Gray, Silver, Gold, (Product) RED. Storage configurations: 62, 128, 246 GB [Discontinued 09/10/19]. <https://en.wikipedia.org/wiki/IPhone_8>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone 8 Plus`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone 8 Plus`) {
     message.channel.send("The **iPhone 8 Plus** (`A1864 (with Qualcomm modem) A1897 (with Intel modem) A1898 (sold in Japan)`) is Apple's 11th Generation smartphone released on **September 22, 2017**. Predecessor: **iPhone 7, iPhone 7 Plus**, Successor: **iPhone X, iPhone SE 2020**. Colours: Space Gray, Silver, Gold, (Product) RED. Storage configurations: 62, 128, 246 GB [Discontinued 09/10/19]. <https://en.wikipedia.org/wiki/IPhone_8>.");
   }
 
@@ -233,31 +233,31 @@ if (message.content.toLowerCase() === `${prefix}iPhone 8 Plus`) {
     message.channel.send("The **iPhone X** (`A1865 (with Qualcomm modem) A1901 (with Intel modem) A1902 (sold in Japan`) is Apple's 11th Generation smartphone released on **November 3, 2017**. Predecessor: **iPhone 7, iPhone 7 Plus**, Successor: **iPhone XS, iPhone XS Max**. Colours: Space Gray, Silver. Storage configurations: 64, 256 GB. <https://en.wikipedia.org/wiki/IPhone_X>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone XS`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone XS`) {
     message.channel.send("The **iPhone XS** (`A1920, A2097, A2098 (Japan), A2100 (China)`) is Apple's 12th Generation smartphone released on **September 21, 2018**. Predecessor: **iPhone X**, Successor: **iPhone 11 Pro, iPhone 11 Pro Max**. Colours: Silver, Space Gray, Gold. Storage configurations: 64, 256, or 512 GB. <https://en.wikipedia.org/wiki/IPhone_XS>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone XS Max`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone XS Max`) {
     message.channel.send("The **iPhone XS Max** (`A1921, A2101, A2102 (Japan), A2104 (China)`) is Apple's 12th Generation smartphone released on **September 21, 2018**. Predecessor: **iPhone X**, Successor: **iPhone 11 Pro, iPhone 11 Pro Max**. Colours: Silver, Space Gray, Gold. Storage configurations: 64, 256, or 512 GB. <https://en.wikipedia.org/wiki/IPhone_XS>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone XR`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone XR`) {
     message.channel.send("The **iPhone XR** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone 11`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone 11`) {
     message.channel.send("The **iPhone 11** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone 11 Pro`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone 11 Pro`) {
     message.channel.send("The **iPhone 11 Pro** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
   }
   
-if (message.content.toLowerCase() === `${prefix}iPhone 11 Pro Max`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone 11 Pro Max`) {
     message.channel.send("The **iPhone 11 Pro Max** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
   }
 
-if (message.content.toLowerCase() === `${prefix}iPhone SE 2020`) {
+  if (message.content.toLowerCase() === `${prefix}iPhone SE 2020`) {
     message.channel.send("The **iPhone SE 2020** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
   }
 
@@ -614,8 +614,8 @@ client.on("message", async message => {
     if(message.author.bot) return;
 
 
-if (message.content.toLowerCase() === `${prefix}ios`) {
-    message.channel.send({embed: {
+    if (message.content.toLowerCase() === `${prefix}ios`) {
+      message.channel.send({embed: {
       color: 9552127,
       title: "iOS Status",
       fields: [{
