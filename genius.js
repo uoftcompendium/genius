@@ -51,12 +51,12 @@ client.on("message", async message => {
       title: "Archive",
       fields: [{
           name: "iPhones (1)",
-          value: "\n`$iPhone 5S`\n`$iPhone 6`\n`$iPhone 6 Plus`\n`$iPhone iPhone 6S`\n`$iPhone 6S Plus`\n`$iPhone SE`\n`$iPhone 7`\n`$iPhone 7 Plus`\n`$iPhone 8`",
+          value: "\n`$iPhone 5S`\n`$iPhone 6`\n`$iPhone 6 Plus`\n`$iPhone iPhone 6S`\n`$iPhone 6S Plus`\n`$iPhone SE`\n`$iPhone 7`\n`$iPhone 7 Plus`\n`$iPhone 8`\n",
           inline: true
         },
         {
           name: "iPhones (2)",
-          value: "\n`$iPhone 8 Plus`\n`$iPhone X`\n`$iPhone XS`\n`$iPhone XS Max`\n`$iPhone XR`\n`$iPhone 11`\n`$iPhone 11 Pro`\n`$iPhone 11 Pro Max`\n`$iPhone SE 2020`",
+          value: "\n`$iPhone 8 Plus`\n`$iPhone X`\n`$iPhone XS`\n`$iPhone XS Max`\n`$iPhone XR`\n`$iPhone 11`\n`$iPhone 11 Pro`\n`$iPhone 11 Pro Max`\n`$iPhone SE 2020`\n",
           inline: true
         },
         {
