@@ -50,8 +50,8 @@ client.on("message", async message => {
       color: 9552127,
       title: "iPhone Assistance",
       fields: [{
-          name: "All help topics:",
-          value: "\n`$ios` - iOS version\n`$ios 2fa` - iOS 2FA\n`$ios alock` - iOS Activation Lock\n`$ios appdl` - App download issues\n`$ios ar` - iOS Account Recovery\n`$ios backuprestore` - Restore from backup\n`$ios battery` - iOS Battery Guide\n`$ios beta` - iOS Beta\n`$ios bypass` - ALock bypass\n`$ios downgrade` - iOS downgrade\n`$ios faceid` - iOS Face ID\n`$ios factoryrestore` - Restore to factory\n`$ios other` iOS 'Other bloat\n`$ios passcode` - iOS passcode\n`$ios touchid` - iOS Touch ID\n\nAdd `guide` for instructions.\nEx: `$ios 2fa guide`"
+          name: "All info topics:",
+          value: "\n`$iPhone 5S`\n`$iPhone 6`\n`$iPhone 6 Plus`\n`$iPhone iPhone 6S`\n`$iPhone 6S Plus`\n`$iPhone SE`\n`$iPhone 7`\n`$iPhone 7 Plus`\n`$iPhone 8`\n`$iPhone 8 Plus`\n`$iPhone X`\n`$iPhone XS`\n`$iPhone XS Max`\n`$iPhone XR`\n`$iPhone 11`\n`$iPhone 11 Pro`\n`$iPhone 11 Pro Max`\n`$iPhone SE 2020`"
         }
       ],
       footer: {
