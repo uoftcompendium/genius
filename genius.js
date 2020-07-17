@@ -3,13 +3,13 @@ const { token, prefix } = require('./config.json');
 const client = new Discord.Client();
 
 client.on("message", async message => {
-    if(message.author.bot) return;
+ if(message.author.bot) return;
 
 // HELP COMMANDS
 
 // CENTRAL HELP
 
-if (message.content.toLowerCase() === `${prefix}help`) {
+ if (message.content.toLowerCase() === `${prefix}help`) {
     message.channel.send({embed: {
       color: 9552127,
       title: "Genius Assistant",
@@ -27,7 +27,7 @@ if (message.content.toLowerCase() === `${prefix}help`) {
 
 // IOS
 
-if (message.content.toLowerCase() === `${prefix}help ios`) {
+ if (message.content.toLowerCase() === `${prefix}help ios`) {
     message.channel.send({embed: {
       color: 9552127,
       title: "iOS Assistance",
@@ -45,7 +45,7 @@ if (message.content.toLowerCase() === `${prefix}help ios`) {
 
 // IPHONE
 
-if (message.content.toLowerCase() === `${prefix}help iphone`) {
+ if (message.content.toLowerCase() === `${prefix}help iphone`) {
     message.channel.send({embed: {
       color: 9552127,
       title: "iPhone Assistance",
@@ -63,7 +63,7 @@ if (message.content.toLowerCase() === `${prefix}help iphone`) {
 
   // JAILBREAK
 
-  if (message.content.toLowerCase() === `${prefix}help jailbreak`) {
+ if (message.content.toLowerCase() === `${prefix}help jailbreak`) {
     message.channel.send({embed: {
       color: 9552127,
       title: "iPhone Assistance",
@@ -81,7 +81,7 @@ if (message.content.toLowerCase() === `${prefix}help iphone`) {
 
   // ICLOUD
 
-  if (message.content.toLowerCase() === `${prefix}help icloud`) {
+ if (message.content.toLowerCase() === `${prefix}help icloud`) {
     message.channel.send({embed: {
       color: 9552127,
       title: "iPhone Assistance",
@@ -99,7 +99,7 @@ if (message.content.toLowerCase() === `${prefix}help iphone`) {
 
   // OTHER
 
-  if (message.content.toLowerCase() === `${prefix}help other`) {
+ if (message.content.toLowerCase() === `${prefix}help other`) {
     message.channel.send({embed: {
       color: 9552127,
       title: "iPhone Assistance",
@@ -118,146 +118,143 @@ if (message.content.toLowerCase() === `${prefix}help iphone`) {
 
 // ALL IOS COMMANDS ($ios command)
 
-if (message.content.toLowerCase() === `${prefix}ios passcode`) {
+ if (message.content.toLowerCase() === `${prefix}ios passcode`) {
     message.channel.send("For better security, set a passcode that needs to be entered to unlock iPhone when you turn it on or wake it. Setting a passcode turns on data protection, which encrypts your iPhone data with 256-bit AES encryption. (Some apps may opt out of using data protection.) <https://support.apple.com/en-ca/guide/iphone/iph14a867ae/ios>");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios faceid`) {
+ if (message.content.toLowerCase() === `${prefix}ios faceid`) {
     message.channel.send("Use Face ID (supported models: ) to unlock iPhone, authorize purchases and payments, and sign in to many third-party apps by simply glancing at your iPhone. To use Face ID, you must also set up a passcode on your iPhone. <https://support.apple.com/en-ca/guide/iphone/iph6d162927a/ios>");
   }
   
-  if (message.content.toLowerCase() === `${prefix}ios touchid`) {
+ if (message.content.toLowerCase() === `${prefix}ios touchid`) {
     message.channel.send("Use Touch ID (supported models) to unlock iPhone, authorize purchases and payments, and sign in to many third-party apps by pressing the Home button with your finger or thumb. To use Touch ID, you must also set up a passcode on your iPhone. <https://support.apple.com/en-ca/guide/iphone/iph672384a0b/ios>");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios 2fa`) {
+ if (message.content.toLowerCase() === `${prefix}ios 2fa`) {
     message.channel.send("Two-factor authentication helps prevent others from accessing your Apple ID account, even if they know your Apple ID password. Two-factor authentication is built into iOS 9, iPadOS 13, OS X 10.11, or later. <https://support.apple.com/en-ca/guide/iphone/iphd709a3c46/ios>");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios alock`) {
+ if (message.content.toLowerCase() === `${prefix}ios alock`) {
     message.channel.send("See <https://support.apple.com/en-us/HT201441>. If the __Activation Lock__ placed on a device you have purchased or one that has come into your possession **cannot** be removed by the previous owner, you must contact your local Apple Store (<https://www.apple.com/retail/>) with proof of purchase.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios appdl`) {
+ if (message.content.toLowerCase() === `${prefix}ios appdl`) {
     message.channel.send("If you want to update apps, you can update them manually or turn on automatic updates (<https://support.apple.com/en-ca/HT202180>) But if your app won't update or is interrupted while it's downloading, try the steps at <https://support.apple.com/en-us/HT207165>.");
   }
   
-  if (message.content.toLowerCase() === `${prefix}ios ar`) {
+ if (message.content.toLowerCase() === `${prefix}ios ar`) {
     message.channel.send("Account recovery is a process designed to get you back into your Apple ID account when you don’t have enough information to reset your password. For security reasons, it might take several days or longer before you can use your account again. <https://support.apple.com/en-us/HT204921>");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios backuprestore`) {
+ if (message.content.toLowerCase() === `${prefix}ios backuprestore`) {
     message.channel.send("A device can be **restored** through an __iCloud backup__ or __local (computer) backup__, by following instructions at <https://support.apple.com/en-us/HT204184>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios battery`) {
+ if (message.content.toLowerCase() === `${prefix}ios battery`) {
     message.channel.send("https://support.apple.com/en-us/HT208387");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios battery guide`) {
+ if (message.content.toLowerCase() === `${prefix}ios battery guide`) {
     message.channel.send("__Battery health guide for iPhones:__ \n- iPhones 5/5S/SE: **90-93%** and less is degraded beyond reasonable usability. \n- iPhones 6/6S/7/8/SE2020 **85-90%** and less is degraded beyond reasonable usability. \n- iPhones 6+/6S+/7+/8+/X/X **80-85%** and less is degraded beyond reasonable usability. \n- XR/XSM/11/11P/11PM - **80% and lower** is generally degraded (Apple recommendation) \n\n*From experience this seems to line up roughly with when people start to complain with batteries and roughly when they could experience shutdowns, throttle, misreporting battery percent, etc. For more info, see <https://support.apple.com/en-us/HT208387>*");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios bypass`) {
+ if (message.content.toLowerCase() === `${prefix}ios bypass`) {
     message.channel.send("There is **no way** to bypass iCloud unlock.\n For __Activation Lock__, see <https://support.apple.com/en-us/HT201441>");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios bypass guide`) {
+ if (message.content.toLowerCase() === `${prefix}ios bypass guide`) {
     message.channel.send("There is **no way** to bypass iCloud unlock.\n For __Activation Lock__, see <https://support.apple.com/en-us/HT201441>");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios bypasshack`) {
+ if (message.content.toLowerCase() === `${prefix}ios bypasshack`) {
     message.channel.send("https://i.imgur.com/tatd6yS.png");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios downgrade`) {
+ if (message.content.toLowerCase() === `${prefix}ios downgrade`) {
     message.channel.send("iOS Developer & Public __Betas__ can be uninstalled by following the instructions at <https://support.apple.com/en-us/HT203282#beta>. An __iCloud backup__ is highly recommended.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios factoryrestore`) {
+ if (message.content.toLowerCase() === `${prefix}ios factoryrestore`) {
     message.channel.send("A __factory restore__ erases the information and settings on your iPhone, iPad, or iPod and installs the latest version of iOS, iPadOS, or iPod software. Follow the steps at <https://support.apple.com/en-us/HT201252>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios other`) {
+ if (message.content.toLowerCase() === `${prefix}ios other`) {
     message.channel.send("__**Other** storage unusually high is currently classified as this by Apple:__ \n\n> Non-removable mobile assets, like Siri voices, fonts, dictionaries, non-removable logs and caches, Spotlight index, and system data, such as Keychain and CloudKit Database. Cached files can't be deleted by the system.\n\n You can read more at <https://support.apple.com/en-us/HT201656> \n\n__The only known method to solve this issue is as follows:__ \n1) Backup your iPhone to **iCloud**. Note: you **cannot** use iTunes of Finder as high 'Other' storage will return. (<https://support.apple.com/en-us/HT203977>) \n2) Restore your phone to **factory settings** using iTunes or Finder on a computer. (<https://support.apple.com/en-us/HT201252>) \n3) Wait for the restore to finish, then you can safely restore from your **iCloud backup**. (<https://support.apple.com/en-us/HT204184>)");
   }
 
-  if (message.content.toLowerCase() === `${prefix}ios beta`) {
+ if (message.content.toLowerCase() === `${prefix}ios beta`) {
     message.channel.send("input");
   }
 
-
-// ALL IPHONE COMMANDS ($iphone command)
-
-  if (message.content.toLowerCase() === `${prefix}iPhone 5S`) {
+ if (message.content.toLowerCase() === `${prefix}iphone 5s`) {
     message.channel.send("The **iPhone 5S** (`A1457 (Middle East); A1518, A1528 (China); A1530 (Asia Pacific); A1533 (North America, China); A1453 (North America, Japan)`) is Apple's 7th Generation smartphone released on **September 20, 2013**. Predecessor: **iPhone 5**, Successor: **iPhone 6, iPhone 6 Plus**. Colours: Space Gray, Silver, Gold. Storage configurations: 16, 32, 64 GB. <https://en.wikipedia.org/wiki/IPhone_5S>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone 6`) {
+ if (message.content.toLowerCase() === `${prefix}iphone 6`) {
     message.channel.send("The **iPhone 6** (`A1549 (North America);  A1586 (Global);  A1589 (China)`) is Apple's 8th Generation smartphone released on **September 19, 2014**. Predecessor: **iPhone 5S, iPhone 5C**, Successor: **iPhone 6S, iPhone 6S Plus**. Colours: Space Grey, Silver, Gold. Storage configurations: 16, 32, 64, 128 GB. <https://en.wikipedia.org/wiki/IPhone_6>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone 6 Plus`) {
+ if (message.content.toLowerCase() === `${prefix}iphone 6 plus`) {
     message.channel.send("The **iPhone 6 Plus** (`A1522 (North America);  A1524 (Global);  A1593 (China);`) is Apple's 8th Generation smartphone released on **September 19, 2014**. Predecessor: **iPhone 5S, iPhone 5C**, Successor: **iPhone 6S, iPhone 6S Plus**. Colours: Space Grey, Silver, Gold. Storage configurations: 16, 64, 128 GB. <https://en.wikipedia.org/wiki/IPhone_6>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone 6S`) {
+ if (message.content.toLowerCase() === `${prefix}iphone 6s`) {
     message.channel.send("The **iPhone 6S** (`A1633 (North America) A1688 (International) A1700 (China)`) is Apple's 9th Generation smartphone released on **September 25, 2015**. Predecessor: **iPhone 6, iPhone 6 Plus**, Successor: **iPhone 7, iPhone 7 Plus**. Colours: Space Gray, Silver, Gold, Rose Gold. Storage configurations: 16, 32, 64, 128GB. <https://en.wikipedia.org/wiki/IPhone_6S>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone 6S Plus`) {
+ if (message.content.toLowerCase() === `${prefix}iphone 6s plus`) {
     message.channel.send("The **iPhone 6S Plus** (`A1634 (North America) A1687 (International) A1699 (China)`) is Apple's 9th Generation smartphone released on **September 25, 2015**. Predecessor: **iPhone 6, iPhone 6 Plus**, Successor: **iPhone 7, iPhone 7 Plus**. Colours: Space Gray, Silver, Gold, Rose Gold. Storage configurations: 16, 32, 64, 128GB. <https://en.wikipedia.org/wiki/IPhone_6S>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone SE`) {
+ if (message.content.toLowerCase() === `${prefix}iphone se`) {
     message.channel.send("The **iPhone SE** (`A1662 (US model) A1723 (Sprint and in most countries) A1724 (China Mobile model)`) is Apple's 9th Generation smartphone released on **March 31, 2016**. Predecessor: **iPhone 5S**, Successor: **iPhone SE**. Colours: Space Gray, Silver, Gold, Rose Gold. Storage configurations: 16, 32, 64, 128GB. <https://en.wikipedia.org/wiki/IPhone_SE_(1st_generation)>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone 7`) {
+ if (message.content.toLowerCase() === `${prefix}iphone 7`) {
     message.channel.send("The **iPhone 7** (`A1660 (with Qualcomm modem) A1778 (with Intel modem)  A1779 (sold in Japan)`) is Apple's 10th Generation smartphone released on **September 16, 2016**. Predecessor: **iPhone 6S, iPhone 6S Plus**, Successor: **iPhone 8, iPhone 8 Plus**. Colours: Black, Jet Black, Silver, Gold, Rose Gold, (Product) RED. Storage configurations: 32, 128, or 256 GB. <https://en.wikipedia.org/wiki/IPhone_7>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone 7 Plus`) {
+ if (message.content.toLowerCase() === `${prefix}iphone 7 plus`) {
     message.channel.send("The **iPhone 7 Plus** (`A1661 (with Qualcomm modem) A1784 (with Intel modem)  A1785 (sold in Japan)`) is Apple's 10th Generation smartphone released on **September 16, 2016**. Predecessor: **iPhone 6S, iPhone 6S Plus**, Successor: **iPhone 8, iPhone 8 Plus**. Colours: Black, Jet Black, Silver, Gold, Rose Gold, (Product) RED. Storage configurations: 32, 128, or 256 GB. <https://en.wikipedia.org/wiki/IPhone_7>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone 8`) {
+ if (message.content.toLowerCase() === `${prefix}iphone 8`) {
     message.channel.send("The **iPhone 8** (`A1863 (with Qualcomm modem) A1905 (with Intel modem) A1906 (sold in Japan)`) is Apple's 11th Generation smartphone released on **September 22, 2017**. Predecessor: **iPhone 7, iPhone 7 Plus**, Successor: **iPhone X, iPhone SE 2020**. Colours: Space Gray, Silver, Gold, (Product) RED. Storage configurations: 62, 128, 246 GB [Discontinued 09/10/19]. <https://en.wikipedia.org/wiki/IPhone_8>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone 8 Plus`) {
+ if (message.content.toLowerCase() === `${prefix}iphone 8 plus`) {
     message.channel.send("The **iPhone 8 Plus** (`A1864 (with Qualcomm modem) A1897 (with Intel modem) A1898 (sold in Japan)`) is Apple's 11th Generation smartphone released on **September 22, 2017**. Predecessor: **iPhone 7, iPhone 7 Plus**, Successor: **iPhone X, iPhone SE 2020**. Colours: Space Gray, Silver, Gold, (Product) RED. Storage configurations: 62, 128, 246 GB [Discontinued 09/10/19]. <https://en.wikipedia.org/wiki/IPhone_8>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone X`) {
+ if (message.content.toLowerCase() === `${prefix}iphone s`) {
     message.channel.send("The **iPhone X** (`A1865 (with Qualcomm modem) A1901 (with Intel modem) A1902 (sold in Japan`) is Apple's 11th Generation smartphone released on **November 3, 2017**. Predecessor: **iPhone 7, iPhone 7 Plus**, Successor: **iPhone XS, iPhone XS Max**. Colours: Space Gray, Silver. Storage configurations: 64, 256 GB. <https://en.wikipedia.org/wiki/IPhone_X>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone XS`) {
+ if (message.content.toLowerCase() === `${prefix}iphone xs`) {
     message.channel.send("The **iPhone XS** (`A1920, A2097, A2098 (Japan), A2100 (China)`) is Apple's 12th Generation smartphone released on **September 21, 2018**. Predecessor: **iPhone X**, Successor: **iPhone 11 Pro, iPhone 11 Pro Max**. Colours: Silver, Space Gray, Gold. Storage configurations: 64, 256, or 512 GB. <https://en.wikipedia.org/wiki/IPhone_XS>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone XS Max`) {
+ if (message.content.toLowerCase() === `${prefix}iphone xs max`) {
     message.channel.send("The **iPhone XS Max** (`A1921, A2101, A2102 (Japan), A2104 (China)`) is Apple's 12th Generation smartphone released on **September 21, 2018**. Predecessor: **iPhone X**, Successor: **iPhone 11 Pro, iPhone 11 Pro Max**. Colours: Silver, Space Gray, Gold. Storage configurations: 64, 256, or 512 GB. <https://en.wikipedia.org/wiki/IPhone_XS>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone XR`) {
+  if (message.content.toLowerCase() === `${prefix}iphone xr`) {
     message.channel.send("The **iPhone XR** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone 11`) {
+  if (message.content.toLowerCase() === `${prefix}iphone 11`) {
     message.channel.send("The **iPhone 11** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone 11 Pro`) {
+  if (message.content.toLowerCase() === `${prefix}iphone 11 pro`) {
     message.channel.send("The **iPhone 11 Pro** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
   }
   
-  if (message.content.toLowerCase() === `${prefix}iPhone 11 Pro Max`) {
+  if (message.content.toLowerCase() === `${prefix}iphone 11 pro max`) {
     message.channel.send("The **iPhone 11 Pro Max** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
   }
 
-  if (message.content.toLowerCase() === `${prefix}iPhone SE 2020`) {
+  if (message.content.toLowerCase() === `${prefix}iphone se 2020`) {
     message.channel.send("The **iPhone SE 2020** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
   }
 
