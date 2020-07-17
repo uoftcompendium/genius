@@ -56,8 +56,12 @@ client.on("message", async message => {
         },
         {
           name: "iPhones (2)",
-          value: "\n`$iPhone 8`\n`$iPhone 8 Plus`\n`$iPhone X`\n`$iPhone XS`\n`$iPhone XS Max`\n`$iPhone XR`\n`$iPhone 11`\n`$iPhone 11 Pro`\n`$iPhone 11 Pro Max`\n`$iPhone SE 2020`\n\nCommands contain:\n- Model No.\n- Release Date\n- Storage Options\n- Colour Options",
+          value: "\n`$iPhone 8 Plus`\n`$iPhone X`\n`$iPhone XS`\n`$iPhone XS Max`\n`$iPhone XR`\n`$iPhone 11`\n`$iPhone 11 Pro`\n`$iPhone 11 Pro Max`\n`$iPhone SE 2020`",
           inline: true
+        },
+        {
+          name: "Command Usage",
+          value: "Info contained: Model No. (`AXXXX`), Release Date, Predecessor,\nStorage Options, Colour Options. Type `$iPhone DFU` for a DFU guide.",
         }
       ],
       footer: {
