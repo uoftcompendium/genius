@@ -61,7 +61,7 @@ client.on("message", async message => {
         },
         {
           name: "Command Usage",
-          value: "Info contained: Model No. (`AXXXX`), Release Date, Predecessor,\nStorage Options, Colour Options. Type `$iPhone DFU` for a DFU guide.",
+          value: "Info contained: Model No. (`AXXXX`), Release Date, Predecessor,\nStorage & Colour Options. Type `$iPhone DFU` for a DFU guide.",
         }
       ],
       footer: {
