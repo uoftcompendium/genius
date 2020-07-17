@@ -2,6 +2,9 @@ const Discord = require('discord.js');
 const { token, prefix } = require('./config.json');
 const client = new Discord.Client();
 
+client.user.setActivity("$help"); 
+
+
 client.on("message", async message => {
  if(message.author.bot) return;
 
@@ -61,7 +64,7 @@ client.on("message", async message => {
         },
         {
           name: "Available Information",
-          value: "Commands contain: Model No. (`AXXXX`), Release Dates,\nStorage & Colour Options. Use `$iPhone DFU` for a DFU guide.\nWiki links contain known hardware/build issues.",
+          value: "Contains: Model No. (`AXXXX`), Release Dates, Storage Options\n& Colour Options. Use `$iPhone DFU` for a DFU guide.\nWiki links contain known hardware issues.",
         }
       ],
       footer: {
