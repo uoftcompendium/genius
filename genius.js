@@ -678,6 +678,4 @@ client.on("message", async message => {
   }
 });
 
-  client.user.setPresence({game: {name: $help, type: 0}});
-
   client.login(process.env.ID);
