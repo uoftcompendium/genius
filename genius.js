@@ -195,7 +195,7 @@ client.on("message", async message => {
   }
 
  if (message.content.toLowerCase() === `${prefix}iphone 6 plus`) {
-    message.channel.send("The **iPhone 6 Plus** (`A1522 (North America);  A1524 (Global);  A1593 (China);`) is Apple's 8th Generation smartphone released on **September 19, 2014**. Predecessor: **iPhone 5S, iPhone 5C**, Successor: **iPhone 6S, iPhone 6S Plus**. Colours: Space Grey, Silver, Gold. Storage configurations: 16, 64, 128 GB. <https://en.wikipedia.org/wiki/IPhone_6>.");
+    message.channel.send("The **iPhone 6 Plus** (`A1522 (North America);  A1524 (Global);  A1593 (China)`) is Apple's 8th Generation smartphone released on **September 19, 2014**. Predecessor: **iPhone 5S, iPhone 5C**, Successor: **iPhone 6S, iPhone 6S Plus**. Colours: Space Grey, Silver, Gold. Storage configurations: 16, 64, 128 GB. <https://en.wikipedia.org/wiki/IPhone_6>.");
   }
 
  if (message.content.toLowerCase() === `${prefix}iphone 6s`) {
@@ -211,11 +211,11 @@ client.on("message", async message => {
   }
 
  if (message.content.toLowerCase() === `${prefix}iphone 7`) {
-    message.channel.send("The **iPhone 7** (`A1660 (with Qualcomm modem) A1778 (with Intel modem)  A1779 (sold in Japan)`) is Apple's 10th Generation smartphone released on **September 16, 2016**. Predecessor: **iPhone 6S, iPhone 6S Plus**, Successor: **iPhone 8, iPhone 8 Plus**. Colours: Black, Jet Black, Silver, Gold, Rose Gold, (Product) RED. Storage configurations: 32, 128, or 256 GB. <https://en.wikipedia.org/wiki/IPhone_7>.");
+    message.channel.send("The **iPhone 7** & **iPhone 7 Plus** are plagued with multiple issues that make it a less than economic choice in the current phone climate. It's affected by these __two issues__: \n\n__1__) '**No Service**' recall, which you can read about at <https://support.apple.com/iphone-7-no-service>. This recall is about to expire, leaving many people soon to have to pay for their own repair. \n\n__2__) The poor design of the iPhone 7 has caused a **defect with the Audio IC**, causing it to become separated from the board. This could result in loss of multiple  audio features such as calls, speaker phone, voice memos, Siri, etc. The difference between this issue and the last is that Apple refuses to recognize the design flaw, and on top of that, even if you get it repaired, it will happen again. There is __no permanent solution__. \n\n*In short, if you're looking for a budget solution, the iPhone SE 2020 or a used iPhone 8 is an infinitely better choice for your money.*\n\n[The **iPhone 7** (`A1660 (with Qualcomm modem) A1778 (with Intel modem)  A1779 (sold in Japan)`) is Apple's 10th Generation smartphone released on **September 16, 2016**. Predecessor: **iPhone 6S, iPhone 6S Plus**, Successor: **iPhone 8, iPhone 8 Plus**. Colours: Black, Jet Black, Silver, Gold, Rose Gold, (Product) RED. Storage configurations: 32, 128, or 256 GB. <https://en.wikipedia.org/wiki/IPhone_7>.]");
   }
 
  if (message.content.toLowerCase() === `${prefix}iphone 7 plus`) {
-    message.channel.send("The **iPhone 7 Plus** (`A1661 (with Qualcomm modem) A1784 (with Intel modem)  A1785 (sold in Japan)`) is Apple's 10th Generation smartphone released on **September 16, 2016**. Predecessor: **iPhone 6S, iPhone 6S Plus**, Successor: **iPhone 8, iPhone 8 Plus**. Colours: Black, Jet Black, Silver, Gold, Rose Gold, (Product) RED. Storage configurations: 32, 128, or 256 GB. <https://en.wikipedia.org/wiki/IPhone_7>.");
+    message.channel.send("The **iPhone 7** & **iPhone 7 Plus** are plagued with multiple issues that make it a less than economic choice in the current phone climate. It's affected by these __two issues__: \n\n__1__) '**No Service**' recall, which you can read about at <https://support.apple.com/iphone-7-no-service>. This recall is about to expire, leaving many people soon to have to pay for their own repair. \n\n__2__) The poor design of the iPhone 7 has caused a **defect with the Audio IC**, causing it to become separated from the board. This could result in loss of multiple  audio features such as calls, speaker phone, voice memos, Siri, etc. The difference between this issue and the last is that Apple refuses to recognize the design flaw, and on top of that, even if you get it repaired, it will happen again. There is __no permanent solution__. \n\n*In short, if you're looking for a budget solution, the iPhone SE 2020 or a used iPhone 8 is an infinitely better choice for your money.*\n\n[The **iPhone 7 Plus** (`A1661 (with Qualcomm modem) A1784 (with Intel modem)  A1785 (sold in Japan)`) is Apple's 10th Generation smartphone released on **September 16, 2016**. Predecessor: **iPhone 6S, iPhone 6S Plus**, Successor: **iPhone 8, iPhone 8 Plus**. Colours: Black, Jet Black, Silver, Gold, Rose Gold, (Product) RED. Storage configurations: 32, 128, or 256 GB. <https://en.wikipedia.org/wiki/IPhone_7>.]");
   }
 
  if (message.content.toLowerCase() === `${prefix}iphone 8`) {
@@ -239,7 +239,7 @@ client.on("message", async message => {
   }
 
   if (message.content.toLowerCase() === `${prefix}iphone xr`) {
-    message.channel.send("The **iPhone XR** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
+    message.channel.send("The **iPhone XR** (`A1984 A2105 A2106 (Sold in Japan) A2107 (Sold in China) A2108 (Sold in China, Hong Kong and Macao)`) is Apple's 12th Generation smartphone released on **October 26, 2018**. Predecessor: **iPhone 8, iPhone 8 Plus**, Successor: **iPhone 11**. Colours: Black, White, Blue, Yellow, Coral, (Product) RED. Storage configurations: 64, 128, 256 GB [Discontinued 09/10/19]. <https://www.apple.com/ca/shop/buy-iphone/iphone-xr>.");
   }
 
   if (message.content.toLowerCase() === `${prefix}iphone 11`) {
