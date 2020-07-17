@@ -37,7 +37,7 @@ client.on("message", async message => {
         }
       ],
       footer: {
-        text: "Version: 3.0.1 | Build 0X8902"
+        text: "Build 0X8902"
     }
   }
   });
@@ -55,7 +55,7 @@ client.on("message", async message => {
         }
       ],
       footer: {
-        text: "Version: 3.0.1 | Build 0X8902"
+        text: "Build 0X8902"
     }
   }
   });
