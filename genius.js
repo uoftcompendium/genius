@@ -680,4 +680,4 @@ client.on("message", async message => {
 
   client.login(process.env.ID);
 
-  client.user.setPresence('$help', { type: 'PLAYING' });
+  client.user.setPresence({game: {name: $help, type: 0}});
