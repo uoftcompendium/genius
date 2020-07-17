@@ -680,4 +680,4 @@ client.on("message", async message => {
 
   client.login(process.env.ID);
 
-  client.user.setActivity("$help")
+  client.user.setPresence('$help', { type: 'PLAYING' });
