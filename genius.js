@@ -610,6 +610,10 @@ const reactionPages = async (message, author, options, page, retries) => {
   
 // OS COMMANDS
 
+client.on("message", async message => {
+    if(message.author.bot) return;
+
+
 if (message.content.toLowerCase() === `${prefix}ios`) {
     message.channel.send({embed: {
       color: 9552127,
@@ -659,6 +663,6 @@ if (message.content.toLowerCase() === `${prefix}ios`) {
     }
   });
   }
-
+});
 
   client.login(process.env.ID);
