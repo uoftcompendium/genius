@@ -48,7 +48,7 @@ client.on("message", async message => {
  if (message.content.toLowerCase() === `${prefix}help iphone`) {
     message.channel.send({embed: {
       color: 9552127,
-      title: "iPhone Assistance",
+      title: "Archive",
       fields: [{
           name: "iPhones (1)",
           value: "\n`$iPhone 5S`\n`$iPhone 6`\n`$iPhone 6 Plus`\n`$iPhone iPhone 6S`\n`$iPhone 6S Plus`\n`$iPhone SE`\n`$iPhone 7`\n`$iPhone 7 Plus`\n`$iPhone 8`",
@@ -61,11 +61,11 @@ client.on("message", async message => {
         },
         {
           name: "Command Usage",
-          value: "Info contained: Model No. (`AXXXX`), Release Date, Predecessor,\nStorage & Colour Options. Type `$iPhone DFU` for a DFU guide.",
+          value: "Info contained: Model No. (`AXXXX`), Release Date, Predecessor,\nStorage & Colour Options. Type `$iPhone DFU` for a DFU guide.\nWiki links contain known hardware/build issues.",
         }
       ],
       footer: {
-        text: "Build 0X8902"
+        text: "$help to return to help menu"
     }
   }
   });
