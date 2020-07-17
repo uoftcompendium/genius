@@ -51,7 +51,7 @@ client.on("message", async message => {
       title: "iPhone Assistance",
       fields: [{
           name: "All info topics:",
-          value: "\n`$iPhone 5S`\n`$iPhone 6`\n`$iPhone 6 Plus`\n`$iPhone iPhone 6S`\n`$iPhone 6S Plus`\n`$iPhone SE`\n`$iPhone 7`\n`$iPhone 7 Plus`\n`$iPhone 8`\n`$iPhone 8 Plus`\n`$iPhone X`\n`$iPhone XS`\n`$iPhone XS Max`\n`$iPhone XR`\n`$iPhone 11`\n`$iPhone 11 Pro`\n`$iPhone 11 Pro Max`\n`$iPhone SE 2020`\n\nCommands contain:\n- Model No.\n- Release Date\n- Storage Options\n- Colour Options"
+          value: "\n`iPhone DFU`\n`$iPhone 5S`\n`$iPhone 6`\n`$iPhone 6 Plus`\n`$iPhone iPhone 6S`\n`$iPhone 6S Plus`\n`$iPhone SE`\n`$iPhone 7`\n`$iPhone 7 Plus`\n`$iPhone 8`\n`$iPhone 8 Plus`\n`$iPhone X`\n`$iPhone XS`\n`$iPhone XS Max`\n`$iPhone XR`\n`$iPhone 11`\n`$iPhone 11 Pro`\n`$iPhone 11 Pro Max`\n`$iPhone SE 2020`\n\nCommands contain:\n- Model No.\n- Release Date\n- Storage Options\n- Colour Options"
         }
       ],
       footer: {
