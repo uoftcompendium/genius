@@ -243,22 +243,26 @@ client.on("message", async message => {
   }
 
   if (message.content.toLowerCase() === `${prefix}iphone 11`) {
-    message.channel.send("The **iPhone 11** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
+    message.channel.send("The **iPhone 11** (`A13 Bionic`) is Apple's 13th Generation smartphone released on **September 20, 2019**. Predecessor: **iPhone XR**, Successor: **None**. Colours: Black, White, Purple, Yellow, Gree, (Product) RED. Storage configurations: 64, 128, or 256 GB. <https://www.apple.com/ca/iphone-11/>.");
   }
 
   if (message.content.toLowerCase() === `${prefix}iphone 11 pro`) {
-    message.channel.send("The **iPhone 11 Pro** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
+    message.channel.send("The **iPhone 11 Pro** (`A2160 A2217 A2215`) is Apple's 13th Generation smartphone released on **September 20, 2019**. Predecessor: **iPhone XS, iPhone XS Max**, Successor: **None**. Colours: Silver, Space Gray, Gold, Midnight Green. Storage configurations: 64, 256, or 512 GB. <https://www.apple.com/ca/iphone-11-pro/>.");
   }
   
   if (message.content.toLowerCase() === `${prefix}iphone 11 pro max`) {
-    message.channel.send("The **iPhone 11 Pro Max** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
+    message.channel.send("The **iPhone 11 Pro Max** (`A2161 A2220 A2218`) is Apple's 13th Generation smartphone released on **September 20, 2019**. Predecessor: **iPhone XS, iPhone XS Max**, Successor: **None**. Colours: Silver, Space Gray, Gold, Midnight Green. Storage configurations: 64, 256, or 512 GB. <https://www.apple.com/ca/shop/buy-iphone/iphone-11-pro>.");
   }
 
   if (message.content.toLowerCase() === `${prefix}iphone se 2020`) {
-    message.channel.send("The **iPhone SE 2020** (`VERSIONS`) is Apple's th Generation smartphone released on **Date**. Predecessor: **Model**, Successor: **Model**. Colours: Insert. Storage configurations: Insert. <LINK>.");
+    message.channel.send("The **iPhone SE 2020** (`A2275 (United States/Canada) A2296 (Global) A2298 (China)`) is Apple's 13th Generation smartphone released on **April 24, 2020**. Predecessor: **iPhone SE (1st Gen)**, Successor: **None**. Colours: Black, White, (Product) RED. Storage configurations: 64, 128, or 256GB. <https://www.apple.com/ca/iphone-se/>.");
   }
 
 // ALL JAILBREAK COMMANDS ($jailbreak command)
+
+
+// ALL IPOD COMMANDS ($ipod command)
+
 
 
 
