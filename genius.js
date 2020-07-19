@@ -37,11 +37,11 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
     title: "iPod Assistance",
     fields: [{
         name: "All iPod topics:",
-        value: "\n`$ipod classic [GEN]`\n`$ipod mini [GEN]`\n`$ipod nano [GEN]`\n`$ipod shuffle [GEN]`\n`$ipod touch [GEN]`\n\n Ex: `$ipod shuffle 3`"
+        value: "\n`$ipod classic [GEN]`\n`$ipod mini [GEN]`\n`$ipod nano [GEN]`\n`$ipod shuffle [GEN]`\n`$ipod touch [GEN]`\n`$ipod timeline`\n\n Ex: `$ipod shuffle 3`"
       }
     ],
     footer: {
-      text: "By tank#0001 | Build 0X8902"
+      text: "Build 0X8902"
   }
 }
 });
