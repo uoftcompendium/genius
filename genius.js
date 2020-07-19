@@ -56,8 +56,13 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
       title: "iOS Assistance",
       fields: [{
           name: "All help topics:",
-          value: "\n`$ios` - iOS version\n`$ios 2fa` - iOS 2FA\n`$ios alock` - iOS Activation Lock\n`$ios appdl` - App download issues\n`$ios ar` - iOS Account Recovery\n`$ios backuprestore` - Restore from backup\n`$ios battery` - iOS Battery Guide\n`$ios beta` - iOS Beta\n`$ios bypass` - ALock bypass\n`$ios downgrade` - iOS downgrade\n`$ios faceid` - iOS Face ID\n`$ios factoryrestore` - Restore to factory\n`$ios other` iOS 'Other bloat\n`$ios passcode` - iOS passcode\n`$ios touchid` - iOS Touch ID\n\nAdd `guide` for instructions.\nEx: `$ios 2fa guide`"
-        }
+          value: "\n`$ios` - iOS version\n`$ios alock` - iOS Activation Lock\n`$ios appdl` - App download issues\n`$ios ar` - iOS Account Recovery\n`$ios battery` - iOS Battery Guide\n`$ios beta` - iOS Beta\n`$ios bypass` - ALock bypass\n`$ios downgrade` - iOS downgrade\n`$ios factoryrestore` - Restore to factory\n`$ios other` iOS 'Other bloat"
+        },
+        {
+         name: "Guide help topics:",
+         value: "\n`$ios 2fa` - iOS 2FA\n`$ios backuprestore` - Restore from backup\n`$ios faceid` - iOS Face ID\n`$ios passcode` - iOS passcode\n`$ios touchid` - iOS Touch ID\n\nAdd `guide` for instructions.\nEx: `$ios faceid guide`"
+      }
+        
       ],
       footer: {
         text: "Build 0X8902"
@@ -414,17 +419,9 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
 
-
-
-
-// ALL ICLOUD COMMANDS ($icloud command)
-
-
-
 // ALL OTHER COMMANDS ($info, $help, $version, $credits, $invite)
 
 // HELP 
-
 
 ////// ALL IOS GUIDE COMMANDS ($ios command)
 ////// ALL ICLOUD GUIDE COMMANDS ($icloud command)
@@ -495,7 +492,7 @@ const reactionPages = async (message, author, options, page, retries) => {
     if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
   
-    if (message.content.toLowerCase() === `${prefix}backuprestorehow`) {
+    if (message.content.toLowerCase() === `${prefix}ios backuprestore guide`) {
   
         const emojis = {
           previousPage: '⬅️',
