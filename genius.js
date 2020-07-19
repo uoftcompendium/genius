@@ -17,11 +17,11 @@ client.on("message", async message => {
       title: "Genius Assistant",
       fields: [{
           name: "All help topics:",
-          value: "\n`$help ios` \n`$help iphone` \n`$help apple watch` \n`$help jailbreak` \n`$help icloud` \n`$help other`\n\n[Support Server](https://discord.gg/iphone) | [Docs](https://discord.gg/iphone)"
+          value: "\n`$help ios` \n`$help mac` \n`$help ipod` \n`$help iphone` \n`$help jailbreak` \n`$help other`\n\n[Support Server](https://discord.gg/iphone) | [Docs](https://discord.gg/iphone)"
         }
       ],
       footer: {
-        text: "Version: 3.0.1 | Build 0X8902"
+        text: "By tank#0001 | Build 0X8902"
     }
   }
 });
@@ -33,6 +33,24 @@ client.on("message", async message => {
     message.channel.send({embed: {
       color: 9552127,
       title: "iOS Assistance",
+      fields: [{
+          name: "All help topics:",
+          value: "\n`$ios` - iOS version\n`$ios 2fa` - iOS 2FA\n`$ios alock` - iOS Activation Lock\n`$ios appdl` - App download issues\n`$ios ar` - iOS Account Recovery\n`$ios backuprestore` - Restore from backup\n`$ios battery` - iOS Battery Guide\n`$ios beta` - iOS Beta\n`$ios bypass` - ALock bypass\n`$ios downgrade` - iOS downgrade\n`$ios faceid` - iOS Face ID\n`$ios factoryrestore` - Restore to factory\n`$ios other` iOS 'Other bloat\n`$ios passcode` - iOS passcode\n`$ios touchid` - iOS Touch ID\n\nAdd `guide` for instructions.\nEx: `$ios 2fa guide`"
+        }
+      ],
+      footer: {
+        text: "Build 0X8902"
+    }
+  }
+  });
+  }
+
+// MAC
+
+ if (message.content.toLowerCase() === `${prefix}help mac`) {
+    message.channel.send({embed: {
+      color: 9552127,
+      title: "macOS Assistance",
       fields: [{
           name: "All help topics:",
           value: "\n`$ios` - iOS version\n`$ios 2fa` - iOS 2FA\n`$ios alock` - iOS Activation Lock\n`$ios appdl` - App download issues\n`$ios ar` - iOS Account Recovery\n`$ios backuprestore` - Restore from backup\n`$ios battery` - iOS Battery Guide\n`$ios beta` - iOS Beta\n`$ios bypass` - ALock bypass\n`$ios downgrade` - iOS downgrade\n`$ios faceid` - iOS Face ID\n`$ios factoryrestore` - Restore to factory\n`$ios other` iOS 'Other bloat\n`$ios passcode` - iOS passcode\n`$ios touchid` - iOS Touch ID\n\nAdd `guide` for instructions.\nEx: `$ios 2fa guide`"
@@ -76,24 +94,6 @@ client.on("message", async message => {
   // JAILBREAK
 
  if (message.content.toLowerCase() === `${prefix}help jailbreak`) {
-    message.channel.send({embed: {
-      color: 9552127,
-      title: "iPhone Assistance",
-      fields: [{
-          name: "All help topics:",
-          value: "\n`$ios` - iOS version\n`$ios 2fa` - iOS 2FA\n`$ios alock` - iOS Activation Lock\n`$ios appdl` - App download issues\n`$ios ar` - iOS Account Recovery\n`$ios backuprestore` - Restore from backup\n`$ios battery` - iOS Battery Guide\n`$ios beta` - iOS Beta\n`$ios bypass` - ALock bypass\n`$ios downgrade` - iOS downgrade\n`$ios faceid` - iOS Face ID\n`$ios factoryrestore` - Restore to factory\n`$ios other` iOS 'Other bloat\n`$ios passcode` - iOS passcode\n`$ios touchid` - iOS Touch ID\n\nAdd `guide` for instructions.\nEx: `$ios 2fa guide`"
-        }
-      ],
-      footer: {
-        text: "Version: 3.0.1 | Build 0X8902"
-    }
-  }
-  });
-  }
-
-  // ICLOUD
-
- if (message.content.toLowerCase() === `${prefix}help icloud`) {
     message.channel.send({embed: {
       color: 9552127,
       title: "iPhone Assistance",
@@ -271,9 +271,127 @@ client.on("message", async message => {
   }
 
 // ALL JAILBREAK COMMANDS ($jailbreak command)
+  if (message.content.toLowerCase() === `${prefix}jailbreak`) {
+    message.channel.send("__Jailbreaking__ is a method by which your iOS device can bypass Apple's stock restrictions through __hardware__ and __software__-based exploits, unlocking the true potential of your iPhone beyond Apple's closed environment. For tools, type `$checkrain` or `$uncover`.");
+  }
 
+  if (message.content.toLowerCase() === `${prefix}checkrain`) {
+    message.channel.send("**checkra1n** is a jailbreak tool that relies on the `checkm8` hardware exploit. It is currently working on all iOS versions 12.3 and higher, on devices 5S to X. Current version: `0.10.2`. Install at <https://checkra.in/>");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}uncover`) {
+    message.channel.send("**unc0ver** is a jailbreak tool that relies on a patchable software exploit. It is currently working on all iOS versions between 11.0 and 13.5, on all devices. Current version: `5.2.1`. Install at <https://unc0ver.dev/>");
+  }
 
 // ALL IPOD COMMANDS ($ipod command)
+  if (message.content.toLowerCase() === `${prefix}ipod classic 1`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod classic 2`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod classic 3`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod classic 4`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod classic 5`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod classic 6`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod mini 1`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod mini 2`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod nano 1`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod nano 2`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod nano 3`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod nano 4`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod nano 5`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod nano 6`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod nano 7`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod shuffle 1`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod shuffle 2`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod shuffle 3`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod shuffle 4`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod touch 1`) {
+    message.channel.send("The **iPod Model ** was released by Apple on **October 23, 2001**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio).");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod touch 2`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod touch 3`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod touch 4`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod touch 5`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod touch 6`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod touch 7`) {
+    message.channel.send("input");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}ipod timeline`) {
+    message.channel.send("https://i.imgur.com/0lWmXTU.png");
+  }
+
 
 
 
