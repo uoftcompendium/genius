@@ -29,6 +29,25 @@ client.on("message", async message => {
 });
 }
 
+// IPOD
+
+if (message.content.toLowerCase() === `${prefix}help ipod`) {
+  message.channel.send({embed: {
+    color: 9552127,
+    title: "iPod Assistance",
+    fields: [{
+        name: "All iPod topics:",
+        value: "\n`$ipod classic [GEN]`\n`$ipod mini [GEN]`\n`$ipod nano [GEN]`\n`$ipod shuffle [GEN]`\n`$ipod touch [GEN]`\n\n Ex: `$ipod shuffle 3`"
+      }
+    ],
+    footer: {
+      text: "By tank#0001 | Build 0X8902"
+  }
+}
+});
+}
+
+
 // IOS
 
  if (message.content.toLowerCase() === `${prefix}help ios`) {
@@ -287,107 +306,107 @@ client.on("message", async message => {
 
 // ALL IPOD COMMANDS ($ipod command)
   if (message.content.toLowerCase() === `${prefix}ipod classic 1`) {
-    message.channel.send("The **iPod Classic (1)** was released by Apple on **October 23, 2001**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). (First model, with mechanical scroll wheel. 10 GB model released later.) <https://en.wikipedia.org/wiki/IPod_Classic>");
+    message.channel.send("The **iPod Classic (Gen 1)** was released by Apple on **October 23, 2001**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). (First model, with mechanical scroll wheel. 10 GB model released later.) <https://en.wikipedia.org/wiki/IPod_Classic>");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 2`) {
-    message.channel.send("The **iPod Classic (2)** was released by Apple on **July 17, 2002**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). (Touch-sensitive wheel. FireWire port had a cover. Hold switch revised. Windows compatibility through Musicmatch.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
+    message.channel.send("The **iPod Classic (Gen 2)** was released by Apple on **July 17, 2002**. Capacity: 5, 20 GB. Connection: Firewire. Battery: 10h (audio). (Touch-sensitive wheel. FireWire port had a cover. Hold switch revised. Windows compatibility through Musicmatch.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 3`) {
-    message.channel.send("The **iPod Classic (3)** was released by Apple on **April 28, 2003**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). (First complete redesign with all-touch interface, dock connector, 4-pin remote connector and slimmer case. Musicmatch support dropped with later release of iTunes 4.1 for Windows.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
+    message.channel.send("The **iPod Classic (Gen 3)** was released by Apple on **April 28, 2003**. Capacity: 10, 15, 20, 30, 40 GB. Connection: Firewire. Battery: 8h (audio). (First complete redesign with all-touch interface, dock connector, 4-pin remote connector and slimmer case. Musicmatch support dropped with later release of iTunes 4.1 for Windows.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 4`) {
-    message.channel.send("The **iPod Classic (4)** was released by Apple on **July 19, 2004** (Photo, with colour display). Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). (Adopted Click Wheel from iPod Mini, added charging through USB in addition to FireWire.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
+    message.channel.send("The **iPod Classic (Gen 4, Standard)** was released by Apple on **July 19, 2004** (Photo, with colour display). Capacity: v. Connection: Firewire or USB. Battery: 12h (audio). (Adopted Click Wheel from iPod Mini, added charging through USB in addition to FireWire.) \n\nThe **iPod Classic (Gen 4, Photo) has capacities of 30, 40, 60 GB, while the **(Gen 4, Colour Display)** has capacities 20, 60 GB, with battery 15h (audio), 5h (slidewshow). (Premium spin-off of 4th generation iPod with color screen, plus picture viewing. Later reintegrated into main iPod line.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 5`) {
-    message.channel.send("The **iPod Classic (5)** was released by Apple on **October 12, 2005**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). (Second full redesign with a slimmer case, and larger screen with video playback. Remote connector near the headphone jack was omitted as was syncing through FireWire. Offered in black or white. Hardware and firmware updated with 60 GB model replaced with 80 GB model on September 12, 2006.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
+    message.channel.send("The **iPod Classic (Gen 5)** was released by Apple on **October 12, 2005**. Capacity: 30, 60, 80 GB. Connection: USB. Battery: 12/20h (audio), 2/3/6.5h (video). (Second full redesign with a slimmer case, and larger screen with video playback. Remote connector near the headphone jack was omitted as was syncing through FireWire. Offered in black or white. Hardware and firmware updated with 60 GB model replaced with 80 GB model on September 12, 2006.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 6`) {
-    message.channel.send("The **iPod Classic (6)** was released by Apple on **September 5, 2007**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). (Introduced the 'Classic' suffix. New interface and anodized aluminum front plate. Silver replaces white. In September 2008 the hardware and firmware was updated with a 120 GB model replacing the 80 GB model and the 160 GB model was discontinued. In September 2009, the 120 GB model was replaced with a 160 GB model. Discontinued on September 9, 2014.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
+    message.channel.send("The **iPod Classic (Gen 6)** was released by Apple on **September 5, 2007**. Capacity: 80, 120, 160 GB. Connection: USB. Battery: 30/36/40h (audio), 5/6/7h (video). (Introduced the 'Classic' suffix. New interface and anodized aluminum front plate. Silver replaces white. In September 2008 the hardware and firmware was updated with a 120 GB model replacing the 80 GB model and the 160 GB model was discontinued. In September 2009, the 120 GB model was replaced with a 160 GB model. Discontinued on September 9, 2014.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod mini 1`) {
-    message.channel.send("The **iPod Mini (1)** was released by Apple on **January 6, 2004**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Mini (Gen 1)** was released by Apple on **January 6, 2004**. Capacity: 4GB. Connection: USB, Firewire. Battery: 8 (audio). (New smaller model, available in 5 colors. Introduced the 'Click Wheel'.) <https://en.wikipedia.org/wiki/IPod_Mini> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod mini 2`) {
-    message.channel.send("The **iPod Mini (2)** was released by Apple on **February 22, 2005**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Mini (Gen 2)** was released by Apple on **February 22, 2005**. Capacity: 4, 6 GB. Connection: USB, Firewire. Battery: 18h (audio). (Brighter color variants with longer battery life. Click Wheel lettering matched body color. Gold color discontinued. *Later replaced by iPod Nano*.) <https://en.wikipedia.org/wiki/IPod_Mini> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 1`) {
-    message.channel.send("The **iPod Nano (1)** was released by Apple on **September 7, 2005**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Nano (Gen 1)** was released by Apple on **September 7, 2005**. Capacity: 1, 2, 4 GB. Connection: USB. Battery: 14h (audio), 2h (slideshow). (Replaced Mini. Available in black or white and used flash memory. Color screen for picture viewing. 1 GB version released later.) <https://en.wikipedia.org/wiki/IPod_Nano> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 2`) {
-    message.channel.send("The **iPod Nano (2)** was released by Apple on **September 12, 2006**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Nano (Gen 2)** was released by Apple on **September 12, 2006**. Capacity: 2, 4, 8 GB. Connection: USB. Battery: 24h (audio), 5h (slideshow). (Anodized aluminum casing and 6 colors available.) <https://en.wikipedia.org/wiki/IPod_Nano> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 3`) {
-    message.channel.send("The **iPod Nano (3)** was released by Apple on **September 5, 2007**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Nano (Gen 3)** was released by Apple on **September 5, 2007**. Capacity: 4, 8 GB. Connection: USB. Battery: 24h (audio), 5h (slideshow). (2 inch QVGA screen, colors refreshed with chrome back, new interface, video capability, smaller Click Wheel.) <https://en.wikipedia.org/wiki/IPod_Nano> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 4`) {
-    message.channel.send("The **iPod Nano (4)** was released by Apple on **September 9, 2008**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Nano (Gen 4)** was released by Apple on **September 9, 2008**. Capacity: 4, 8, 16 GB. Connection: USB. Battery: 24h (audio), 4h (slideshow). (Reverted to tall form factor and all-aluminum enclosure with nine color choices, added accelerometer for 'shake to shuffle' functionality and horizontal viewing. 4 GB model limited release in selected markets.) <https://en.wikipedia.org/wiki/IPod_Nano> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 5`) {
-    message.channel.send("The **iPod Nano (5)** was released by Apple on **September 9, 2009**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Nano (Gen 5)** was released by Apple on **September 9, 2009**. Capacity: 8, 16 GB. Connection: USB. Battery: 24h (audio), 5h (slideshow). (First iPod to include a video camera; also included a larger screen, FM radio, speaker, pedometer, and a polished exterior case while retaining similar colors to the 4th generation model.) <https://en.wikipedia.org/wiki/IPod_Nano> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 6`) {
-    message.channel.send("The **iPod Nano (6)** was released by Apple on **September 1, 2010**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Nano (Gen Gen 6)** was released by Apple on **September 1, 2010**. Capacity: 8, 16 GB. Connection: USB. Battery: 24h (audio). (First iPod Nano to include multi-touch screen; clip from iPod Shuffle added. Video playback, speakers and camera removed.) <https://en.wikipedia.org/wiki/IPod_Nano> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 7`) {
-    message.channel.send("The **iPod Nano (7)** was released by Apple on **September 12, 2012**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Nano (Gen 7)** was released by Apple on **September 12, 2012**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 30h (audio), 3.5h (video). (Reverted to tall form factor with larger 2.5 inch multi-touch screen. Clip removed. Video playback restored and Bluetooth added. Replaced 30-pin dock connector with new Lightning connector. Discontinued July 27, 2017.[1]) <https://en.wikipedia.org/wiki/IPod_Nano> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod shuffle 1`) {
-    message.channel.send("The **iPod Shuffle (1)** was released by Apple on **January 11, 2005**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Shuffle (Gen 1)** was released by Apple on **January 11, 2005**. Capacity: 512 MB, 1 GB. Connection: USB. Battery: 12h (audio). (New entry-level model. Uses flash memory and has no screen.) <https://en.wikipedia.org/wiki/IPod_Shuffle> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod shuffle 2`) {
-    message.channel.send("The **iPod Shuffle (2)** was released by Apple on **September 12, 2006**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Shuffle (Gen 2)** was released by Apple on **September 12, 2006**. Capacity: 1, 2 GB. Connection: USB. Battery: 12h (audio). (Smaller clip design with anodized aluminum casing. 4 color options added later. Colors were changed in 2007 and 2008.) <https://en.wikipedia.org/wiki/IPod_Shuffle> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod shuffle 3`) {
-    message.channel.send("The **iPod Shuffle (3)** was released by Apple on **March 11, 2009**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Shuffle (Gen 3)** was released by Apple on **March 11, 2009**. Capacity: 1, 2 GB. Connection: USB. Battery: 10h (audio). (Smaller design with controls relocated to right earbud cable. Introduced with two colors, and featured VoiceOver. More colors and 2 GB model added in September 2009.) <https://en.wikipedia.org/wiki/IPod_Shuffle> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod shuffle 4`) {
-    message.channel.send("The **iPod Shuffle (4)** was released by Apple on **September 1, 2010**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Shuffle (Gen 4)** was released by Apple on **September 1, 2010**. Capacity: 2 GB. Connection: USB. Battery: 15h (audio). (Controls returned to the body of the iPod. Introduced with five colors, and featured VoiceOver. Discontinued July 27, 2017.) <https://en.wikipedia.org/wiki/IPod_Shuffle> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 1`) {
-    message.channel.send("The **iPod Touch (1)** was released by Apple on **September 5, 2007**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Touch (Gen 1)** was released by Apple on **September 5, 2007**. Capacity: 8, 16, 32 GB. Connection: Firewire. Battery: 22h (audio), 5h (video). (First iPod with Wi-Fi and a Multi-touch interface. Features Safari browser and wireless access to the iTunes Store and YouTube. 32 GB model later added. iOS 2.0 and App Store access required an upgrade fee.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 2`) {
-    message.channel.send("The **iPod Touch (2)** was released by Apple on **September 9, 2008**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Touch (Gen 2)** was released by Apple on **September 9, 2008**. Capacity: 8, 16, 32 GB. Connection: Firewire. Battery: 36h (audio), 6h (video). (New tapered chrome back with Nike+ functionality, volume buttons, and built-in speaker added. iOS 2.0 and App Store access standard. Bluetooth support added but not made active until iOS 3.0, which required an upgrade fee.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 3`) {
-    message.channel.send("The **iPod Touch (3)** was released by Apple on **September 9, 2009**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Touch (Gen 3)** was released by Apple on **September 9, 2009**. Capacity: 32, 64 GB. Connection: Firewire. Battery: 30h (audio), 6h (video). (Updated to include the upgraded internals from the iPhone 3GS; included Voice Control support and bundled remote earphones.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 4`) {
-    message.channel.send("The **iPod Touch (4)** was released by Apple on **September 1, 2010**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Touch (Gen 4)** was released by Apple on **September 1, 2010**. Capacity: 8, 16, 32, 64 GB. Connection: Firewire. Battery: 40h (audio), 7h (video). (New thinner design including two cameras for FaceTime and HD video recording, hold button moved to top right corner, Retina Display similar to iPhone 4, Apple A4 chip. White-colored version added on October 4, 2011.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 5`) {
-    message.channel.send("The **iPod Touch (5)** was released by Apple on **September 12, 2012**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Touch (Gen 5)** was released by Apple on **September 12, 2012**. Capacity: 16, 32, 64 GB. Connection: Firewire. Battery: 40h (audio), 8h (video). (New aluminum design with colored case options. Featured improved cameras along with A5 processor, Siri, and taller 4 inch Retina Display. First 16 GB models released have no color choices and no iSight camera, In early 2014 16 GB models were released that featured iSight cameras and color choices.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 6`) {
-    message.channel.send("The **iPod Touch (6)** was released by Apple on **July 15, 2015**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Touch (Gen 6)** was released by Apple on **July 15, 2015**. Capacity: 16, 32, 64, 128 GB. Connection: Firewire. Battery: 40h (audio), 8h (video). (Updated with a new lineup of six colors, a new 128 GB model, and improved internals. The improved internals feature new cameras and the A8 processor with M8 motion coprocessor, 1 GB of RAM (twice the amount of the previous generation), and 802.11ac Wi-Fi.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 7`) {
-    message.channel.send("The **iPod Touch (7)** was released by Apple on **May 28, 2019**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
+    message.channel.send("The **iPod Touch (Gen 7)** was released by Apple on **May 28, 2019**. Capacity: 32, 128, 256 GB. Connection: Firewire. Battery: 40h (audio), 8h (video). (Updated with a new 256 GB model, and an upgraded SoC from the A8 to the A10 Fusion. Also added support for features not previously supported on the 6th generation iPod touch, like AR and Group FaceTime.) <https://en.wikipedia.org/wiki/IPod_Touch> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod timeline`) {
