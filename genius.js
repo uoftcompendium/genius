@@ -5,6 +5,8 @@ const client = new Discord.Client();
 
 
 client.on("message", async message => {
+
+  client.user.setPresence({ activity: { name: '$help' }, status: 'online' })
  if(message.author.bot) return;
 
 // HELP COMMANDS
@@ -195,7 +197,7 @@ client.on("message", async message => {
   }
 
  if (message.content.toLowerCase() === `${prefix}ios beta`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Classic (1) ** was released by Apple on **DATE**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
  if (message.content.toLowerCase() === `${prefix}iphone 5s`) {
@@ -285,107 +287,107 @@ client.on("message", async message => {
 
 // ALL IPOD COMMANDS ($ipod command)
   if (message.content.toLowerCase() === `${prefix}ipod classic 1`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Classic (1)** was released by Apple on **October 23, 2001**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). (First model, with mechanical scroll wheel. 10 GB model released later.) <https://en.wikipedia.org/wiki/IPod_Classic>");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 2`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Classic (2)** was released by Apple on **July 17, 2002**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). (Touch-sensitive wheel. FireWire port had a cover. Hold switch revised. Windows compatibility through Musicmatch.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 3`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Classic (3)** was released by Apple on **April 28, 2003**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). (First complete redesign with all-touch interface, dock connector, 4-pin remote connector and slimmer case. Musicmatch support dropped with later release of iTunes 4.1 for Windows.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 4`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Classic (4)** was released by Apple on **July 19, 2004** (Photo, with colour display). Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). (Adopted Click Wheel from iPod Mini, added charging through USB in addition to FireWire.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 5`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Classic (5)** was released by Apple on **October 12, 2005**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). (Second full redesign with a slimmer case, and larger screen with video playback. Remote connector near the headphone jack was omitted as was syncing through FireWire. Offered in black or white. Hardware and firmware updated with 60 GB model replaced with 80 GB model on September 12, 2006.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod classic 6`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Classic (6)** was released by Apple on **September 5, 2007**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). (Introduced the 'Classic' suffix. New interface and anodized aluminum front plate. Silver replaces white. In September 2008 the hardware and firmware was updated with a 120 GB model replacing the 80 GB model and the 160 GB model was discontinued. In September 2009, the 120 GB model was replaced with a 160 GB model. Discontinued on September 9, 2014.) <https://en.wikipedia.org/wiki/IPod_Classic> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod mini 1`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Mini (1)** was released by Apple on **January 6, 2004**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod mini 2`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Mini (2)** was released by Apple on **February 22, 2005**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 1`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Nano (1)** was released by Apple on **September 7, 2005**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 2`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Nano (2)** was released by Apple on **September 12, 2006**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 3`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Nano (3)** was released by Apple on **September 5, 2007**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 4`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Nano (4)** was released by Apple on **September 9, 2008**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 5`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Nano (5)** was released by Apple on **September 9, 2009**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 6`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Nano (6)** was released by Apple on **September 1, 2010**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod nano 7`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Nano (7)** was released by Apple on **September 12, 2012**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod shuffle 1`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Shuffle (1)** was released by Apple on **January 11, 2005**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod shuffle 2`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Shuffle (2)** was released by Apple on **September 12, 2006**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod shuffle 3`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Shuffle (3)** was released by Apple on **March 11, 2009**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod shuffle 4`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Shuffle (4)** was released by Apple on **September 1, 2010**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 1`) {
-    message.channel.send("The **iPod Model ** was released by Apple on **October 23, 2001**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio).");
+    message.channel.send("The **iPod Touch (1)** was released by Apple on **September 5, 2007**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 2`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Touch (2)** was released by Apple on **September 9, 2008**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 3`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Touch (3)** was released by Apple on **September 9, 2009**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 4`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Touch (4)** was released by Apple on **September 1, 2010**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 5`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Touch (5)** was released by Apple on **September 12, 2012**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 6`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Touch (6)** was released by Apple on **July 15, 2015**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod touch 7`) {
-    message.channel.send("input");
+    message.channel.send("The **iPod Touch (7)** was released by Apple on **May 28, 2019**. Capacity: 5, 10 GB. Connection: Firewire. Battery: 10h (audio). <LINK> ");
   }
 
   if (message.content.toLowerCase() === `${prefix}ipod timeline`) {
