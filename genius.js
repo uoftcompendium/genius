@@ -15,7 +15,7 @@ client.on("message", async message => {
 
  if (message.content.toLowerCase() === `${prefix}help`) {
     message.channel.send({embed: {
-      color: 9552127,
+      color: 5488029,
       title: "Genius Assistant",
       fields: [{
           name: "All help topics:",
@@ -33,15 +33,15 @@ client.on("message", async message => {
 
 if (message.content.toLowerCase() === `${prefix}help ipod`) {
   message.channel.send({embed: {
-    color: 9552127,
+    color: 5488029,
     title: "iPod Assistance",
     fields: [{
-        name: "All iPod topics:",
+        name: "All iPod commands:",
         value: "\n`$ipod classic [GEN]`\n`$ipod mini [GEN]`\n`$ipod nano [GEN]`\n`$ipod shuffle [GEN]`\n`$ipod touch [GEN]`\n`$ipod timeline`\n\n Ex: `$ipod shuffle 3`"
       }
     ],
     footer: {
-      text: "Build 0X8902"
+      text: "$help for main menu"
   }
 }
 });
@@ -52,7 +52,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 
  if (message.content.toLowerCase() === `${prefix}help ios`) {
     message.channel.send({embed: {
-      color: 9552127,
+      color: 5488029,
       title: "iOS Assistance",
       fields: [{
           name: "All help topics:",
@@ -75,15 +75,15 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 
  if (message.content.toLowerCase() === `${prefix}help mac`) {
     message.channel.send({embed: {
-      color: 9552127,
+      color: 5488029,
       title: "macOS Assistance",
       fields: [{
           name: "All help topics:",
-          value: "\n`$ios` - iOS version\n`$ios 2fa` - iOS 2FA\n`$ios alock` - iOS Activation Lock\n`$ios appdl` - App download issues\n`$ios ar` - iOS Account Recovery\n`$ios backuprestore` - Restore from backup\n`$ios battery` - iOS Battery Guide\n`$ios beta` - iOS Beta\n`$ios bypass` - ALock bypass\n`$ios downgrade` - iOS downgrade\n`$ios faceid` - iOS Face ID\n`$ios factoryrestore` - Restore to factory\n`$ios other` iOS 'Other bloat\n`$ios passcode` - iOS passcode\n`$ios touchid` - iOS Touch ID\n\nAdd `guide` for instructions.\nEx: `$ios 2fa guide`"
+          value: "\n`$macOS` - macOS version\n`$mac battery` - Battery health\n`$mac displays` - Display mirroring\n`$mac GPU` - GPU & eGPU\n`$mac migration` - Migration Assistant\n`$mac recovery` - macOS Recovery\n`$mac reinstall` - macOS Reinstall\n`$mac restore` - macOS Restore\n`$mac storage` - Storage trimming\n`$mac timemachine` - Time Machine"
         }
       ],
       footer: {
-        text: "Build 0X8902"
+        text: "$help for main menu"
     }
   }
   });
@@ -93,7 +93,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 
  if (message.content.toLowerCase() === `${prefix}help iphone`) {
     message.channel.send({embed: {
-      color: 9552127,
+      color: 5488029,
       title: "Archive",
       fields: [{
           name: "iPhones (1)",
@@ -111,7 +111,7 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
         }
       ],
       footer: {
-        text: "$help to return to help menu"
+        text: "$help for main menu"
     }
   }
   });
@@ -121,15 +121,15 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 
  if (message.content.toLowerCase() === `${prefix}help jailbreak`) {
     message.channel.send({embed: {
-      color: 9552127,
-      title: "iPhone Assistance",
+      color: 5488029,
+      title: "Jailbreak Assistance",
       fields: [{
           name: "All help topics:",
-          value: "\n`$ios` - iOS version\n`$ios 2fa` - iOS 2FA\n`$ios alock` - iOS Activation Lock\n`$ios appdl` - App download issues\n`$ios ar` - iOS Account Recovery\n`$ios backuprestore` - Restore from backup\n`$ios battery` - iOS Battery Guide\n`$ios beta` - iOS Beta\n`$ios bypass` - ALock bypass\n`$ios downgrade` - iOS downgrade\n`$ios faceid` - iOS Face ID\n`$ios factoryrestore` - Restore to factory\n`$ios other` iOS 'Other bloat\n`$ios passcode` - iOS passcode\n`$ios touchid` - iOS Touch ID\n\nAdd `guide` for instructions.\nEx: `$ios 2fa guide`"
+          value: "\n`$jailbreak` - jailbreak info\n`$checkrain` - checkra1n tool\n`$uncover` - unc0ver tool"
         }
       ],
       footer: {
-        text: "Version: 3.0.1 | Build 0X8902"
+        text: "$help for main menu"
     }
   }
   });
@@ -139,15 +139,15 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
 
  if (message.content.toLowerCase() === `${prefix}help other`) {
     message.channel.send({embed: {
-      color: 9552127,
-      title: "iPhone Assistance",
+      color: 5488029,
+      title: "Genius",
       fields: [{
-          name: "All help topics:",
-          value: "\n`$ios` - iOS version\n`$ios 2fa` - iOS 2FA\n`$ios alock` - iOS Activation Lock\n`$ios appdl` - App download issues\n`$ios ar` - iOS Account Recovery\n`$ios backuprestore` - Restore from backup\n`$ios battery` - iOS Battery Guide\n`$ios beta` - iOS Beta\n`$ios bypass` - ALock bypass\n`$ios downgrade` - iOS downgrade\n`$ios faceid` - iOS Face ID\n`$ios factoryrestore` - Restore to factory\n`$ios other` iOS 'Other bloat\n`$ios passcode` - iOS passcode\n`$ios touchid` - iOS Touch ID\n\nAdd `guide` for instructions.\nEx: `$ios 2fa guide`"
+          name: "Miscellaneous",
+          value: "\n`$info`\n`$help`n`$version`\n`$invite`\n`$credits`"
         }
       ],
       footer: {
-        text: "Version: 3.0.1 | Build 0X8902"
+        text: "$help for main menu"
     }
   }
   });
@@ -189,10 +189,6 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
  if (message.content.toLowerCase() === `${prefix}ios battery`) {
-    message.channel.send("https://support.apple.com/en-us/HT208387");
-  }
-
- if (message.content.toLowerCase() === `${prefix}ios battery guide`) {
     message.channel.send("__Battery health guide for iPhones:__ \n- iPhones 5/5S/SE: **90-93%** and less is degraded beyond reasonable usability. \n- iPhones 6/6S/7/8/SE2020 **85-90%** and less is degraded beyond reasonable usability. \n- iPhones 6+/6S+/7+/8+/X/X **80-85%** and less is degraded beyond reasonable usability. \n- XR/XSM/11/11P/11PM - **80% and lower** is generally degraded (Apple recommendation) \n\n*From experience this seems to line up roughly with when people start to complain with batteries and roughly when they could experience shutdowns, throttle, misreporting battery percent, etc. For more info, see <https://support.apple.com/en-us/HT208387>*");
   }
 
@@ -419,12 +415,55 @@ if (message.content.toLowerCase() === `${prefix}help ipod`) {
   }
 
 
+// ALL MACOS COMMANDS
+
+
+  if (message.content.toLowerCase() === `${prefix}mac battery`) {
+    message.channel.send("macOS Catalina 10.15.5 introduces battery health management, a feature designed to improve the lifespan of your Mac notebook's battery.\n\nBased on the measurements that it collects, battery health management may reduce your battery's maximum charge when in this mode. (Your battery will discharge to about 90% while the power adapter is plugged in). More info here: <https://support.apple.com/en-us/HT211094>");
+  }
+
+
+  if (message.content.toLowerCase() === `${prefix}mac displays`) {
+    message.channel.send("You can make all of your displays mirror each other, or extend your workspace with different apps and windows on each display. If you use an external display with your Mac notebook, you can also use closed-display mode (clam-shell mode)\n\nHere’s an overview of the types of arrangements and connections possible: <https://support.apple.com/en-us/HT202351>\nHere are some troubleshooting tips for external display issues: <https://support.apple.com/en-us/HT201177>\nHere’s how to use closed-display or clamshell mode: <https://support.apple.com/en-us/HT201834>");
+  }
+
+
+  if (message.content.toLowerCase() === `${prefix}mac GPU`) {
+    message.channel.send("Your Thunderbolt 3-equipped Mac running macOS High Sierra 10.13.4 or later can access additional graphics performance by connecting to an external graphics processor (also known as an eGPU), using Thunderbolt 3. Here’s a guide for how to get started, and which GPUs are supported by macOS: <https://support.apple.com/en-us/HT208544>\n\n**Important note**: Nvidia GPUs are NOT supported by macOS at this time, only AMD. Windows via Boot Camp also does not support eGPUs reliably. There are some workarounds, but no guarantees that Windows on your Mac will reliably use the eGPU.\nHere is a very involved guide that may get an eGPU working in Boot Camp: <https://egpu.io/boot-camp-egpu-setup-guide/> (recommended for advanced users only)");
+  }
+
+
+  if (message.content.toLowerCase() === `${prefix}mac migration`) {
+    message.channel.send("Migration Assistant copies all of your files to your new Mac so that you don't have to copy your files manually. You can copy all of your documents, apps, user accounts, and settings from another Mac, a Time Machine backup, other startup disk, or even a Windows PC. Here’s how: <https://support.apple.com/en-us/HT204350>");
+  }
+
+
+  if (message.content.toLowerCase() === `${prefix}mac recovery`) {
+    message.channel.send("The utilities in macOS Recovery help you restore from Time Machine, reinstall macOS, get help online, repair or erase a hard disk, and more. macOS Recovery is part of the built-in recovery system of your Mac. You can start up from macOS Recovery and use its utilities to recover from certain software issues or take other actions on your Mac.\n\nMore info here: <https://support.apple.com/en-us/HT201314>");
+  }
+
+
+  if (message.content.toLowerCase() === `${prefix}mac reinstall`) {
+    message.channel.send("macOS Recovery makes it easy to reinstall the Mac operating system, even if you need to erase your startup disk first. Here’s how: <https://support.apple.com/en-us/HT204904>");
+  }
+  
+
+  if (message.content.toLowerCase() === `${prefix}mac restore`) {
+    message.channel.send("If you used Time Machine to create a backup of your Mac, you can restore your files from that backup or a local snapshot on your startup disk. Here’s how: <https://support.apple.com/en-us/HT203981>");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}mac storage`) {
+    message.channel.send("With macOS Sierra or later, your Mac automatically takes these additional steps to save storage space:\n- Detects duplicate downloads in Safari, keeping only the most recent version of the download\n- Reminds you to delete used app installers\n- Removes old fonts, languages, and dictionaries that aren't being used\n- Clears caches, logs, and other unnecessary data when storage space is needed\n\nmacOS also offers some other tools that can help you manage your storage. If your internal storage is getting full, your own User data is usually taking up most of the storage. Try to get into the habit of deleting old files and documents you no longer need. Here’s a guide to the different storage management options in macOS: <https://support.apple.com/en-us/HT206996>");
+  }
+
+  if (message.content.toLowerCase() === `${prefix}mac timemachine`) {
+    message.channel.send("You can use Time Machine, the built-in backup feature of your Mac, to automatically back up all of your files, including apps, music, photos, email, documents, and system files. When you have a backup, you can restore files from your backup if the original files are ever deleted from your Mac, or the hard disk (or SSD) in your Mac is erased or replaced.\n\nTo create backups with Time Machine, all you need is an external storage device. After you connect the device and select it as your backup disk, Time Machine automatically makes hourly backups for the past 24 hours, daily backups for the past month, and weekly backups for all previous months. The oldest backups are deleted when your backup disk is full. More info here: <https://support.apple.com/en-us/HT201250>\n\n*Note: Every Mac user should take advantage of Time Machine. It is 100% the best way to backup your Mac.*");
+  }
+
+
+
 // ALL OTHER COMMANDS ($info, $help, $version, $credits, $invite)
 
-// HELP 
-
-////// ALL IOS GUIDE COMMANDS ($ios command)
-////// ALL ICLOUD GUIDE COMMANDS ($icloud command)
 
 
 });
@@ -500,8 +539,8 @@ const reactionPages = async (message, author, options, page, retries) => {
         }
       
         const pages = [
-            {  embed: { footer: { text: "This is page 1 of 2. The parent command is $backuprestore" }, color: 9552127, title: 'Restore your device from an iCloud backup', description: '__Learn how to restore your device from a backup in iCloud or on your computer.__ \n\n`1.` Turn on your device. You should see a Hello screen. If you already set up your device, you need to erase all of its content before you can use these steps to restore from your backup. \n\n`2.` Follow the onscreen setup steps until you reach the Apps & Data screen, then tap Restore from iCloud Backup. \n\n`3`. Sign in to iCloud with your Apple ID. \n\n`4`. Choose a backup. Look at the date and size of each and pick the most relevant. After you choose, the transfer starts. If a message says that a newer version of software is required, follow the onscreen steps to update (If you don\'t see onscreen steps to help you update, [learn what to do](https://support.apple.com/en-ca/HT203434)). \n\nUse the ➡️ button to proceed to page 2.\n' } },
-            {  embed: { footer: { text: "This is page 2 of 2. The parent command is $backuprestore" }, color: 9552127, title: 'Restore your device from an iCloud backup (2)', description: '`5.` When asked, sign in with your Apple ID to restore your apps and purchases (If you\'ve purchased iTunes or App Store content using multiple Apple IDs, you\'ll be asked to sign in to each). If you can’t remember your password, you can tap Skip this Step and sign in later. But you won\'t be able to use the apps until you sign in with your Apple ID.\n\n`6.` Stay connected and wait for a progress bar to appear and complete. Depending on the size of the backup and the network speed, the progress bar might need a few minutes to an hour to complete. If you disconnect from Wi-Fi too soon, the progress will pause until you reconnect.\n\n`7.` Now you can finish setup and enjoy your device. Content like your apps, photos, music, and other information will continue to restore in the background for the next several hours or days, depending on the amount of information there is. Try to connect often to Wi-Fi and power to let the process complete.\n\n[Get help with restoring from your iCloud backup](https://support.apple.com/en-ca/HT203516).\n\nUse the ⬅️ button to return to page 1.\n' } }
+            {  embed: { footer: { text: "This is page 1 of 2. The parent command is $backuprestore" }, color: 5488029, title: 'Restore your device from an iCloud backup', description: '__Learn how to restore your device from a backup in iCloud or on your computer.__ \n\n`1.` Turn on your device. You should see a Hello screen. If you already set up your device, you need to erase all of its content before you can use these steps to restore from your backup. \n\n`2.` Follow the onscreen setup steps until you reach the Apps & Data screen, then tap Restore from iCloud Backup. \n\n`3`. Sign in to iCloud with your Apple ID. \n\n`4`. Choose a backup. Look at the date and size of each and pick the most relevant. After you choose, the transfer starts. If a message says that a newer version of software is required, follow the onscreen steps to update (If you don\'t see onscreen steps to help you update, [learn what to do](https://support.apple.com/en-ca/HT203434)). \n\nUse the ➡️ button to proceed to page 2.\n' } },
+            {  embed: { footer: { text: "This is page 2 of 2. The parent command is $backuprestore" }, color: 5488029, title: 'Restore your device from an iCloud backup (2)', description: '`5.` When asked, sign in with your Apple ID to restore your apps and purchases (If you\'ve purchased iTunes or App Store content using multiple Apple IDs, you\'ll be asked to sign in to each). If you can’t remember your password, you can tap Skip this Step and sign in later. But you won\'t be able to use the apps until you sign in with your Apple ID.\n\n`6.` Stay connected and wait for a progress bar to appear and complete. Depending on the size of the backup and the network speed, the progress bar might need a few minutes to an hour to complete. If you disconnect from Wi-Fi too soon, the progress will pause until you reconnect.\n\n`7.` Now you can finish setup and enjoy your device. Content like your apps, photos, music, and other information will continue to restore in the background for the next several hours or days, depending on the amount of information there is. Try to connect often to Wi-Fi and power to let the process complete.\n\n[Get help with restoring from your iCloud backup](https://support.apple.com/en-ca/HT203516).\n\nUse the ⬅️ button to return to page 1.\n' } }
         ]
         
         const defaultPage = 0;
@@ -552,8 +591,8 @@ const reactionPages = async (message, author, options, page, retries) => {
         }
       
         const pages = [
-            {  embed: { footer: { text: "This is page 1 of 2. The parent command is $ios passcode" }, color: 9552127, title: 'Set a passcode on iPhone', description: '__Set or change the passcode__ \n\n`1.` Go to Settings , then do one of the following:\n- On an iPhone with Face ID: Tap Face ID & Passcode.\n- On an iPhone a Home button: Tap Touch ID & Passcode.\n\n`2.` Tap Turn Passcode On or Change Passcode.\n\nTo view options for creating a password, tap Passcode Options. The most secure options are Custom Alphanumeric Code and Custom Numeric Code.\n\nUse the ➡️ button to proceed to page 2.\n' } },
-            {  embed: { footer: { text: "This is page 2 of 2. The parent command is $ios passcode" }, color: 9552127, title: 'Set a passcode on iPhone (2)', description: 'After you set a passcode, you can [use Face ID](https://support.apple.com/en-ca/guide/iphone/iph6d162927a/13.0/ios/13.0) or [Touch ID](https://support.apple.com/en-ca/guide/iphone/iph672384a0b/13.0/ios/13.0) to unlock iPhone (depending on your model). For additional security, however, you must always enter your passcode to unlock your iPhone under the following conditions:\n- You turn on or restart your iPhone.\n- You haven’t unlocked your iPhone for more than 48 hours.\n- You haven’t unlocked your iPhone with the passcode in the last 6.5 days, and you haven’t unlocked it with Face ID or Touch ID in the last 4 hours.\n- Your iPhone receives a remote lock command.\n- There are five unsuccessful attempts to unlock your iPhone with Face ID or Touch ID.\n- An attempt to use Emergency SOS is initiated ([see Make emergency calls on iPhone](https://support.apple.com/en-ca/guide/iphone/iph3c99374c/13.0/ios/13.0)).\n- An attempt to view your Medical ID is initiated ([see Create and share your Medical ID in Health on iPhone](https://support.apple.com/en-ca/guide/iphone/iphec639eb15/13.0/ios/13.0)).\n\n[Set a passcode on iPhone](https://support.apple.com/en-ca/guide/iphone/iph14a867ae/ios)\n\nUse the ⬅️ button to return to page 1.\n' } }
+            {  embed: { footer: { text: "This is page 1 of 2. The parent command is $ios passcode" }, color: 5488029, title: 'Set a passcode on iPhone', description: '__Set or change the passcode__ \n\n`1.` Go to Settings , then do one of the following:\n- On an iPhone with Face ID: Tap Face ID & Passcode.\n- On an iPhone a Home button: Tap Touch ID & Passcode.\n\n`2.` Tap Turn Passcode On or Change Passcode.\n\nTo view options for creating a password, tap Passcode Options. The most secure options are Custom Alphanumeric Code and Custom Numeric Code.\n\nUse the ➡️ button to proceed to page 2.\n' } },
+            {  embed: { footer: { text: "This is page 2 of 2. The parent command is $ios passcode" }, color: 5488029, title: 'Set a passcode on iPhone (2)', description: 'After you set a passcode, you can [use Face ID](https://support.apple.com/en-ca/guide/iphone/iph6d162927a/13.0/ios/13.0) or [Touch ID](https://support.apple.com/en-ca/guide/iphone/iph672384a0b/13.0/ios/13.0) to unlock iPhone (depending on your model). For additional security, however, you must always enter your passcode to unlock your iPhone under the following conditions:\n- You turn on or restart your iPhone.\n- You haven’t unlocked your iPhone for more than 48 hours.\n- You haven’t unlocked your iPhone with the passcode in the last 6.5 days, and you haven’t unlocked it with Face ID or Touch ID in the last 4 hours.\n- Your iPhone receives a remote lock command.\n- There are five unsuccessful attempts to unlock your iPhone with Face ID or Touch ID.\n- An attempt to use Emergency SOS is initiated ([see Make emergency calls on iPhone](https://support.apple.com/en-ca/guide/iphone/iph3c99374c/13.0/ios/13.0)).\n- An attempt to view your Medical ID is initiated ([see Create and share your Medical ID in Health on iPhone](https://support.apple.com/en-ca/guide/iphone/iphec639eb15/13.0/ios/13.0)).\n\n[Set a passcode on iPhone](https://support.apple.com/en-ca/guide/iphone/iph14a867ae/ios)\n\nUse the ⬅️ button to return to page 1.\n' } }
         ]
         
         const defaultPage = 0;
@@ -594,8 +633,8 @@ const reactionPages = async (message, author, options, page, retries) => {
         }
       
         const pages = [
-            {  embed: { footer: { text: "This is page 1 of 2. The parent command is $ios faceid" }, color: 9552127, title: 'Set up Face ID or add an alternate appearance', description: '`1.` If you didn’t set up Face ID when you first set up your iPhone, go to Settings  > Face ID & Passcode > Set up Face ID, then follow the onscreen instructions.\n\n`2.` To set up an additional appearance for Face ID to recognize, go to Settings > Face ID & Passcode > Set Up an Alternate Appearance, then follow the onscreen instructions.\n\nIf you have physical limitations, you can tap Accessibility Options during Face ID set up. When you do this, setting up facial recognition doesn’t require the full range of head motion. Using Face ID is still secure, but it requires more consistency in how you look at iPhone.\n\nUse the ➡️ button to proceed to page 2.\n' } },
-            {  embed: { footer: { text: "This is page 2 of 2. The parent command is $ios faceid" }, color: 9552127, title: 'Set up Face ID or add an alternate appearance (2)', description: 'Face ID also has an accessibility feature you can use if you’re blind or have low vision. If you don’t want Face ID to require that you look at iPhone with your eyes open, go to Settings > Accessibility, then turn off Require Attention for Face ID. This feature is automatically turned off if you turn on VoiceOver when you first set up iPhone. See [Change Face ID and attention settings on iPhone.](https://support.apple.com/en-ca/guide/iphone/iph646624222/13.0/ios/13.0)\n\n[User Guide - Face ID, Apple](https://support.apple.com/en-ca/guide/iphone/iph6d162927a/ios)\n\nUse the ⬅️ button to return to page 1.\n' } }
+            {  embed: { footer: { text: "This is page 1 of 2. The parent command is $ios faceid" }, color: 5488029, title: 'Set up Face ID or add an alternate appearance', description: '`1.` If you didn’t set up Face ID when you first set up your iPhone, go to Settings  > Face ID & Passcode > Set up Face ID, then follow the onscreen instructions.\n\n`2.` To set up an additional appearance for Face ID to recognize, go to Settings > Face ID & Passcode > Set Up an Alternate Appearance, then follow the onscreen instructions.\n\nIf you have physical limitations, you can tap Accessibility Options during Face ID set up. When you do this, setting up facial recognition doesn’t require the full range of head motion. Using Face ID is still secure, but it requires more consistency in how you look at iPhone.\n\nUse the ➡️ button to proceed to page 2.\n' } },
+            {  embed: { footer: { text: "This is page 2 of 2. The parent command is $ios faceid" }, color: 5488029, title: 'Set up Face ID or add an alternate appearance (2)', description: 'Face ID also has an accessibility feature you can use if you’re blind or have low vision. If you don’t want Face ID to require that you look at iPhone with your eyes open, go to Settings > Accessibility, then turn off Require Attention for Face ID. This feature is automatically turned off if you turn on VoiceOver when you first set up iPhone. See [Change Face ID and attention settings on iPhone.](https://support.apple.com/en-ca/guide/iphone/iph646624222/13.0/ios/13.0)\n\n[User Guide - Face ID, Apple](https://support.apple.com/en-ca/guide/iphone/iph6d162927a/ios)\n\nUse the ⬅️ button to return to page 1.\n' } }
         ]
         
         const defaultPage = 0;
@@ -636,8 +675,8 @@ const reactionPages = async (message, author, options, page, retries) => {
           }
         
           const pages = [
-              {  embed: { footer: { text: "This is page 1 of 2. The parent command is $ios touchid" }, color: 9552127, title: 'Set up Touch ID on iPhone', description: 'Turn on fingerprint recognition\n\n`1.` If you didn’t turn on fingerprint recognition when you first set up your iPhone, go to Settings  > Touch ID & Passcode.\n\n`2.` Turn on any of the options, then follow the onscreen instructions.\n\nIf you turn on iTunes & App Store, you’re asked for your Apple ID password when you make your first purchase from the App Store, Apple Books, or iTunes Store. When you make your next purchases, you’re asked to use Touch ID.\n\nNote: If you can’t add a fingerprint or unlock your iPhone using Touch ID, see the Apple Support article [If Touch ID isn’t working.](https://support.apple.com/HT207537)\n\nUse the ➡️ button to proceed to page 2.\n' } },
-              {  embed: { footer: { text: "This is page 2 of 2. The parent command is $ios touchid" }, color: 9552127, title: 'Set up Touch ID on iPhone (2)', description: '__**Add a fingerprint**__\n\n`1.` Go to Settings  > Touch ID & Passcode.\n\n`2.` Tap Add a Fingerprint.\n\n`3.` Follow the onscreen instructions.\n\n__**Name or delete a fingerprint**__\n\n`1.` Go to Settings  > Touch ID & Passcode. If you added more than one fingerprint, place a finger on the Home button to identify its print.\n\n`2`. Tap the fingerprint, then enter a name (such as “Thumb”) or tap Delete Fingerprint.\n\nUse the ⬅️ button to return to page 1.\n' } }
+              {  embed: { footer: { text: "This is page 1 of 2. The parent command is $ios touchid" }, color: 5488029, title: 'Set up Touch ID on iPhone', description: 'Turn on fingerprint recognition\n\n`1.` If you didn’t turn on fingerprint recognition when you first set up your iPhone, go to Settings  > Touch ID & Passcode.\n\n`2.` Turn on any of the options, then follow the onscreen instructions.\n\nIf you turn on iTunes & App Store, you’re asked for your Apple ID password when you make your first purchase from the App Store, Apple Books, or iTunes Store. When you make your next purchases, you’re asked to use Touch ID.\n\nNote: If you can’t add a fingerprint or unlock your iPhone using Touch ID, see the Apple Support article [If Touch ID isn’t working.](https://support.apple.com/HT207537)\n\nUse the ➡️ button to proceed to page 2.\n' } },
+              {  embed: { footer: { text: "This is page 2 of 2. The parent command is $ios touchid" }, color: 5488029, title: 'Set up Touch ID on iPhone (2)', description: '__**Add a fingerprint**__\n\n`1.` Go to Settings  > Touch ID & Passcode.\n\n`2.` Tap Add a Fingerprint.\n\n`3.` Follow the onscreen instructions.\n\n__**Name or delete a fingerprint**__\n\n`1.` Go to Settings  > Touch ID & Passcode. If you added more than one fingerprint, place a finger on the Home button to identify its print.\n\n`2`. Tap the fingerprint, then enter a name (such as “Thumb”) or tap Delete Fingerprint.\n\nUse the ⬅️ button to return to page 1.\n' } }
           ]
           
           const defaultPage = 0;
@@ -678,8 +717,8 @@ const reactionPages = async (message, author, options, page, retries) => {
         }
       
         const pages = [
-            {  embed: { footer: { text: "This is page 1 of 2. The parent command is $ios 2fa" }, color: 9552127, title: 'title', description: 'enterdesc\n\nUse the ➡️ button to proceed to page 2.\n' } },
-            {  embed: { footer: { text: "This is page 2 of 2. The parent command is $ios 2fa" }, color: 9552127, title: 'title (2)', description: 'enterdesc\n\nUse the ⬅️ button to return to page 1.\n' } }
+            {  embed: { footer: { text: "This is page 1 of 2. The parent command is $ios 2fa" }, color: 5488029, title: 'title', description: 'enterdesc\n\nUse the ➡️ button to proceed to page 2.\n' } },
+            {  embed: { footer: { text: "This is page 2 of 2. The parent command is $ios 2fa" }, color: 5488029, title: 'title (2)', description: 'enterdesc\n\nUse the ⬅️ button to return to page 1.\n' } }
         ]
         
         const defaultPage = 0;
@@ -718,8 +757,8 @@ const reactionPages = async (message, author, options, page, retries) => {
         }
       
         const pages = [
-            {  embed: { footer: { text: "This is page 1 of 2. The parent command is $parent" }, color: 9552127, title: 'title', description: 'enterdesc\n\nUse the ➡️ button to proceed to page 2.\n' } },
-            {  embed: { footer: { text: "This is page 2 of 2. The parent command is $parent" }, color: 9552127, title: 'title (2)', description: 'enterdesc\n\nUse the ⬅️ button to return to page 1.\n' } }
+            {  embed: { footer: { text: "This is page 1 of 2. The parent command is $parent" }, color: 5488029, title: 'title', description: 'enterdesc\n\nUse the ➡️ button to proceed to page 2.\n' } },
+            {  embed: { footer: { text: "This is page 2 of 2. The parent command is $parent" }, color: 5488029, title: 'title (2)', description: 'enterdesc\n\nUse the ⬅️ button to return to page 1.\n' } }
         ]
         
         const defaultPage = 0;
@@ -757,7 +796,7 @@ const reactionPages = async (message, author, options, page, retries) => {
   
   // END $ios passcode guide 
   
-// OS COMMANDS
+// OS STATUS COMMANDS
 
 client.on("message", async message => {
     if(message.author.bot) return;
@@ -765,7 +804,7 @@ client.on("message", async message => {
 
     if (message.content.toLowerCase() === `${prefix}ios`) {
       message.channel.send({embed: {
-      color: 9552127,
+      color: 5488029,
       title: "iOS Status",
       fields: [{
           name: "Current distribution",
@@ -787,10 +826,31 @@ client.on("message", async message => {
     }
   });
   }
+  
+      if (message.content.toLowerCase() === `${prefix}macOS`) {
+      message.channel.send({embed: {
+      color: 5488029,
+      title: "macOS Status",
+      fields: [{
+          name: "Current distribution",
+          value: "macOS `10.15.6` (Catalina) (`19G73`) R. Jul. 15, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/MacOS_Catalina#Release_historys). ([Official](https://developer.apple.com/news/releases/))"
+        },
+        {
+          name: "Next macOS release",
+          value: "macOS `11.0 (2)` (Big Sur) (`20A4300b`) R. Jul. 7, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/MacOS_Catalina#Release_history). ([Official](https://developer.apple.com/news/releases/))"
+        }
+      ],
+      timestamp: new Date(),
+      footer: {
+        text: "Last refresh July 15, 2020"
+      }
+    }
+  });
+  }
 
   if (message.content.toLowerCase() === `${prefix}watchos`) {
     message.channel.send({embed: {
-      color: 9552127,
+      color: 5488029,
       title: "watchOS Status",
       fields: [{
           name: "Current distribution",
@@ -801,7 +861,7 @@ client.on("message", async message => {
           value: "watchOS `6.2.8 (4) GM` (`17U63`) R. Jul. 9, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_6). ([Official](https://developer.apple.com/news/releases/))"
         },
         {
-          name: "Next iOS release",
+          name: "Next watchOS release",
           value: "watchOS `7.0 (2)` (`18R5327h`) R. Jul. 7, 2020\nClick for [previous revisions](https://en.wikipedia.org/wiki/WatchOS#watchOS_7). ([Official](https://developer.apple.com/news/releases/))"
         }
       ],
