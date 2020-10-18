@@ -103,6 +103,14 @@ client.on("message", async message => {
      message.channel.send("venti guava black iced tea lemonade");
    }
 
+  if (message.content.toLowerCase().includes(`fine`)) {
+     message.channel.send("lowkey boutta nut");
+   }
+
+  if (message.content.toLowerCase().includes(`lowkey boutta nut`)) {
+     message.channel.send(":smirk_cat:");
+   }
+
   }
 
 );
