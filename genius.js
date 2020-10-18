@@ -154,7 +154,7 @@ client.on("message", async message => {
    }
 
   if (message.content.toLowerCase().includes(`yaul`)) {
-     message.author.send("IT'S FUCKING Y'ALL.");
+     message.author.send("its y'all :neutral_face: :neutral_face: :neutral_face: :neutral_face: :neutral_face:");
    }
 
 
