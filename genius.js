@@ -25,7 +25,7 @@ client.on("message", async message => {
    }
 
   if (message.content.toLowerCase().includes(`stfu`)) {
-     message.channel.send("<:shutthefuckup:756581516842238174>");
+     message.react(`756581516842238174`);
    }
 
   if (message.content.toLowerCase().includes(`kaischmoney`)) {
