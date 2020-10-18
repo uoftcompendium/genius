@@ -159,7 +159,7 @@ client.on("message", async message => {
    }
 
   if (message.content.toLowerCase().includes(`twice`)) {
-     message.author.send("calling paige :telephone:");
+     message.channel.send("calling paige :telephone:");
    }
 
 
