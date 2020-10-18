@@ -24,6 +24,22 @@ client.on("message", async message => {
      message.channel.send("ok");
    }
 
+  if (message.content.toLowerCase().includes(`stfu`)) {
+     message.channel.send("no u");
+   }
+
+  if (message.content.toLowerCase().includes(`kaischmoney`)) {
+     message.channel.send(":speaking_head: KAISCHMONEY :speaking_head:");
+   }
+
+  if (message.content.toLowerCase().includes(`poptart`)) {
+     message.channel.send("only tank's allowed to say that :smiling_face_with_3_hearts:");
+   }
+
+  if (message.content.toLowerCase().includes(`butterfly`)) {
+     message.channel.send(":butterfly:");
+   }
+
 
   }
 
