@@ -114,7 +114,7 @@ client.on("message", async message => {
   if (message.content.toLowerCase().includes(`beabadoobee`)) {
      message.channel.send("who????");
    }
-beabadoobee
+
 
   }
 
