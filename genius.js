@@ -119,6 +119,14 @@ client.on("message", async message => {
      message.channel.send("to hell :airplane:");
    }
 
+  if (message.content.toLowerCase().includes(`color`)) {
+     message.channel.send("C-O-L-O-**U**-R");
+   }
+
+  if (message.content.toLowerCase().includes(`favorite`)) {
+     message.channel.send("F-A-V-O-**U**-R-I-T-E");
+   }
+
 
   }
 
