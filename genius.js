@@ -65,6 +65,11 @@ client.on("message", async message => {
      message.react(`😐`);
    }
 
+  if (message.content.toLowerCase().includes(`new york`)) {
+     message.react(`:tanktango:`);
+     message.react(`:kaitango:`);
+   }
+
   if (message.content.toLowerCase().includes(`bein cute`)) {
      message.channel.send("<:stopbeingcute:760955473817108491>");
    }
