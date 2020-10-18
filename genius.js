@@ -118,11 +118,11 @@ client.on("message", async message => {
    }
 
   if (message.content.toLowerCase().includes(`color`)) {
-     message.channel.send("C-O-L-O-**U**-R");
+     message.channel.send("colo**u**r");
    }
 
   if (message.content.toLowerCase().includes(`favorite`)) {
-     message.channel.send("F-A-V-O-**U**-R-I-T-E");
+     message.channel.send("favo**u**rite");
    }
 
   if (message.content.toLowerCase().includes(`ayy`)) {
@@ -147,10 +147,6 @@ client.on("message", async message => {
 
   if (message.content.toLowerCase().includes(`eddy`)) {
      message.channel.send("government name Edamame");
-   }
-
-  if (message.content.toLowerCase().includes(`yah`)) {
-     message.channel.send("yeet!");
    }
 
   if (message.content.toLowerCase().includes(`yah`)) {
