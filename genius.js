@@ -12,7 +12,7 @@ client.on("message", async message => {
 
 // COMMANDS
 
- if (message.content.toLowerCase().includes(`kai`)) {
+ if (message.content.toLowerCase().includes(`kailey`)) {
      message.channel.send("cracker");
    }
 
@@ -38,6 +38,11 @@ client.on("message", async message => {
 
   if (message.content.toLowerCase().includes(`butterfly`)) {
      message.channel.send(":butterfly:");
+   }
+
+
+  if (message.content.toLowerCase().includes(`zoe`)) {
+     message.channel.send("FUCK OHIO :100:");
    }
 
 
