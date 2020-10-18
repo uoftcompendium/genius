@@ -66,8 +66,8 @@ client.on("message", async message => {
    }
 
   if (message.content.toLowerCase().includes(`new york`)) {
-     message.react(`:tanktango:`);
-     message.react(`:kaitango:`);
+     message.react(`<:tanktango:760644161925545984>`);
+     message.react(`<:kaitango:760552675346481182>`);
    }
 
   if (message.content.toLowerCase().includes(`bein cute`)) {
