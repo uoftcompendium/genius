@@ -25,7 +25,7 @@ client.on("message", async message => {
    }
 
   if (message.content.toLowerCase().includes(`stfu`)) {
-     message.channel.send("no u");
+     message.channel.send("<:shutthefuckup:756581516842238174>");
    }
 
   if (message.content.toLowerCase().includes(`kaischmoney`)) {
@@ -33,7 +33,7 @@ client.on("message", async message => {
    }
 
   if (message.content.toLowerCase().includes(`poptart`)) {
-     message.channel.send("only tank's allowed to say that :smiling_face_with_3_hearts:");
+     message.channel.send("only tank's allowed to say that :neutral_face:");
    }
 
   if (message.content.toLowerCase().includes(`butterfly`)) {
@@ -43,6 +43,26 @@ client.on("message", async message => {
 
   if (message.content.toLowerCase().includes(`zoe`)) {
      message.channel.send("FUCK OHIO :100:");
+   }
+    
+  if (message.content.toLowerCase().includes(`stan`)) {
+     message.channel.send("kkb");
+   }
+
+  if (message.content.toLowerCase().includes(`mf`)) {
+     message.channel.send("mf");
+   }
+
+  if (message.content.toLowerCase().includes(`starbucks`)) {
+     message.channel.send("its pronounced starbees");
+   }
+
+  if (message.content.toLowerCase().includes(`quando`)) {
+     message.channel.send("rondo");
+   }
+
+  if (message.content.toLowerCase().includes(`:neutral_face:`)) {
+     message.channel.send(":neutral_face:");
    }
 
 
