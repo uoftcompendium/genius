@@ -12,7 +12,7 @@ client.on("message", async message => {
 
 // COMMANDS
 
- if (message.content.toLowerCase().includes(`kai`)) {
+ if (message.content.toLowerCase().includes(`kailey`)) {
      message.channel.send("becoming a drainer");
    }
 
@@ -41,7 +41,7 @@ client.on("message", async message => {
    }
 
 
-  if (message.content.toLowerCase().includes(`zoe`)) {
+  if (message.content.toLowerCase().includes(`fuck ohio`)) {
      message.channel.send("FUCK OHIO :100:");
    }
     
@@ -49,9 +49,6 @@ client.on("message", async message => {
      message.channel.send("kkb");
    }
 
-  if (message.content.toLowerCase().includes(`mf`)) {
-     message.channel.send("mf");
-   }
 
   if (message.content.toLowerCase().includes(`starbucks`)) {
      message.channel.send("its pronounced :sparkles: starbees :sparkles:");
@@ -164,6 +161,11 @@ client.on("message", async message => {
 
   if (message.content.toLowerCase().includes(`earthgang`)) {
      message.channel.send("james' favourite rapper");
+   }
+
+
+  if (message.content.toLowerCase().includes(`paigey`)) {
+     message.channel.send("girl huh");
    }
 
 
