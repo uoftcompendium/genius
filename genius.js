@@ -62,7 +62,7 @@ client.on("message", async message => {
    }
 
   if (message.content.toLowerCase().includes(`😐`)) {
-     message.channel.send(":neutral_face:");
+     message.react(`😐`);
    }
 
   if (message.content.toLowerCase().includes(`bein cute`)) {
