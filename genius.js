@@ -6,14 +6,14 @@ const client = new Discord.Client();
 
 client.on("message", async message => {
 
-  client.user.setPresence({ activity: { name: 'bullying kai' }, status: 'online' })
+  client.user.setPresence({ activity: { name: 'bullying kai <3' }, status: 'online' })
 
  if(message.author.bot) return;
 
 // COMMANDS
 
  if (message.content.toLowerCase().includes(`kai`)) {
-     message.channel.send("probably dancing to brockhampton");
+     message.channel.send("becoming a drainer");
    }
 
   if (message.content.toLowerCase().includes(`peter`)) {
