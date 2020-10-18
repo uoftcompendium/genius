@@ -61,7 +61,7 @@ client.on("message", async message => {
      message.channel.send("rondo");
    }
 
-  if (message.content.toLowerCase().includes(`:neutral_face:`)) {
+  if (message.content.toLowerCase().includes(`😐`)) {
      message.channel.send(":neutral_face:");
    }
 
@@ -71,7 +71,7 @@ client.on("message", async message => {
     
     
   if (message.content.toLowerCase().includes(`texas`)) {
-     message.channel.send("<:letmeLIVE:756588295483555870>>");
+     message.channel.send("<:letmeLIVE:756588295483555870>");
    }
 
   if (message.content.toLowerCase().includes(`canada`)) {
