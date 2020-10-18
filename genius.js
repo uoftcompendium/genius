@@ -12,8 +12,8 @@ client.on("message", async message => {
 
 // COMMANDS
 
- if (message.content.toLowerCase().includes(`kailey`)) {
-     message.channel.send("cracker");
+ if (message.content.toLowerCase().includes(`kai`)) {
+     message.channel.send("probably dancing to brockhampton");
    }
 
   if (message.content.toLowerCase().includes(`peter`)) {
@@ -88,6 +88,11 @@ client.on("message", async message => {
 
   if (message.content.toLowerCase().includes(`heyyy`)) {
      message.channel.send("haha heyyyy <:heymamas:767063306468327444>");
+   }
+
+
+  if (message.content.toLowerCase().includes(`tank`)) {
+     message.channel.send("is not a furry :neutral_face:");
    }
 
   }
