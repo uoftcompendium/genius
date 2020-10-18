@@ -131,6 +131,13 @@ client.on("message", async message => {
      message.channel.send("lmao");
    }
 
+  if (message.content.toLowerCase().includes(`kpop`)) {
+     message.channel.send("https://i.imgur.com/yD7d5Ok.png");
+   }
+
+  if (message.content.toLowerCase().includes(`twice`)) {
+     message.channel.send("FUCK TWICE:100:");
+   }
 
   if (message.content.toLowerCase().includes(`dhruv`)) {
      message.channel.send("I only spend a couple hours a day on Discord, and it's mostly to make my bots better and better my coding skills. I don't enjoy moderation, honestly. It's difficult with people like you in the server.");
