@@ -54,7 +54,7 @@ client.on("message", async message => {
    }
 
   if (message.content.toLowerCase().includes(`starbucks`)) {
-     message.channel.send("its pronounced starbees");
+     message.channel.send("its pronounced :sparkles: starbees :sparkles:");
    }
 
   if (message.content.toLowerCase().includes(`quando`)) {
@@ -63,6 +63,10 @@ client.on("message", async message => {
 
   if (message.content.toLowerCase().includes(`:neutral_face:`)) {
      message.channel.send(":neutral_face:");
+   }
+
+  if (message.content.toLowerCase().includes(`quit bein cute`)) {
+     message.channel.send("<:stopbeingcute:760955473817108491>");
    }
 
 
