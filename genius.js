@@ -99,6 +99,10 @@ client.on("message", async message => {
      message.channel.send("doesn't exist");
    }
 
+  if (message.content.toLowerCase().includes(`regular`)) {
+     message.channel.send("venti guava black iced tea lemonade");
+   }
+
   }
 
 );
