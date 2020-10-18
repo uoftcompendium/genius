@@ -168,6 +168,10 @@ client.on("message", async message => {
      message.channel.send("girl huh");
    }
 
+  if (message.content.toLowerCase().includes(`yaul`)) {
+     message.author.send("its y'all :neutral_face: :neutral_face: :neutral_face: :neutral_face: :neutral_face:");
+   }
+
 
   }
 
