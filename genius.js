@@ -162,6 +162,10 @@ client.on("message", async message => {
      message.channel.send("calling paige :telephone:");
    }
 
+  if (message.content.toLowerCase().includes(`earthgang`)) {
+     message.channel.send("james' favourite rapper");
+   }
+
 
   }
 
