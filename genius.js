@@ -95,6 +95,10 @@ client.on("message", async message => {
      message.channel.send("is not a furry :neutral_face:");
    }
 
+  if (message.content.toLowerCase().includes(`ohio`)) {
+     message.channel.send("doesn't exist");
+   }
+
   }
 
 );
