@@ -12,12 +12,16 @@ client.on("message", async message => {
 
 // COMMANDS
 
- if (message.content.toLowerCase() === `kai`) {
+ if (message.content.toLowerCase().includes(`kai`)) {
      message.channel.send("cracker");
    }
 
-  if (message.content.toLowerCase().includes(`ping`)) {
+  if (message.content.toLowerCase().includes(`peter`)) {
      message.channel.send("waiting for bail");
+   }
+
+  if (message.content.toLowerCase().includes(`ok`)) {
+     message.channel.send("ok");
    }
 
 
