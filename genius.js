@@ -111,6 +111,11 @@ client.on("message", async message => {
      message.channel.send(":smirk_cat:");
    }
 
+  if (message.content.toLowerCase().includes(`beabadoobee`)) {
+     message.channel.send("who????");
+   }
+beabadoobee
+
   }
 
 );
