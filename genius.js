@@ -69,7 +69,6 @@ client.on("message", async message => {
      message.channel.send("<:stopbeingcute:760955473817108491>");
    }
     
-    
   if (message.content.toLowerCase().includes(`texas`)) {
      message.channel.send("<:letmeLIVE:756588295483555870>");
    }
@@ -89,7 +88,6 @@ client.on("message", async message => {
   if (message.content.toLowerCase().includes(`heyyy`)) {
      message.channel.send("haha heyyyy <:heymamas:767063306468327444>");
    }
-
 
   if (message.content.toLowerCase().includes(`tank`)) {
      message.channel.send("is not a furry :neutral_face:");
@@ -132,7 +130,7 @@ client.on("message", async message => {
    }
 
   if (message.content.toLowerCase().includes(`kpop`)) {
-     message.channel.send("https://i.imgur.com/yD7d5Ok.png");
+     message.channel.send("<https://i.imgur.com/yD7d5Ok.png>");
    }
 
   if (message.content.toLowerCase().includes(`twice`)) {
@@ -143,6 +141,21 @@ client.on("message", async message => {
      message.channel.send("I only spend a couple hours a day on Discord, and it's mostly to make my bots better and better my coding skills. I don't enjoy moderation, honestly. It's difficult with people like you in the server.");
    }
 
+  if (message.content.toLowerCase().includes(`good morning`)) {
+     message.channel.send("good morning cuties :blush:");
+   }
+
+  if (message.content.toLowerCase().includes(`eddy`)) {
+     message.channel.send("government name Edamame");
+   }
+
+  if (message.content.toLowerCase().includes(`yah`)) {
+     message.channel.send("yeet!");
+   }
+
+  if (message.content.toLowerCase().includes(`yaul`)) {
+     message.author.send("IT'S FUCKING Y'ALL.");
+   }
 
 
   }
