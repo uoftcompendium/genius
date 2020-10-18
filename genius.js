@@ -133,7 +133,7 @@ client.on("message", async message => {
      message.channel.send("<https://i.imgur.com/yD7d5Ok.png>");
    }
 
-  if (message.content.toLowerCase().includes(`twice`)) {
+  if (message.content.toLowerCase().includes(`fuck twice`)) {
      message.channel.send("FUCK TWICE:100:");
    }
 
@@ -153,8 +153,12 @@ client.on("message", async message => {
      message.channel.send("yeet!");
    }
 
-  if (message.content.toLowerCase().includes(`yaul`)) {
-     message.author.send("its y'all :neutral_face: :neutral_face: :neutral_face: :neutral_face: :neutral_face:");
+  if (message.content.toLowerCase().includes(`yah`)) {
+     message.channel.send("yeet!");
+   }
+
+  if (message.content.toLowerCase().includes(`twice`)) {
+     message.author.send("calling paige :telephone:");
    }
 
 
