@@ -16,7 +16,7 @@ client.on("message", async message => {
      message.channel.send("cracker");
    }
 
-  if (message.content.includes.toLowerCase() === `peter`) {
+  if (message.content.toLowerCase().includes(`ping`)) {
      message.channel.send("waiting for bail");
    }
 
