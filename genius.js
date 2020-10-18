@@ -115,6 +115,10 @@ client.on("message", async message => {
      message.channel.send("who????");
    }
 
+  if (message.content.toLowerCase().includes(`going`)) {
+     message.channel.send("to hell :airplane:");
+   }
+
 
   }
 
