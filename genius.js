@@ -16,6 +16,10 @@ client.on("message", async message => {
      message.channel.send("becoming a drainer");
    }
 
+ if (message.content.toLowerCase().includes(`brockhampton`)) {
+     message.channel.send("invented gay :money_with_wings:");
+   }
+
   if (message.content.toLowerCase().includes(`peter`)) {
      message.channel.send("waiting for bail");
    }
