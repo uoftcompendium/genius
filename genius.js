@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 client.on("message", async message => {
 
-  client.user.setPresence({ activity: { name: 'gm cutie 😁' }, status: 'idle' })
+  client.user.setPresence({ activity: { name: 'FUCK CLASS💯' }, status: 'idle' })
 
  if(message.author.bot) return;
 
@@ -44,7 +44,6 @@ client.on("message", async message => {
      message.channel.send(":butterfly:");
    }
 
-
   if (message.content.toLowerCase().includes(`fuck ohio`)) {
      message.channel.send("FUCK OHIO :100:");
    }
@@ -52,7 +51,6 @@ client.on("message", async message => {
   if (message.content.toLowerCase().includes(`stan`)) {
      message.channel.send("kkb");
    }
-
 
   if (message.content.toLowerCase().includes(`starbucks`)) {
      message.channel.send("its pronounced :sparkles: starbees :sparkles:");
@@ -171,7 +169,6 @@ client.on("message", async message => {
      message.channel.send("james' favourite rapper");
    }
 
-
   if (message.content.toLowerCase().includes(`paigey`)) {
      message.channel.send("girl huh");
    }
@@ -179,7 +176,6 @@ client.on("message", async message => {
   if (message.content.toLowerCase().includes(`yaul`)) {
      message.author.send("its y'all :neutral_face: :neutral_face: :neutral_face: :neutral_face: :neutral_face:");
    }
-
 
   }
 
