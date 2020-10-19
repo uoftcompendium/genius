@@ -58,7 +58,7 @@ client.on("message", async message => {
      message.channel.send("rondo");
    }
 
-  if (message.content.toLowerCase().includes(`😐`)) {
+  if (message.content.toLowerCase().includes(`i hate it here`)) {
      message.react(`😐`);
    }
 
