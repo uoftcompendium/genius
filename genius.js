@@ -81,12 +81,20 @@ client.on("message", async message => {
      message.react(`😐`);
    }
 
+  if (message.content.toLowerCase().includes(`goddess`)) {
+     message.react(`😐`);
+   }
+
   if (message.content.toLowerCase().includes(`new york`)) {
      message.react(`760644161925545984`);
      message.react(`760552675346481182`);
    }
 
   if (message.content.toLowerCase().includes(`bein cute`)) {
+     message.channel.send("<:stopbeingcute:760955473817108491>");
+   }
+
+  if (message.content.toLowerCase().includes(`being cute`)) {
      message.channel.send("<:stopbeingcute:760955473817108491>");
    }
     
@@ -96,6 +104,10 @@ client.on("message", async message => {
 
   if (message.content.toLowerCase().includes(`canada`)) {
      message.channel.send("candia*");
+   }
+
+  if (message.content.toLowerCase().includes(`canadian`)) {
+     message.channel.send("candian*");
    }
 
   if (message.content.toLowerCase().includes(`imy`)) {
@@ -116,6 +128,10 @@ client.on("message", async message => {
 
   if (message.content.toLowerCase().includes(`ohio`)) {
      message.channel.send("doesn't exist");
+   }
+
+  if (message.content.toLowerCase().includes(`huz`)) {
+     message.channel.send("bless you 🤧");
    }
 
   if (message.content.toLowerCase().includes(`regular`)) {
@@ -184,6 +200,19 @@ client.on("message", async message => {
 
   if (message.content.toLowerCase().includes(`paigey`)) {
      message.channel.send("girl huh");
+   }
+
+  if (message.content.toLowerCase().includes(`fart`)) {
+     message.channel.send("ANT WYA");
+   }
+
+
+  if (message.content.toLowerCase().includes(`mac and cheese`)) {
+     message.channel.send("kai's signature dish");
+   }
+
+  if (message.content.toLowerCase().includes(`shipleys`)) {
+     message.channel.send("NO KRISPY KREME SLANDER");
    }
 
   if (message.content.toLowerCase().includes(`yaul`)) {
