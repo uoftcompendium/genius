@@ -52,9 +52,18 @@ client.on("message", async message => {
      message.channel.send("kkb");
    }
 
+  if (message.content.toLowerCase().includes(`jack harlow`)) {
+     message.channel.send("like this best jack harlow song");
+   }
+
   if (message.content.toLowerCase().includes(`starbucks`)) {
      message.channel.send("its pronounced :sparkles: starbees :sparkles:");
    }
+
+  if (message.content.toLowerCase().includes(`disclaimer`)) {
+     message.channel.send("this message is not sponsored by tank im innocent");
+   }
+
 
   if (message.content.toLowerCase().includes(`quando`)) {
      message.channel.send("rondo");
