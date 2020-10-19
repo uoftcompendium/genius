@@ -69,6 +69,10 @@ client.on("message", async message => {
      message.channel.send("rondo");
    }
 
+  if (message.content.toLowerCase().includes(`cutie`)) {
+     message.channel.send("kai's full time job");
+   }
+
   if (message.content.toLowerCase().includes(`ameer`)) {
      message.channel.send("Ameer is no longer in BROCKHAMPTON. We want to sincerely apologize to the victims affected by Vann's actions. We were lied to, and we're sorry for not speaking up sooner. We do not tolerate abuse of any kind. This is not a solution to their suffering, but we hope this is a step in the right direction. We are going to cancel the remaining dates of our current US tour to go home and regroup.");
    }
