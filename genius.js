@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 client.on("message", async message => {
 
-  client.user.setPresence({ activity: { name: 'class sucks' }, status: 'idle' })
+  client.user.setPresence({ activity: { name: 'stop distracting me 😐' }, status: 'dnd' })
 
  if(message.author.bot) return;
 
